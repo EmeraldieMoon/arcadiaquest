@@ -2,26 +2,26 @@
 <!doctype html>
 <!-- Template bios Heroes -->
 <head>
-	<title>Greensleeves | Arcadia Quest</title>
+	<title>Grom | Arcadia Quest</title>
 		<link rel="stylesheet" href="css/normalize.min.css">
 		<link rel="stylesheet" href="css/main6.css">
 		<script type="text/javascript" src="https://raw.github.com/LeaVerou/prefixfree/master/prefixfree.min.js"></script>
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/9ZRyjgg/f-Greensleeves.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('https://i.ibb.co/MCv0bg5/fGrom.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch">
 			<div class="bioText">
-				<h1>Greensleeves</h1>
-				<p class="quote">“Do you like my new coat? It’s my complete delight.”</p>
-				<p>Greensleeves has two pleasures in life: the sound of an arrow crossing the air, and the feel of fresh cotton against his skin. A native from the Daylight Woods, Greensleeves is an enthusiastic orc hunter and an avid tailor, who is very picky with the quality of the arrows he uses and of the cotton he sews. His aim, either with an arrow or a needle, is legendary. Greensleeves descends from an ancient line of Blond Elves, where honesty and honor are sacred, knowledge and tradition are passed from one generation to the next, and the length of the hair shows how long one intends to stay single. He dreams one day of sewing via archery, but the thread proves problematic to aerodynamic efficiency.</p>
+				<h1>Grom</h1>
+				<p class="quote">“GGGGRRRRAAAAAAAAAAAGGGGGH<br/>HHHHHHHHHHH!!!!!!”</p>
+				<p>As a tiny barbarian, Grom was told that ‘practice makes perfect’, and the young Grom took it to heart… perhaps a little too literally. Grom prefers not to walk anywhere. He fights his way from place to place. He does not eat dinner. He conquers it! He does not take out the trash. He forces it into exile! He does not bathe… er, because, barbarian! In all the world, Grom fears only one thing. It is the greatest opponent he has ever faced. No matter his wit, no matter his cunning, it matches him move for move, and stalks him everywhere he goes: His shadow.</p>
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/4dvxjz2/mini-H-Greensleeves.png" alt="Greensleeves miniature" />
+			<img src="https://i.ibb.co/N1QbwqZ/mini-H-Grom.png" alt="Grom miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/P4LHQ87/Greensleeves.png" alt="Greensleeves profile card" width="531" height="380" />
+			<img src="https://i.ibb.co/v4xb99J/Grom.png" alt="Grom profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>
