@@ -2,13 +2,13 @@
 <!-- Template bios Heroes -->
 <head>
 	<title>Chaz | Arcadia Quest</title>
-		<link rel="stylesheet" href="D:\World Of Arcadia Quest\css\normalize.min.css">
-		<link rel="stylesheet" href="D:\World Of Arcadia Quest\css\main6.css">
+		<link rel="stylesheet" href="css/normalize.min.css">
+		<link rel="stylesheet" href="css/main6.css">
 		<script type="text/javascript" src="https://raw.github.com/LeaVerou/prefixfree/master/prefixfree.min.js"></script>
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('D:\World Of Arcadia Quest\Img\fChaz.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('https://i.ibb.co/mNjKKzx/fChaz.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch ">
 			<div class="bioText">
 				<h1>Chaz</h1>
@@ -17,12 +17,15 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="D:\World Of Arcadia Quest\Img\mini-H-Chaz.png" alt="Chaz miniature" />
+			<img src="https://i.ibb.co/yQx3HMB/mini-H-Chaz.png" alt="Chaz miniature" />
+		</div>
+		<div class="card switch">
+			<img src="https://i.ibb.co/p4bhzDq/Chaz.jpg" alt="Chaz profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio " title="Show biography"></span>
 			<span class="switchMini " title="Show miniature"></span>
-			<a target="blank" href="D:\World Of Arcadia Quest\Img\card-H-Chaz.jpg"><span class="switchCard" title="Show profile card"></span></a>
+			<span class="switchCard" title="Show profile card"></span>
 			<!--<span class="switchClose" title="Hide all"></span>-->
 		</div>
 	</div>
@@ -30,7 +33,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script>
 	$(document).ready(function(){
-		$(".textFrame").show(10);
+		$(".card").show(10);
 		$(".switchBio").click(function(){
 			$(".switch").hide(10);
 			$(".textFrame").show(10);

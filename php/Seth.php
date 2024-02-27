@@ -2,26 +2,26 @@
 <!doctype html>
 <!-- Template bios Heroes -->
 <head>
-	<title>Johan | Arcadia Quest</title>
+	<title>Seth | Arcadia Quest</title>
 		<link rel="stylesheet" href="css/normalize.min.css">
 		<link rel="stylesheet" href="css/main6.css">
 		<script type="text/javascript" src="https://raw.github.com/LeaVerou/prefixfree/master/prefixfree.min.js"></script>
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/HnkSgyh/fJohan.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('https://i.ibb.co/61X7KRG/fSeth.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch">
 			<div class="bioText">
-				<h1>Jøhan</h1>
-				<p class="quote">“It’s all in the wrist.”</p>
-				<p>Jøhan and his brothers made everything a competition. School, work, girls, and especially swordplay. Not a one of them didn’t dream of joining the Sunguard. In fact, they all got so good at fighting each other, they developed whole new strategies and tactics never before considered at the Academy. Jøhan had the singular distinction of defeating his admissions officer in single combat, something no other aspirant had ever done. No one on faculty had ever considered that a sword could function like a boomerang. Now a full Knight Errant, Jøhan was questing abroad when eternal night descended. He has returned, more determined than ever, to conquer Arcadia and rebuild the Sunguard.</p>
+				<h1>Seth</h1>
+				<p class="quote">“Psst. Hey, buddy. Wanna buy a wand?”</p>
+				<p>Seth was admitted to Arcadia University on a scholarship, and was expelled three days later, just to set the record for shortest attendance. An inveterate showoff, Seth was unhappy with the plodding pace at the University, and figured he could simply learn it all on his own. But books are expensive, and arcane knowledge rare. To fund his thirst for learning, Seth picked up the artificing trade, and sells his wands and scrolls to anyone with the necessary coin. Once he qualified for Guild memberships, he took his wares on the road, questing and peddling, and never looked back. Now with Arcadia fallen, he is determined to return and be the first to liberate the University (or rather liberate the University Library of its excess grimoires.)</p>
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/dg4FpKm/mini-H-Johan.png" alt="Jøhan miniature" />
+			<img src="https://i.ibb.co/HT6th4j/mini-H-Seth.png" alt="Seth miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/0DChX11/Johan.png" alt="Jøhan profile card" width="531" height="380" />
+			<img src="https://i.ibb.co/x63bghH/Seth.png" alt="Seth profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

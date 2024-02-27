@@ -2,26 +2,26 @@
 <!doctype html>
 <!-- Template bios Heroes -->
 <head>
-	<title>Johan | Arcadia Quest</title>
+	<title>Spike | Arcadia Quest</title>
 		<link rel="stylesheet" href="css/normalize.min.css">
 		<link rel="stylesheet" href="css/main6.css">
 		<script type="text/javascript" src="https://raw.github.com/LeaVerou/prefixfree/master/prefixfree.min.js"></script>
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/HnkSgyh/fJohan.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('https://i.ibb.co/CPhxjxH/fSpike.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch">
 			<div class="bioText">
-				<h1>Jøhan</h1>
-				<p class="quote">“It’s all in the wrist.”</p>
-				<p>Jøhan and his brothers made everything a competition. School, work, girls, and especially swordplay. Not a one of them didn’t dream of joining the Sunguard. In fact, they all got so good at fighting each other, they developed whole new strategies and tactics never before considered at the Academy. Jøhan had the singular distinction of defeating his admissions officer in single combat, something no other aspirant had ever done. No one on faculty had ever considered that a sword could function like a boomerang. Now a full Knight Errant, Jøhan was questing abroad when eternal night descended. He has returned, more determined than ever, to conquer Arcadia and rebuild the Sunguard.</p>
+				<h1>Spike</h1>
+				<p class="quote">“Helmet hair?? Is that ‘sposed ta be a joke, laddie??”</p>
+				<p>Being born with a mohawk wasn’t easy for Spike (to say nothing of his poor mother), but his legendary follicles of steel became a point of pride for his dwarven family, and heralded the potential for so much more. Sure enough, at age thirteen when all dwarves awake with their full beards, his was truly one-in-a-generation. He was... a Dragonbeard! One of the fabled heroes of old that served as barber to the ancient dragons. But, alas, humankind doesn’t hold the same traditions as Dwarves about their quasi-religious figures. The constant nettling and mockery has set him a bit on edge, though his inner rage is a source of great retributive strength.</p>
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/dg4FpKm/mini-H-Johan.png" alt="Jøhan miniature" />
+			<img src="https://i.ibb.co/Cwh9KDK/mini-H-Spike.png" alt="Spike miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/0DChX11/Johan.png" alt="Jøhan profile card" width="531" height="380" />
+			<img src="https://i.ibb.co/Ss57J4v/Spike.png" alt="Spike profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

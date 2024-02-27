@@ -34,7 +34,7 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script>
 	$(document).ready(function(){
-		$(".textFrame").show(10);
+		$(".card").show(10);
 		$(".switchBio").click(function(){
 			$(".switch").hide(10);
 			$(".textFrame").show(10);

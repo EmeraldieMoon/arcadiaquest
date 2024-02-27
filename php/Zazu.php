@@ -2,26 +2,26 @@
 <!doctype html>
 <!-- Template bios Heroes -->
 <head>
-	<title>Johan | Arcadia Quest</title>
+	<title>Zazu | Arcadia Quest</title>
 		<link rel="stylesheet" href="css/normalize.min.css">
 		<link rel="stylesheet" href="css/main6.css">
 		<script type="text/javascript" src="https://raw.github.com/LeaVerou/prefixfree/master/prefixfree.min.js"></script>
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/HnkSgyh/fJohan.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('https://i.ibb.co/KmSvSPN/fZazu.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch">
 			<div class="bioText">
-				<h1>Jøhan</h1>
-				<p class="quote">“It’s all in the wrist.”</p>
-				<p>Jøhan and his brothers made everything a competition. School, work, girls, and especially swordplay. Not a one of them didn’t dream of joining the Sunguard. In fact, they all got so good at fighting each other, they developed whole new strategies and tactics never before considered at the Academy. Jøhan had the singular distinction of defeating his admissions officer in single combat, something no other aspirant had ever done. No one on faculty had ever considered that a sword could function like a boomerang. Now a full Knight Errant, Jøhan was questing abroad when eternal night descended. He has returned, more determined than ever, to conquer Arcadia and rebuild the Sunguard.</p>
+				<h1>Zazu</h1>
+				<p class="quote">“Feel my inner calm’ they said… ‘Master your emotions’ they said…. Grrrrrr!!”</p>
+				<p>As a young child, Zazu had rage issues. Which is to say he raged at any issue. Bedtime. Dinnertime. Lunchtime. Afternoons. Mornings. Zazu could even rage while asleep. His desperate parents had little choice but to cloister him with the Zen Monks of Tranquil Glade in the hopes that they could teach him a peace that he’d never known in life. Zazu and the monks tried, they really did, but, in the end, Zazu proved completely incapable of mastering the Zen state, which, obviously, infuriated him even more. And yet, in this circle, lay the key. Bye opening himself up to his inadequacy and the fury it causes, Zazu has mastered the perfect cycle of Furious Zen. Like all monks he prepares himself before battle by chanting, though, in Zazu’s case, grinding teeth and muttering takes the place of any meditative chant.</p>
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/dg4FpKm/mini-H-Johan.png" alt="Jøhan miniature" />
+			<img src="https://i.ibb.co/c11Wj4B/mini-H-Zazu.png" alt="Zazu miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/0DChX11/Johan.png" alt="Jøhan profile card" width="531" height="380" />
+			<img src="https://i.ibb.co/Tqgtd77/Zazu.png" alt="Zazu profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>
