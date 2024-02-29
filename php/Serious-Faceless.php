@@ -21,7 +21,7 @@
 			<img src="https://i.ibb.co/cFcvdZB/mini-H-Serious-Faceless.png" alt="Serious Faceless miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/h8TrCm4/Serious-Faceless.jpg" alt="Serious Faceless profile card" width="380" height="531" />
+			<img src="https://i.ibb.co/h8TrCm4/Serious-Faceless.jpg" alt="Serious Faceless profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

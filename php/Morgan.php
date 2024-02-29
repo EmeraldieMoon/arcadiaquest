@@ -21,7 +21,7 @@
 			<img src="https://i.ibb.co/j51W6pk/mini-H-Morgan.png" alt="Morgan miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/KDx8Xq9/Morgan.jpg" alt="Morgan profile card" width="380" height="531" />
+			<img src="https://i.ibb.co/KDx8Xq9/Morgan.jpg" alt="Morgan profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

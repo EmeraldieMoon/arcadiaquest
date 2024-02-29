@@ -21,7 +21,7 @@
 			<img src="https://i.ibb.co/H4njQj4/mini-H-Surprised-Faceless.png" alt="Surprised Faceless miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/FDqYffD/Surprised-Faceless.jpg" alt="Surprised Faceless profile card" width="380" height="531" />
+			<img src="https://i.ibb.co/FDqYffD/Surprised-Faceless.jpg" alt="Surprised Faceless profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

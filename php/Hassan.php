@@ -21,7 +21,7 @@
 			<img src="https://i.ibb.co/m0G1P46/mini-H-Hassan.png" alt="Hassan miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/ZMv6Fcs/Hassan.jpg" alt="Hassan profile card" width="380" height="531" />
+			<img src="https://i.ibb.co/ZMv6Fcs/Hassan.jpg" alt="Hassan profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

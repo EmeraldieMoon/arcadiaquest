@@ -21,7 +21,7 @@
 			<img src="https://i.ibb.co/hZ9gJky/mini-H-Smiley-Faceless.png" alt="Smiley Faceless miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/XSxNGNV/Smiley-Faceless.jpg" alt="Smiley Faceless profile card" width="380" height="531" />
+			<img src="https://i.ibb.co/XSxNGNV/Smiley-Faceless.jpg" alt="Smiley Faceless profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

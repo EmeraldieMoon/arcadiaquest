@@ -21,7 +21,7 @@
 			<img src="https://i.ibb.co/3sR5kHX/mini-H-The-Heartless.png" alt="The Heartless miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/yVD36w3/The-Heartless.jpg" alt="The Heartless profile card" width="380" height="531" />
+			<img src="https://i.ibb.co/yVD36w3/The-Heartless.jpg" alt="The Heartless profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

@@ -21,7 +21,7 @@
 			<img src="https://i.ibb.co/7YtL13p/mini-H-Pluck.png" alt="Pluck miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/yVhHNN5/Pluck.jpg" alt="Pluck profile card" width="380" height="531" />
+			<img src="https://i.ibb.co/yVhHNN5/Pluck.jpg" alt="Pluck profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

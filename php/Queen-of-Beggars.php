@@ -21,7 +21,7 @@
 			<img src="https://i.ibb.co/QDwKv8s/mini-H-Queen-of-Beggars.png" alt="Queen of Beggars miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/NWL68gp/Queen-of-Beggars.jpg" alt="Queen of Beggars profile card" width="380" height="531" />
+			<img src="https://i.ibb.co/NWL68gp/Queen-of-Beggars.jpg" alt="Queen of Beggars profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

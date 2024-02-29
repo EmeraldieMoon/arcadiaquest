@@ -21,7 +21,7 @@
 			<img src="https://i.ibb.co/8DyYCK6/mini-H-Lydia.png" alt="Lydia miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/6Z9mS6Q/Lydia.jpg" alt="Lydia profile card" width="380" height="531" />
+			<img src="https://i.ibb.co/6Z9mS6Q/Lydia.jpg" alt="Lydia profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

@@ -21,7 +21,7 @@
 			<img src="https://i.ibb.co/Xb6cDM6/mini-H-Montoya.png" alt="Montoya miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/mz26dHT/Montoya.jpg" alt="Montoya profile card" width="380" height="531" />
+			<img src="https://i.ibb.co/mz26dHT/Montoya.jpg" alt="Montoya profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

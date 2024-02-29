@@ -21,7 +21,7 @@
 			<img src="https://i.ibb.co/fF5vd9N/mini-H-Prince-Aaron.png" alt="Prince Aaron miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/QPSh0BG/Prince-Aaron.jpg" alt="Prince Aaron profile card" width="380" height="531" />
+			<img src="https://i.ibb.co/QPSh0BG/Prince-Aaron.jpg" alt="Prince Aaron profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

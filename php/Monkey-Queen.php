@@ -21,7 +21,7 @@
 			<img src="https://i.ibb.co/yXQ9CSY/mini-H-Monkey-Queen.png" alt="Monkey Queen miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/HY7j6jq/Monkey-Queen.jpg" alt="Monkey Queen profile card" width="380" height="531" />
+			<img src="https://i.ibb.co/HY7j6jq/Monkey-Queen.jpg" alt="Monkey Queen profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

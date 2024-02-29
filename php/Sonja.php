@@ -21,7 +21,7 @@
 			<img src="https://i.ibb.co/VjFGGwL/mini-H-Sonja.png" alt="Sonja miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/Ypg10ST/Sonja.jpg" alt="Sonja profile card" width="380" height="531" />
+			<img src="https://i.ibb.co/Ypg10ST/Sonja.jpg" alt="Sonja profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

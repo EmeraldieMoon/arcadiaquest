@@ -21,7 +21,7 @@
 			<img src="https://i.ibb.co/qYb3Qxj/mini-H-Sting.png" alt="Sting miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/zGsGT40/Sting.jpg" alt="Sting profile card" width="380" height="531" />
+			<img src="https://i.ibb.co/zGsGT40/Sting.jpg" alt="Sting profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

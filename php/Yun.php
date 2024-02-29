@@ -21,7 +21,7 @@
 			<img src="https://i.ibb.co/f4Jx3S7/mini-H-Yun.png" alt="Yun miniature" />
 		</div>
 	<div class="card switch">
-			<img src="https://i.ibb.co/SRVVbVs/Yun.jpg" alt="Yun profile card" width="380" height="531" />
+			<img src="https://i.ibb.co/SRVVbVs/Yun.jpg" alt="Yun profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>
