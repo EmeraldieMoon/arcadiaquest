@@ -42,6 +42,10 @@
 			$(".switch").hide(10);
 			$(".mini").show(10);
 		});
+		$(".switchCard").click(function(){
+			$(".switch").hide(10);
+			$(".card").show(10);
+		});
 		$(".switchClose").click(function(){
 			$(".switch").hide(10);
 		});
