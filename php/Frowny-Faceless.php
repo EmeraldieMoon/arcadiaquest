@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/XCX0zwP/Frowny-Faceless.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('https://i.ibb.co/pzJq9fD/f-Frowny-Faceless.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch hide">
 			<div class="bioText">
 				<h1></h1>
@@ -21,7 +21,7 @@
 			<img src="https://i.ibb.co/9Nks6qK/mini-H-Frowny-Faceless.png" alt="Frowny Faceless miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/pzJq9fD/f-Frowny-Faceless.jpg" alt="Frowny Faceless profile card" width="531" height="380" />
+			<img src="https://i.ibb.co/XCX0zwP/Frowny-Faceless.jpg" alt="Frowny Faceless profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio " title="Show biography"></span>
