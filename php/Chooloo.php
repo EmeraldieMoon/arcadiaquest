@@ -21,7 +21,7 @@
 			<img src="https://i.ibb.co/1MkgnVb/mini-H-Chooloo.png" alt="Chooloo miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/QPr6jSL/Bob.jpg" alt="Chooloo profile card" width="531" height="380" />
+			<img src="https://i.ibb.co/0rvd3vY/Chooloo.jpg" alt="Chooloo profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio " title="Show biography"></span>
