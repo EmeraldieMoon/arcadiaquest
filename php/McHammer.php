@@ -21,7 +21,7 @@
 			<img src="https://i.ibb.co/48Pqf91/mini-H-Mc-Hammer.png" alt="McHammer miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/gFgXKzj/Mc-Hammer.jpg" alt="McHammer profile card" width="380" height="531" />
+			<img src="https://i.ibb.co/gFgXKzj/Mc-Hammer.jpg" alt="McHammer profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

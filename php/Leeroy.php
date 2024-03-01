@@ -21,7 +21,7 @@
 			<img src="https://i.ibb.co/10HnWtG/mini-H-Leeroy.png" alt="Leeroy miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/RhynXSd/Leeroy.jpg" alt="Leeroy profile card" width="380" height="531" />
+			<img src="https://i.ibb.co/RhynXSd/Leeroy.jpg" alt="Leeroy profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>
