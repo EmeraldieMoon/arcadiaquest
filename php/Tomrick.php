@@ -54,4 +54,4 @@
 	</script>
 	
 </body>
-</html>
+</html><style>.bioText p {line-height: 15px}</style>
