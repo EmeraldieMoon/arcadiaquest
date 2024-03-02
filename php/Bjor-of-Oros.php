@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/rHYW3cb/f-Bjor-of-Oros.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('https://i.ibb.co/vdMyRdv/f-Bjor-of-Oros.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch hide">
 			<div class="bioText">
 				<h1></h1>
