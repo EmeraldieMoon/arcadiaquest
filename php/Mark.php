@@ -21,7 +21,7 @@
 			<img src="https://i.ibb.co/JBZBCqX/mini-H-Mark.png" alt="Mark miniature" />
 		</div>
 		<div class="card switch">
-			<img src="hhttps://i.ibb.co/h8JkttS/Mark.png" alt="Mark profile card" width="531" height="380" />
+			<img src="https://i.ibb.co/h8JkttS/Mark.png" alt="Mark profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>
