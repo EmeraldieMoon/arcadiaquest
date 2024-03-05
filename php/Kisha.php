@@ -2,14 +2,14 @@
 <!doctype html>
 <!-- Template bios Heroes -->
 <head>
-	<title>Bjor of Oros | Arcadia Quest</title>
+	<title>Kisha | Arcadia Quest</title>
 		<link rel="stylesheet" href="css/normalize.min.css">
 		<link rel="stylesheet" href="css/main6.css">
 		<script type="text/javascript" src="https://raw.github.com/LeaVerou/prefixfree/master/prefixfree.min.js"></script>
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/51LJJR6/f-Bjor-of-Oros.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('https://i.ibb.co/gvJnRbb/fKisha.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch hide">
 			<div class="bioText">
 				<h1></h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/DDBKG1c/mini-H-Bjor-of-Oros.png" alt="Bjor of Oros miniature" />
+			<img src="https://i.ibb.co/7KmCFxg/mini-H-Kisha.png" alt="Kisha miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/tB69JWF/Bjor-of-Oros.png" alt="Bjor of Oros profile card" width="531" height="380" />
+			<img src="https://i.ibb.co/Pg5pFSQ/Kisha.png" alt="Kisha profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>
@@ -54,4 +54,4 @@
 	</script>
 	
 </body>
-</html>
+</html><style>.bioText p {line-height: 15px}</style>
