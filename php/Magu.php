@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/f4Yzj6J/fMagu.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fMagu.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch hide">
 			<div class="bioText">
 				<h1></h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/5YgPqRv/mini-H-Magu.png" alt="Magu miniature" />
+			<img src="Img/mini-H-Magu.png" alt="Magu miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/gdLLv4s/Magu.png" alt="Magu profile card" width="531" height="380" />
+			<img src="Img/card-H-Magu.png" alt="Magu profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

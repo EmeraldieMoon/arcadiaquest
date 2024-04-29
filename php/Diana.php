@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/hyYYSjC/fDiana.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fDiana.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch hide">
 			<div class="bioText">
 				<h1></h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/GMKJ61Y/mini-H-Diana.png" alt="Diana miniature" />
+			<img src="Img/mini-H-Diana.png" alt="Diana miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/dQbwyDx/Diana.png alt="Diana profile card" width="531" height="380" />
+			<img src="Img/card-H-Diana.png" alt="Diana profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

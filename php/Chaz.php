@@ -8,7 +8,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/mNjKKzx/fChaz.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fChaz.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch ">
 			<div class="bioText">
 				<h1>Chaz</h1>
@@ -17,10 +17,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/yQx3HMB/mini-H-Chaz.png" alt="Chaz miniature" />
+			<img src="Img/mini-H-Chaz.png" alt="Chaz miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/p4bhzDq/Chaz.jpg" alt="Chaz profile card" width="531" height="380" />
+			<img src="Img/card-H-Chaz.png" alt="Chaz profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio " title="Show biography"></span>

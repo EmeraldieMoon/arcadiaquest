@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/644F73W/fLydia.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fLydia.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch hide">
 			<div class="bioText">
 				<h1></h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/8DyYCK6/mini-H-Lydia.png" alt="Lydia miniature" />
+			<img src="Img/mini-H-Lydia.png" alt="Lydia miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/6Z9mS6Q/Lydia.jpg" alt="Lydia profile card" width="531" height="380" />
+			<img src="Img/card-H-Lydia.png" alt="Lydia profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

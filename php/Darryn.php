@@ -8,7 +8,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/m0ThDPN/fDarryn.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fDarryn.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch ">
 			<div class="bioText">
 				<h1>Darryn</h1>
@@ -17,10 +17,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/Bqntvt3/mini-H-Darryn.png" alt="Darryn miniature" />
+			<img src="Img/mini-H-Darryn.png" alt="Darryn miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/F6ht503/Darryn.jpg" alt="Darryn profile card" width="531" height="380" />
+			<img src="Img/card-H-Darryn.png" alt="Darryn profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio " title="Show biography"></span>

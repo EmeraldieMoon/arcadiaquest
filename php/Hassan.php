@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/PhKsLZT/fHassan.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fHassan.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch ">
 			<div class="bioText">
 				<h1>Hassan</h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/m0G1P46/mini-H-Hassan.png" alt="Hassan miniature" />
+			<img src="Img/mini-H-Hassan.png" alt="Hassan miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/ZMv6Fcs/Hassan.jpg" alt="Hassan profile card" width="531" height="380" />
+			<img src="Img/card-H-Hassan.png" alt="Hassan profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/FHmqNdG/fMark.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fMark.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch hide">
 			<div class="bioText">
 				<h1></h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/JBZBCqX/mini-H-Mark.png" alt="Mark miniature" />
+			<img src="Img/mini-H-Mark.png" alt="Mark miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/h8JkttS/Mark.png" alt="Mark profile card" width="531" height="380" />
+			<img src="Img/card-H-Mark.png" alt="Mark profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

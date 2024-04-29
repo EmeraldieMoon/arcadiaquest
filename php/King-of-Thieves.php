@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/cY2wGG9/f-King-of-Thieves.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fKing-of-Thieves.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch ">
 			<div class="bioText">
 				<h1>King of Thieves</h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/xYy2W8s/mini-H-King-of-Thieves.png" alt="King of Thieves miniature" />
+			<img src="Img/mini-H-King-of-Thieves.png" alt="King of Thieves miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/B2jJsN9/King-of-Thieves.jpg" alt="King-of-Thieves profile card" width="531" height="380" />
+			<img src="Img/card-H-King-of-Thieves.png" alt="King-of-Thieves profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio " title="Show biography"></span>

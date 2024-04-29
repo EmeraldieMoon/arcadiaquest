@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/rM5dQPV/f-Hobsbawm.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fHobsbawm.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch">
 			<div class="bioText">
 				<h1>Hobsbawm</h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/0C9xWgd/mini-H-Hobsbawm.png" alt="Hobsbawm miniature" />
+			<img src="Img/mini-H-Hobsbawm.png" alt="Hobsbawm miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/5K2YDVX/Hobsbawm.png" alt="Hobsbawm profile card" width="531" height="380" />
+			<img src="Img/card-H-Hobsbawm.png" alt="Hobsbawm profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

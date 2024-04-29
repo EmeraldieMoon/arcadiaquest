@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/MBwzZKS/f-Lord-Fang.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fLord-Fang.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch">
 			<div class="bioText">
 				<h1>Lord Fang</h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/68MYfdk/mini-H-Lord-Fang.png" alt="Lord Fang miniature" />
+			<img src="Img/mini-H-Lord-Fang.png" alt="Lord Fang miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/bzfrngR/Lord-Fang.jpg" alt="Lord Fang profile card" width="531" height="380" />
+			<img src="Img/card-H-Lord-Fang.png" alt="Lord Fang profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

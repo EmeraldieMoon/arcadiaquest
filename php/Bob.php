@@ -8,7 +8,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/7RctmHb/fBob.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fBob.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch ">
 			<div class="bioText">
 				<h1>Bob the Conjurer</h1>
@@ -17,10 +17,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/0VW0nMQ/mini-H-Bob.png" alt="Bob the Conjurer miniature" />
+			<img src="Img/mini-H-Bob.png" alt="Bob the Conjurer miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/QPr6jSL/Bob.jpg" alt="Bob the Conjurer profile card" width="531" height="380" />
+			<img src="Img/card-H-Bob.png" alt="Bob the Conjurer profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio " title="Show biography"></span>

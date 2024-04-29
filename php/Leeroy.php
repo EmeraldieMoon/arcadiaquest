@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/Gc9sDh4/fLeeroy.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fLeeroy.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch ">
 			<div class="bioText">
 				<h1>Leeroy</h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/10HnWtG/mini-H-Leeroy.png" alt="Leeroy miniature" />
+			<img src="Img/mini-H-Leeroy.png" alt="Leeroy miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/RhynXSd/Leeroy.jpg" alt="Leeroy profile card" width="531" height="380" />
+			<img src="Img/card-H-Leeroy.png" alt="Leeroy profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

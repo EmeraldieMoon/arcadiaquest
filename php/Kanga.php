@@ -8,7 +8,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/Z1S2fBS/fKanga.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fKanga.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch">
 			<div class="bioText">
 				<h1>Kanga</h1>
@@ -17,10 +17,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/xjr4Syr/mini-H-Kanga.png" alt="Kanga miniature" />
+			<img src="Img/mini-H-Kanga.png" alt="Kanga miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/44fkY8B/Kanga.png" alt="Kanga profile card" width="531" height="380" />
+			<img src="Img/card-H-Kanga.png" alt="Kanga profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

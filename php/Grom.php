@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/MCv0bg5/fGrom.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fGrom.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch">
 			<div class="bioText">
 				<h1>Grom</h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/N1QbwqZ/mini-H-Grom.png" alt="Grom miniature" />
+			<img src="Img/mini-H-Grom.png" alt="Grom miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/v4xb99J/Grom.png" alt="Grom profile card" width="531" height="380" />
+			<img src="Img/card-H-Grom.png" alt="Grom profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/vmbDSBx/f-Lord-Tyron.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fLord-Tyron.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch hide">
 			<div class="bioText">
 				<h1></h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/tJC1SZQ/mini-H-Lord-Tyron.png" alt="Lord Tyron miniature" />
+			<img src="Img/mini-H-Lord-Tyron.png" alt="Lord Tyron miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/V9G06PM/Lord-Tyron.png" alt="Lord Tyron profile card" width="531" height="380" />
+			<img src="Img/card-H-Lord-Tyron.png" alt="Lord Tyron profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

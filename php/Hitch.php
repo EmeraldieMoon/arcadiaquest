@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/bJtvCTc/fHitch.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fHitch.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch ">
 			<div class="bioText">
 				<h1>Hitch</h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/58NW1T3/mini-H-Hitch.png" alt="Hitch miniature" />
+			<img src="Img/mini-H-Hitch.png" alt="Hitch miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/mRbfbDq/Hitch.jpg" alt="Hitch profile card" width="531" height="380" />
+			<img src="Img/card-H-Hitch.png" alt="Hitch profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio " title="Show biography"></span>

@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/tpc7wv6/fChooloo.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fChooloo.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch ">
 			<div class="bioText">
 				<h1>Chooloo</h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/1MkgnVb/mini-H-Chooloo.png" alt="Chooloo miniature" />
+			<img src="Img/mini-H-Chooloo.png" alt="Chooloo miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/0rvd3vY/Chooloo.jpg" alt="Chooloo profile card" width="531" height="380" />
+			<img src="Img/card-H-Chooloo.png" alt="Chooloo profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio " title="Show biography"></span>
