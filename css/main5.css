@@ -1,0 +1,267 @@
+/* General layout **************************************/
+
+html { border: medium none !important; box-shadow: none !important; }
+
+body {
+    background-color: #15495F;
+    color: #3C3A3A;
+    font-family: HighlanderStd-Medium;
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+  
+header { margin: 0 auto; width: 980px; }
+header #topHeader { height:30px; display:none; }
+header #greyHeader { height: 290px; padding:20px 0; }
+header .container  { width: 980px; height:290px; }
+
+#main {
+    background: url('../Img/green-BG.jpg') repeat-y scroll center top #C8D8CB;
+    border: 1px solid #D0D5CB;
+    box-shadow: 0 0 0 5px rgba(34, 34, 34, 0.6);
+    margin: 0 auto;
+    padding: 5px 0 5px;
+    position: relative;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    width: 1220px;
+    height: 415px;
+    overflow-y: scroll;
+}
+/* Track */
+.style-1::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+/* width */
+.style-1::-webkit-scrollbar
+{
+  width: 6px;
+  background-color: #F5F5F5;
+}
+
+/* Handle */
+.style-1::-webkit-scrollbar-thumb
+{
+  background-color: #000000;
+}
+
+/* Handle on hover */
+.style-1::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+
+
+
+#left {
+    background: url('../Img/green-BG.jpg') repeat-y scroll center top #C8D8CB;
+    border: 1px solid #D0D5CB;
+    box-shadow: 0 0 0 1px rgba(34, 34, 34, 0.6);
+    margin: 0 auto;
+    padding: 5px 0 5px;
+    position: relative;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    width: 500px;
+}
+#right {
+    background: url('../Img/green-BG.jpg') repeat-y scroll center top #C8D8CB;
+    border: 1px solid #D0D5CB;
+    box-shadow: 0 0 0 1px rgba(34, 34, 34, 0.6);
+    margin: 0 auto;
+    padding: 5px 0 5px;
+    position: relative;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    width: 1210px;
+}
+.page { padding: 0 5px }
+/*.page p { text-align:justify}*/
+.page p {
+  margin: 20px auto;
+  max-width: 587px;
+  text-align: justify;
+}
+/* Menus **************************************/
+
+#menu li a, #menu li a:visited, #menu li a:hover, #menu li a:active, #menu li a:focus { color:#84366A; text-decoration:none}
+
+#menu ul li a, #menu ul li a:visited, #menu ul li a:hover, #menu ul li a:active, #menu ul li a:focus {color:#fff }
+
+#menu {
+    list-style: none;
+	margin: 0 auto;
+    position: relative;
+    width: 980px;
+    z-index: 10;
+}
+
+#menu li {
+    background: none repeat scroll 0 0 #C8D8CD;
+    border-radius: 6px 6px 0 0;
+    box-shadow: 0 0 0 3px rgba(208, 213, 203, 0.3);
+    display: inline-block;
+    font-family: LitteratraKLTF-Rg;
+    font-size: 25px;
+    line-height: 25px;
+    margin: 0 11px 0px;
+    padding: 10px;
+	position: relative;
+    text-align: center;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    width: 111px;
+}
+
+#menu1:hover, #menu2:hover, #menu3:hover, #menu4:hover, #menu5:hover, #menu6:hover { background:url('../Img/current-Tab.jpg') no-repeat #C8D8CD !important}
+
+#menu li:hover > ul{
+    display: block;
+}
+
+#menu ul{
+    list-style: none;
+    margin: 10px 0 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 99999;
+    background: #15495F;
+    border-radius: 5px;
+	border:3px solid #84366A;
+}
+#menu ul li{
+    background:none;
+	border:none;
+	float: none;
+    margin: 0;
+    padding: 0 0 0 8px;
+	text-align:left;
+	width: 95%;
+    box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+}
+
+#menu ul li a {
+    border-radius: 5px 5px 0 0;
+	display: block;
+    float: none;
+    height: auto;
+    line-height: 1;
+    margin-left: -10px;
+    padding: 10px;
+    text-shadow: 2px 2px 0 #84366A;
+    text-transform: none;
+    white-space: nowrap;
+    width: 111px;
+}
+
+#menu ul li a:hover {
+    color: #BF2904;
+	text-shadow:none;
+}
+
+
+#menu2 > ul {width:193px}
+#menu3 > ul {width:186px}
+
+/* General layout **************************************/
+
+body {
+    background-color: #15495F;
+    color: #3C3A3A;
+    font-family: HighlanderStd-Medium;
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+header { margin: 0 auto; width: 980px; }
+header #greyHeader { height: 290px; padding:20px 0; }
+header .container  { width: 980px; height:290px; }
+
+/* Webfonts **************************************/
+@font-face {
+	font-family: 'LitteratraKLTF-Rg';
+	src: url('LitteratraKLTF-Rg.eot?') format('eot'), 
+	     url('LitteratraKLTF-Rg.otf')  format('opentype'),
+	     url('LitteratraKLTF-Rg.woff') format('woff'), 
+	     url('LitteratraKLTF-Rg.ttf')  format('truetype'),
+	     url('LitteratraKLTF-Rg.svg#LitteratraKLTF-Rg') format('svg');
+}
+
+/* =============================================================================
+   SlideJS | http://slidesjs.com/
+   ========================================================================== */
+
+    /* Prevent the slideshow from flashing on load */
+    #slides { display: none }
+    /* Center the slideshow */
+    .container { margin: 0 auto }
+		
+	/* Prevents flashes between slides on iOS mobile devices.
+	Not working actually.
+	https://groups.google.com/forum/#!topic/slidesjs/Q5YpXk4riQA */
+	#slides * { -webkit-transform: translate3d(0, 0, 0); }
+	
+	/* Image de fond permanente sur le slider pour éviter d'avoir du vide en cas de bug du slider */
+	.slidesjs-control {
+		background: url('../Img/header1.jpg') no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+   @media only screen and (min-width: 35em) {
+
+   }
+   
+   @media print,
+          (-o-min-device-pixel-ratio: 5/4),
+          (-webkit-min-device-pixel-ratio: 1.25),
+          (min-resolution: 120dpi) {
+   
+   }
+   @media screen and (max-device-width: 480px){
+       /*--- iPhone only CSS here ---*/
+       /*#background { background: url("../img/bg-mob2.jpg") no-repeat #000; -webkit-background-size: 980px 1330px }*/
+   }
+   @media screen and (max-device-width: 1024px){
+       /*--- iPad only CSS here ---*/
+       /*#background { background: url("../img/bg-mob2.jpg") no-repeat #000; -webkit-background-size: 980px 1330px }*/
+   }
+   
+   /* Galleries **************************************/
+   ul.gallery { padding-left:0px}
+   ul.gallery li { float: left; list-style-type: none; margin-right: 0px; margin-bottom: -10px; }
+   ul.gallery li:nth-child(4n) { margin-right:0 }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+   .clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* Classes générales*/
+a img             { opacity:   1; transition: all 0.2s ease-in-out 0s;}
+a img:hover { opacity: 0.8; transition: all 0.2s ease-in-out 0s;}
+
+/* Pick area */
+.myDiv {
+    height : 100px;
+    width : 100px;
+    border : 1px;
+    border-style: solid;
+  }
+
+ 

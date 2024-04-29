@@ -36,6 +36,7 @@ hr {
 
 img {
     vertical-align: middle;
+    border-radius: 25px;
 }
 
 fieldset {
@@ -146,7 +147,7 @@ footer a:hover {color:#fff; text-decoration:underline}		/* mouse over link */
 /* menu */
 
 .underconstruction {
-    background: url("../img/underconstruction.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("../Img/underconstruction.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
     height: 36px;
     left: -1px;
     position: absolute;
@@ -177,7 +178,7 @@ footer a:hover {color:#fff; text-decoration:underline}		/* mouse over link */
     text-shadow: 1px 1px 0 #FFFFFF;
     width: 111px;
 }
-#menu1:hover, #menu2:hover, #menu3:hover, #menu4:hover, #menu5:hover, #menu6:hover { background:url('https://i.ibb.co/gdRGC1P/current-Tab.jpg') no-repeat #C8D8CD !important}
+#menu1:hover, #menu2:hover, #menu3:hover, #menu4:hover, #menu5:hover, #menu6:hover { background:url('../Img/current-Tab.jpg') no-repeat #C8D8CD !important}
 
 
 /******************************************/
@@ -313,7 +314,7 @@ header #greyHeader { height: 290px; padding:20px 0; }
 header .container  { width: 980px; height:290px; }
 
 #main {
-    background: url('https://i.ibb.co/YtDhCjB/green-BG.jpg') repeat-y scroll center top #C8D8CB;
+    background: url('../Img/green-BG.jpg') repeat-y scroll center top #C8D8CB;
     border: 1px solid #D0D5CB;
     box-shadow: 0 0 0 5px rgba(34, 34, 34, 0.6);
     margin: 0 auto;
@@ -331,7 +332,7 @@ header .container  { width: 980px; height:290px; }
   text-align: justify;
 }
 .page h1 {
-    background: url('https://i.ibb.co/L15VdZR/Rule-Title.png') no-repeat scroll center bottom rgba(0, 0, 0, 0);
+    background: url('../Img/Rule-Title.png') no-repeat scroll center bottom rgba(0, 0, 0, 0);
     color: #84366A;
     font-family: LitteratraKLTF-Rg;
     font-size: 39px;
@@ -370,7 +371,7 @@ footer {
     font-family: arial;
     margin-top: 27px;
 }
-footer #footerContainer { width:980px; margin:10px auto; /*padding-top:45px; background: url('https://i.ibb.co/8scnGRK/Rule-top.png') no-repeat scroll center top*/ }
+footer #footerContainer { width:980px; margin:10px auto; /*padding-top:45px; background: url('../Img/Rule-top.png') no-repeat scroll center top*/ }
 footer a { color:#fff; text-decoration: }
 footer #logos { width: 158px; height: 180px; float:left; padding:0 30px }
 footer #copyright { font-size: 10px }
@@ -378,7 +379,7 @@ footer #share { width: 175px; height: 180px; float:left; padding:0 30px }
 footer #share h4 { color: #FFFFFF; font-size: 13px; margin: -10px 0 4px }
 footer #share a:hover { text-decoration: none }
 footer #facebook { width: 414px; height: 180px; float:left; padding-left: 30px;  }
-footer #bottomLine { height:43px; clear:both; background: url('https://i.ibb.co/h2M1Lrn/Rule-bot.png') no-repeat scroll center bottom;  }
+footer #bottomLine { height:43px; clear:both; background: url('../Img/Rule-bot.png') no-repeat scroll center bottom;  }
 
 
 
@@ -400,15 +401,16 @@ footer #bottomLine { height:43px; clear:both; background: url('https://i.ibb.co/
 
 /* Product page **************************************/
 
-.parchment { width:460px; height:183px; background: url('https://i.ibb.co/X39ZpPq/Parchment-Quest.png') no-repeat center; }
+.parchment { width:460px; height:183px; background: url('../Img/Parchment-Quest.png') no-repeat center; }
 .parchment p { font-family: LitteratraKLTF-Rg; color: #84366A; }
-.parchment.parch1 p { font-size:25px; line-height: 28px; padding: 36px 60px }
-.parchment.parch2 p { font-size:19px; line-height: 19px; padding: 28px 34px }
+.parchment.parch1 p { font-size:25px; line-height: 28px; padding: 30px 30px;text-align: center}
+.parchment.parch2 p { font-size:25px; line-height: 28px; padding: 60px 34px;text-align: center }
+.parchment.parch3 p { font-size:18px; line-height: 14px; padding: 30px 34px;text-align: center }
 .encart {
-    /*background: url("../img/Rule-Encart-top.png") no-repeat scroll center top, url("../img/Rule-Encart-bot.png") no-repeat scroll center bottom #DFDACF;*/
+    /*background: url("../Img/Rule-Encart-top.png") no-repeat scroll center top, url("../img/Rule-Encart-bot.png") no-repeat scroll center bottom #DFDACF;*/
     background: #e6e0d4;
     box-shadow:0 0 3px 0 #000000;
-	font-size: 105%;
+	font-size: 105%;            
     /*padding: 45px 0;*/
     padding: 0;
 }
@@ -425,12 +427,12 @@ footer #bottomLine { height:43px; clear:both; background: url('https://i.ibb.co/
 .encart > p { padding: 0 33px }
 
 /* Test parchemin */
-.encart .top { height:40px; background:url('../img/parchment-top.gif') }
-.encart .topleft { width:67px; height:40px; float:left; background:url('../img/parchment-topleft.gif') }
-.encart .topright { width:67px; height:40px; float:right; background:url('../img/parchment-topright.gif') }
-.encart .bot { height:40px; background:url('../img/parchment-bot.gif') }
-.encart .botleft { width:67px; height:40px; float:left; background:url('../img/parchment-botleft.gif') }
-.encart .botright { width:67px; height:40px; float:right; background:url('../img/parchment-botright.gif') }
+.encart .top { height:40px; background:url('../Img/parchment-top.gif') }
+.encart .topleft { width:67px; height:40px; float:left; background:url('../Img/parchment-topleft.gif') }
+.encart .topright { width:67px; height:40px; float:right; background:url('../Img/parchment-topright.gif') }
+.encart .bot { height:40px; background:url('../Img/parchment-bot.gif') }
+.encart .botleft { width:67px; height:40px; float:left; background:url('../Img/parchment-botleft.gif') }
+.encart .botright { width:67px; height:40px; float:right; background:url('../Img/parchment-botright.gif') }
 /* Test parchemin */
 
 .warning { background-color: #84366a; padding:10px; font-size: 20px; font-weight: bold; color:#fff; text-shadow:1px 1px 8px #000 }
@@ -461,6 +463,16 @@ ul.gallery li:nth-child(4n) { margin-right:0 }
 	height:32px;
     margin-bottom: -16px;
 }
+.gallery.heros .large.name {
+	height:16px;
+    width: 180px;
+    margin: 5px auto 0;
+}
+.gallery.heros .large.big.name {
+	height:32px;
+    width: 180px;
+    margin: 5px auto 0;
+}
 .gallery.monsters .name {
 	height:35px;
     width: 135px;
@@ -472,7 +484,7 @@ ul.gallery li:nth-child(4n) { margin-right:0 }
 
 .bioPage { width: 950px; height: 800px; position:relative}
 .bioPage .textFrame {
-    background: url('https://i.ibb.co/6wPLrMd/Parchment-Bio.png') no-repeat;
+    background: url('../Img/Parchment-Bio.png') no-repeat;
     height: 544px;
     position: absolute;
     width: 362px;
@@ -526,14 +538,14 @@ ul.gallery li:nth-child(4n) { margin-right:0 }
     cursor: pointer;
     opacity: 0.7;
 }
-.Hero .switchBio { background: url('https://i.ibb.co/M1C9WQR/switch-Bio-H.png') }
-.Hero .switchMini { background: url('https://i.ibb.co/wJQwstY/switch-Mini-H.png') }
-.Hero .switchCard { background: url('https://i.ibb.co/2N6YR3X/switch-Card-H.png') }
-.Hero .switchClose { background: url('https://i.ibb.co/R0S2GbT/switch-Close-H.png') }
-.Monster .switchBio { background: url('https://i.ibb.co/f8W2bsN/switch-Bio-M.png') }
-.Monster .switchMini { background: url('https://i.ibb.co/p0ZMFfs/switch-Mini-M.png') }
-.Monster .switchCard { background: url('https://i.ibb.co/nbf981w/switch-Card-M.png') }
-.Monster .switchClose { background: url('https://i.ibb.co/4tjNZKC/switch-Close-M.png') }
+.Hero .switchBio { background: url('../Img/switch-Bio-H.png') }
+.Hero .switchMini { background: url('../Img/switch-Mini-H.png') }
+.Hero .switchCard { background: url('../Img/switch-Card-H.png') }
+.Hero .switchClose { background: url('../Img/switch-Close-H.png') }
+.Monster .switchBio { background: url('../Img/switch-Bio-M.png') }
+.Monster .switchMini { background: url('../Img/switch-Mini-M.png') }
+.Monster .switchCard { background: url('../Img/switch-Card-M.png') }
+.Monster .switchClose { background: url('../Img/switch-Close-M.png') }
 
 .bioPage .switch { display:none }
 .Hero .mini.switch {
@@ -546,6 +558,7 @@ ul.gallery li:nth-child(4n) { margin-right:0 }
     position: absolute;
     top: 75px;
     transform: rotate(4deg);
+    
 }
 .Monster .mini.switch {
     right: 10px;
@@ -628,7 +641,7 @@ ul.gallery li:nth-child(4n) { margin-right:0 }
 	
 	/* Image de fond permanente sur le slider pour éviter d'avoir du vide en cas de bug du slider */
 	.slidesjs-control {
-		background: url('https://i.ibb.co/Vgvgd84/header1.jpg') no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+		background: url('../Img/header1.jpg') no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 	}
 
 
@@ -668,10 +681,10 @@ html[xmlns] .slides {display: block;}
 .flexslider .slides {zoom: 1;}
 .carousel li {margin-right: 5px}
 /* JULIEN */
-.flexslider {background: url("../img/hach-red.jpg") repeat; height: 225px; overflow: hidden; padding: 30px 30px 10px; width: 860px; border-radius:5px;}
+.flexslider {background: url("../Img/hach-red.jpg") repeat; height: 225px; overflow: hidden; padding: 30px 30px 10px; width: 860px; border-radius:5px;}
 /* Direction Nav */
 .flex-direction-nav {*height: 0;}
-.flex-direction-nav a {width: 30px; height: 65px; margin: -20px 0 0; display: block; background: url(../img/controls.png) no-repeat 0 0; position: absolute; top: 48%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 1; -webkit-transition: all .3s ease;}
+.flex-direction-nav a {width: 30px; height: 65px; margin: -20px 0 0; display: block; background: url(../Img/controls.png) no-repeat 0 0; position: absolute; top: 48%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 1; -webkit-transition: all .3s ease;}
 /*.flex-direction-nav a {width: 30px; height: 30px; margin: -20px 0 0; display: block; background: url(../img/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 0.8; -webkit-transition: all .3s ease;}*/
 .flex-direction-nav .flex-next {background-position: 100% 0; right: 0 /*-36px*/; }
 .flex-direction-nav .flex-prev {left: 0 /*-36px*/;}
@@ -853,4 +866,25 @@ html[xmlns] .slides {display: block;}
     h3 {
         page-break-after: avoid;
     }
+    
 }
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+  }
+  th {
+    cursor: pointer;
+  }
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: middle;
+    padding: 10px;
+    color:#000000
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
