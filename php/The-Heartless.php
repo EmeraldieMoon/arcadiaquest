@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/rdyx02g/f-Heartless.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fHeartless.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch hide">
 			<div class="bioText">
 				<h1></h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/3sR5kHX/mini-H-The-Heartless.png" alt="The Heartless miniature" />
+			<img src="Img/mini-H-The-Heartless.png" alt="The Heartless miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/yVD36w3/The-Heartless.jpg" alt="The Heartless profile card" width="531" height="380" />
+			<img src="Img/card-H-The-Heartless.png" alt="The Heartless profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

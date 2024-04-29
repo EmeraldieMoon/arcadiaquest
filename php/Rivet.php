@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/GFBRfzY/fRivet.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fRivet.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch hide">
 			<div class="bioText">
 				<h1></h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/4M6bsTr/mini-H-Rivet.png" alt="Rivet miniature" />
+			<img src="Img/mini-H-Rivet.png" alt="Rivet miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/DWwHhJ3/Rivet.png" alt="Rivet profile card" width="531" height="380" />
+			<img src="Img/card-H-Rivet.png" alt="Rivet profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

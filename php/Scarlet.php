@@ -8,7 +8,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/71Z4mnG/fScarlet.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fScarlet.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch">
 			<div class="bioText">
 				<h1>Scarlet</h1>
@@ -17,10 +17,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/RHYgBSB/mini-H-Scarlet.png" alt="Scarlet miniature" />
+			<img src="Img/mini-H-Scarlet.png" alt="Scarlet miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/xXVPD8k/Scarlet.png" alt="Scarlet profile card" width="531" height="380" />
+			<img src="Img/card-H-Scarlet.png" alt="Scarlet profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

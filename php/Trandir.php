@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/RQ7Yn9D/fTrandir.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fTrandir.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch hide">
 			<div class="bioText">
 				<h1></h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/j5YKF85/mini-H-Trandir.png" alt="Trandir miniature" />
+			<img src="Img/mini-H-Trandir.png" alt="Trandir miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/hX5nvTD/Trandir.png" alt="Trandir profile card" width="531" height="380" />
+			<img src="Img/card-H-Trandir.png" alt="Trandir profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

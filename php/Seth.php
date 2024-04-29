@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/61X7KRG/fSeth.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fSeth.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch">
 			<div class="bioText">
 				<h1>Seth</h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/HT6th4j/mini-H-Seth.png" alt="Seth miniature" />
+			<img src="Img/mini-H-Seth.png" alt="Seth miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/x63bghH/Seth.png" alt="Seth profile card" width="531" height="380" />
+			<img src="Img/card-H-Seth.png" alt="Seth profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

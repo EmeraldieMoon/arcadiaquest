@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/58vj3VL/fTomrick.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fTomrick.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch ">
 			<div class="bioText">
 				<h1>Tomrick</h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/3MmNPXj/mini-H-Tomrick.png" alt="Tomrick miniature" />
+			<img src="Img/mini-H-Tomrick.png" alt="Tomrick miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/d5L3qs0/Tomrick.jpg" alt="Tomrick profile card" width="531" height="380" />
+			<img src="Img/card-H-Tomrick.png" alt="Tomrick profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

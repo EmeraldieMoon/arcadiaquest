@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/YDCFMZM/f-Serious-Faceless.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fSerious-Faceless.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch hide">
 			<div class="bioText">
 				<h1></h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/cFcvdZB/mini-H-Serious-Faceless.png" alt="Serious Faceless miniature" />
+			<img src="Img/mini-H-Serious-Faceless.png" alt="Serious Faceless miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/h8TrCm4/Serious-Faceless.jpg" alt="Serious Faceless profile card" width="531" height="380" />
+			<img src="Img/card-H-Serious-Faceless.png" alt="Serious Faceless profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

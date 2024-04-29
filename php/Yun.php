@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/q5yF78g/fYun.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fYun.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch ">
 			<div class="bioText">
 				<h1>Yun</h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/f4Jx3S7/mini-H-Yun.png" alt="Yun miniature" />
+			<img src="Img/mini-H-Yun.png" alt="Yun miniature" />
 		</div>
 	<div class="card switch">
-			<img src="https://i.ibb.co/SRVVbVs/Yun.jpg" alt="Yun profile card" width="531" height="380" />
+			<img src="Img/card-H-Yun.png" alt="Yun profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/syxKtFk/fMontoya.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fMontoya.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch ">
 			<div class="bioText">
 				<h1>Montoya</h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/Xb6cDM6/mini-H-Montoya.png" alt="Montoya miniature" />
+			<img src="Img/mini-H-Montoya.png" alt="Montoya miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/mz26dHT/Montoya.jpg" alt="Montoya profile card" width="531" height="380" />
+			<img src="Img/card-H-Montoya.png" alt="Montoya profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

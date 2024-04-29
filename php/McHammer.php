@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/BKbWpjC/f-Mc-Hammer.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fMcHammer.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch ">
 			<div class="bioText">
 				<h1>McHammer</h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/48Pqf91/mini-H-Mc-Hammer.png" alt="McHammer miniature" />
+			<img src="Img/mini-H-McHammer.png" alt="McHammer miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/gFgXKzj/Mc-Hammer.jpg" alt="McHammer profile card" width="531" height="380" />
+			<img src="Img/card-H-McHammer.png" alt="McHammer profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

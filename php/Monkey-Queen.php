@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/R2sQqgJ/f-Monkey-Queen.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fMonkey-Queen.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch ">
 			<div class="bioText">
 				<h1>Monkey Queen</h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/yXQ9CSY/mini-H-Monkey-Queen.png" alt="Monkey Queen miniature" />
+			<img src="Img/mini-H-Monkey-Queen.png" alt="Monkey Queen miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/HY7j6jq/Monkey-Queen.jpg" alt="Monkey Queen profile card" width="531" height="380" />
+			<img src="Img/card-H-Monkey-Queen.png" alt="Monkey Queen profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

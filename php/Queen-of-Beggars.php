@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/41NZkDq/f-Queen-of-Beggars.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fQueen-of-Beggars.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch ">
 			<div class="bioText">
 				<h1>Queen of Beggars</h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/QDwKv8s/mini-H-Queen-of-Beggars.png" alt="Queen of Beggars miniature" />
+			<img src="Img/mini-H-Queen-of-Beggars.png" alt="Queen of Beggars miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/NWL68gp/Queen-of-Beggars.jpg" alt="Queen of Beggars profile card" width="531" height="380" />
+			<img src="Img/card-H-Queen-of-Beggars.png" alt="Queen of Beggars profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

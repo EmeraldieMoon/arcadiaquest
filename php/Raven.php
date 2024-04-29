@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/BN0qWkY/fRaven.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fRaven.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch hide">
 			<div class="bioText">
 				<h1></h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/j5LNcw7/mini-H-Raven.png" alt="Raven miniature" />
+			<img src="Img/mini-H-Raven.png" alt="Raven miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/0Mz7BDh/Raven.png" alt="Raven profile card" width="531" height="380" />
+			<img src="Img/card-H-Raven.png" alt="Raven profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

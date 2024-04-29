@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/3487FJH/fPluck.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fPluck.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch ">
 			<div class="bioText">
 				<h1>Pluck</h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/7YtL13p/mini-H-Pluck.png" alt="Pluck miniature" />
+			<img src="Img/mini-H-Pluck.png" alt="Pluck miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/yVhHNN5/Pluck.jpg" alt="Pluck profile card" width="531" height="380" />
+			<img src="Img/card-H-Pluck.png" alt="Pluck profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

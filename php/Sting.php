@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/9vPMZ86/fSting.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fSting.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch hide">
 			<div class="bioText">
 				<h1></h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/qYb3Qxj/mini-H-Sting.png" alt="Sting miniature" />
+			<img src="Img/mini-H-Sting.png" alt="Sting miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/zGsGT40/Sting.jpg" alt="Sting profile card" width="531" height="380" />
+			<img src="Img/card-H-Sting.png" alt="Sting profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

@@ -8,7 +8,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/dpRDTwq/fMaya.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fMaya.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch">
 			<div class="bioText">
 				<h1>Maya</h1>
@@ -17,10 +17,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/jg7NC9M/mini-H-Maya.png" alt="Maya miniature" />
+			<img src="Img/mini-H-Maya.png" alt="Maya miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/DrNVfJg/Maya.png" alt="Maya profile card" width="531" height="380" />
+			<img src="Img/card-H-Maya.png" alt="Maya profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>

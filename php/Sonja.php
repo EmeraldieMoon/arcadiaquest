@@ -9,7 +9,7 @@
 		<style>body {background:#15495F}</style>
 </head>
 <body>
-	<div class="bioPage Hero" style="background:url('https://i.ibb.co/0D3b1Wh/fSonja.jpg') no-repeat scroll 0 0 #fff">
+	<div class="bioPage Hero" style="background:url('Img/fSonja.jpg') no-repeat scroll 0 0 #fff">
 		<div class="textFrame switch ">
 			<div class="bioText">
 				<h1>Sonja</h1>
@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div class="mini switch">
-			<img src="https://i.ibb.co/VjFGGwL/mini-H-Sonja.png" alt="Sonja miniature" />
+			<img src="Img/mini-H-Sonja.png" alt="Sonja miniature" />
 		</div>
 		<div class="card switch">
-			<img src="https://i.ibb.co/Ypg10ST/Sonja.jpg" alt="Sonja profile card" width="531" height="380" />
+			<img src="Img/card-H-Sonja.png" alt="Sonja profile card" width="531" height="380" />
 		</div>
 		<div class="switchButttons">
 			<span class="switchBio" title="Show biography"></span>
