@@ -36,7 +36,7 @@ header .container  { width: 980px; height:290px; }
   background-color: #F5F5F5;
 }
 
-.style-1::-webkit-scrollbar-button 
+/*.style-1::-webkit-scrollbar-button
 
 /* Track */
 .style-1::-webkit-scrollbar-track
@@ -45,14 +45,14 @@ header .container  { width: 980px; height:290px; }
   background-color: #F5F5F5;
 }
 
-::-webkit-scrollbar-track-piece
+/*::-webkit-scrollbar-track-piece
 
 /* Handle */
 .style-1::-webkit-scrollbar-thumb
 {
   background-color: #000000;
 }
-::-webkit-scrollbar-corner
+/*::-webkit-scrollbar-corner
 
 ::-webkit-resizer
 
