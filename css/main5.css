@@ -28,12 +28,6 @@ header .container  { width: 980px; height:290px; }
     height: 415px;
     overflow-y: scroll;
 }
-/* Track */
-.style-1::-webkit-scrollbar-track
-{
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  background-color: #F5F5F5;
-}
 
 /* width */
 .style-1::-webkit-scrollbar
@@ -42,11 +36,25 @@ header .container  { width: 980px; height:290px; }
   background-color: #F5F5F5;
 }
 
+.style-1::-webkit-scrollbar-button 
+
+/* Track */
+.style-1::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-track-piece
+
 /* Handle */
 .style-1::-webkit-scrollbar-thumb
 {
   background-color: #000000;
 }
+::-webkit-scrollbar-corner
+
+::-webkit-resizer
 
 /* Handle on hover */
 .style-1::-webkit-scrollbar-thumb:hover {
@@ -54,7 +62,26 @@ header .container  { width: 980px; height:290px; }
   }
 
 
-
+#search {
+    background: url('../Img/green-BG.jpg') repeat-y scroll center top #C8D8CB;
+    border: 1px solid #D0D5CB;
+    box-shadow: 0 0 0 5px rgba(34, 34, 34, 0.6);
+    margin: 0 auto;
+    padding: 10px 0 5px;
+    position: relative;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    width: 957px;
+}
+#myInput {
+    background: none;
+    position: relative;
+    width: 920px;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  
 #left {
     background: url('../Img/green-BG.jpg') repeat-y scroll center top #C8D8CB;
     border: 1px solid #D0D5CB;
@@ -235,7 +262,21 @@ header .container  { width: 980px; height:290px; }
    ul.gallery { padding-left:0px}
    ul.gallery li { float: left; list-style-type: none; margin-right: 0px; margin-bottom: -10px; }
    ul.gallery li:nth-child(4n) { margin-right:0 }
-
+   .gallery .name {
+    background-color: #000000;
+   	color: #FFFFFF;
+    box-shadow: 0 0 4px #000000, 0 0 4px #000000;
+    display: block;
+	font-size: 10px;
+	line-height: 0;
+    margin: -15px auto 10px;
+	padding: 10px 0;
+    text-align: center;
+	text-shadow: none;
+}
+.gallery.heros .name {
+    width: 90px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
