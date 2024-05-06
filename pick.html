@@ -502,20 +502,20 @@ function drop(ev) {
   /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
   var dropdown = document.getElementsByClassName("dropdown-btn");
   var i;
-  var j=0;
+  let m=0;
   for (i = 0; i < dropdown.length; i++) {
     dropdown[i].addEventListener("click", function() {
       this.classList.toggle("active");
       var dropdownContent = this.nextElementSibling;
       if (dropdownContent.style.display === "block") {
         dropdownContent.style.display = "none";
-        j=j-1;
+        m=m-1;
       } else {
         dropdownContent.style.display = "block";
         document.getElementById('search').style.height = '250px';
-        j=j+1;
+        m=m+1;
       }
-      if (j===0){
+      if (m===0){
         document.getElementById('search').style.height = '100px';
       }
 
