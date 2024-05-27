@@ -1,0 +1,75 @@
+[
+{
+    "Team": "Team1",
+    "Hero": "Hero1",
+    "ido": "Diva",
+    "idd": "mdrag1"
+  },
+  {
+    "Team": "Team1",
+    "Hero": "Hero2",
+    "ido": "Greensleeves",
+    "idd": "mdrag2"
+  },
+  {
+    "Team": "Team1",
+    "Hero": "Hero3",
+    "ido": "Grom",
+    "idd": "mdrag3"
+  },
+  {
+    "Team": "Team2",
+    "Hero": "Hero1",
+    "ido": "",
+    "idd": "mdrag4"
+  },
+  {
+    "Team": "Team2",
+    "Hero": "Hero2",
+    "ido": "",
+    "idd": "mdrag5"
+  },
+  {
+    "Team": "Team2",
+    "Hero": "Hero3",
+    "ido": "",
+    "idd": "mdrag6"
+  },
+  {
+    "Team": "Team3",
+    "Hero": "Hero1",
+    "ido": "",
+    "idd": "mdrag7"
+  },
+  {
+    "Team": "Team3",
+    "Hero": "Hero2",
+    "ido": "",
+    "idd": "mdrag8"
+  },
+  {
+    "Team": "Team3",
+    "Hero": "Hero3",
+    "ido": "",
+    "idd": "mdrag9"
+  },
+  {
+    "Team": "Team4",
+    "Hero": "Hero1",
+    "ido": "",
+    "idd": "mdrag10"
+  },
+  {
+    "Team": "Team4",
+    "Hero": "Hero2",
+    "ido": "",
+    "idd": "mdrag11"
+  },
+  {
+    "Team": "Team4",
+    "Hero": "Hero3",
+    "ido": "",
+    "idd": "mdrag12"
+  }
+
+]
