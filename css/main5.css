@@ -71,7 +71,18 @@ header .container  { width: 980px; height:290px; }
     position: relative;
     text-shadow: 1px 1px 0 #FFFFFF;
     width: 957px;
-    height: 100px;
+    height: 80px;
+}
+#filter {
+    background: url('../Img/green-BG.jpg') repeat-y scroll center top #C8D8CB;
+    border: 1px solid #D0D5CB;
+    box-shadow: 0 0 0 5px rgba(34, 34, 34, 0.6);
+    margin: 0 auto;
+    padding: 10px 0 5px;
+    position: relative;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    width: 957px;
+    height: 30px;
 }
 #myInput {
     background: none;
@@ -182,16 +193,41 @@ label input{
     width: 104px;
     border: 1px solid rgb(0, 0, 0);
     float: left;
+    position: relative;
     margin: 0px 10px;
     padding:10px;
+}
+.div1:hover .remove-symbol {
+    opacity: 1;
+      visibility: visible;
+      transition: opacity 2s ease, visibility 2s ease;
+}
 
-
-    }
+.remove-symbol {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    font-size: 15px;
+    width: 20px;
+    color:white;
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+   z-index: 1;
+}
 .maindiv1 {
         height: 180px;
         width: 450px;
         border: 2px solid rgb(0, 0, 0);
         display: inline-block;
+        position: relative;
+
         margin: 5px;
         }
 .text{
@@ -212,6 +248,9 @@ label input{
  padding: 10px 0;
  text-align: center;
  text-shadow: none;
+}
+.hidden {
+    display: none;
 }
 /* Menus **************************************/
 
@@ -398,8 +437,9 @@ header .container  { width: 980px; height:290px; }
    ========================================================================== */
 
 /* Classes générales*/
-a img             { opacity:   1; transition: all 0.2s ease-in-out 0s;}
+a img         { opacity:   1; transition: all 0.2s ease-in-out 0s;}
 a img:hover { opacity: 0.8; transition: all 0.2s ease-in-out 0s;}
-
-
+#main li {
+    display:none;
+}
  

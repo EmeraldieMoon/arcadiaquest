@@ -1,0 +1,317 @@
+/* General layout **************************************/
+
+html { border: medium none !important; box-shadow: none !important; }
+
+body {
+    background-color: #15495F;
+    color: #3C3A3A;
+    font-family: HighlanderStd-Medium;
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+  
+header { margin: 0 auto; width: 980px; }
+header #topHeader { height:30px; display:none; }
+header #greyHeader { height: 290px; padding:20px 0; }
+header .container  { width: 980px; height:290px; }
+
+#main {
+    background: url('../Img/green-BG.jpg') repeat-y scroll center top #C8D8CB;
+    border: 1px solid #D0D5CB;
+    box-shadow: 0 0 0 5px rgba(34, 34, 34, 0.6);
+    margin: 0 auto;
+    padding: 5px 0 5px;
+    position: relative;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    width: 957px;
+    height: 300px;
+    display: grid;
+      place-items: center;
+}
+#createroom{
+  display: grid;
+  place-items: center;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  width: 400px;
+  height: 200px;
+ background: radial-gradient(circle, #3813c0, #4016d8);
+  opacity: 0.7;
+}
+.style-maintext{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  color:#ffffff;
+  font-family: HighlanderStd-Medium;
+  opacity: 1;
+
+}
+.style-text{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width:300px;
+    font-family: HighlanderStd-Medium;
+    color: #C8D8CB;
+    font-weight: bold;
+    opacity: 1;
+}
+.style-text::before, .style-text::after{
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.style-text::before{
+  margin-right:10px;
+}
+.style-text::after{
+  margin-left:10px;
+}
+#settingsButton{
+  background-color:#df7960;
+  color: #ffffff;
+  width: 300px;
+  height: 50px;
+  opacity: 1;
+  border-radius: 8px;
+  font-weight: bold;      
+}
+#closeButton{
+  background-color:#df7960;
+  color: #ffffff;
+  width: 300px;
+  height: 50px;
+  opacity: 1;
+  border-radius: 8px;
+  font-weight: bold;      
+}
+#jo
+#joinButton{
+  background-color:#df7960;
+  color: #ffffff;
+  width: 50px;
+  height: 30px;
+  opacity: 1;
+  border-radius: 8px;
+  font-weight: bold;      
+    
+}
+#name{
+  width: 240px;
+  border-radius: 4px;
+  height: 25px;
+}
+#settingsButton:hover, #joinButton:hover{background-color:#b8614c;}
+
+.popup {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, #6c49ec, #553dac);
+  padding: 20px;
+  z-index: 1000;
+  border-radius: 10px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: white;
+}
+.popup.open {
+  display: block;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+.overlay.open {
+  display: block;
+}
+.slider-container {
+width: 300px;
+margin-top: 30px;
+}
+.slider1 {
+  width: 100%;
+  height: 15px;
+  background: #d81919;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+cursor: pointer;
+}
+.value {
+position: fixed;
+color: rgb(255, 255, 255);
+font-family: HighlanderStd-Medium;
+font-size: 18px;
+padding: 5px;
+border-radius: 4px;
+z-index: 10; /* Ensure it stays on top of other elements */
+}
+.style-subtext{
+  font-size: 30px;
+  color:#ffffff;
+  font-family: HighlanderStd-Medium;
+}
+.modeText{
+  color: rgb(255, 255, 255);
+  font-family: HighlanderStd-Medium;
+font-size: 18px;
+}
+.checkbox{
+  margin:5px;
+  color: rgb(255, 255, 255);
+  font-family: HighlanderStd-Medium;
+font-size: 18px;
+}
+/* Menus **************************************/
+
+#menu li a, #menu li a:visited, #menu li a:hover, #menu li a:active, #menu li a:focus { color:#84366A; text-decoration:none}
+
+#menu ul li a, #menu ul li a:visited, #menu ul li a:hover, #menu ul li a:active, #menu ul li a:focus {color:#fff }
+
+#menu {
+    list-style: none;
+	margin: 0 auto;
+    position: relative;
+    width: 980px;
+    z-index: 10;
+}
+
+#menu li {
+    background: none repeat scroll 0 0 #C8D8CD;
+    border-radius: 6px 6px 0 0;
+    box-shadow: 0 0 0 3px rgba(208, 213, 203, 0.3);
+    display: inline-block;
+    font-family: LitteratraKLTF-Rg;
+    font-size: 25px;
+    line-height: 25px;
+    margin: 0 11px 0px;
+    padding: 10px;
+	position: relative;
+    text-align: center;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    width: 111px;
+}
+
+#menu1:hover, #menu2:hover, #menu3:hover, #menu4:hover, #menu5:hover, #menu6:hover { background:url('../Img/current-Tab.jpg') no-repeat #C8D8CD !important}
+
+#menu li:hover > ul{
+    display: block;
+}
+
+#menu ul{
+    list-style: none;
+    margin: 10px 0 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 99999;
+    background: #15495F;
+    border-radius: 5px;
+	border:3px solid #84366A;
+}
+#menu ul li{
+    background:none;
+	border:none;
+	float: none;
+    margin: 0;
+    padding: 0 0 0 8px;
+	text-align:left;
+	width: 95%;
+    box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+}
+
+#menu ul li a {
+    border-radius: 5px 5px 0 0;
+	display: block;
+    float: none;
+    height: auto;
+    line-height: 1;
+    margin-left: -10px;
+    padding: 10px;
+    text-shadow: 2px 2px 0 #84366A;
+    text-transform: none;
+    white-space: nowrap;
+    width: 111px;
+}
+
+#menu ul li a:hover {
+    color: #BF2904;
+	text-shadow:none;
+}
+
+
+#menu2 > ul {width:193px}
+#menu3 > ul {width:186px}
+
+/* General layout **************************************/
+
+
+
+/* Webfonts **************************************/
+@font-face {
+	font-family: 'LitteratraKLTF-Rg';
+	src: url('LitteratraKLTF-Rg.eot?') format('eot'), 
+	     url('LitteratraKLTF-Rg.otf')  format('opentype'),
+	     url('LitteratraKLTF-Rg.woff') format('woff'), 
+	     url('LitteratraKLTF-Rg.ttf')  format('truetype'),
+	     url('LitteratraKLTF-Rg.svg#LitteratraKLTF-Rg') format('svg');
+}
+
+/* =============================================================================
+   SlideJS | http://slidesjs.com/
+   ========================================================================== */
+
+    /* Prevent the slideshow from flashing on load */
+    #slides { display: none }
+    /* Center the slideshow */
+    .container { margin: 0 auto }
+		
+	/* Prevents flashes between slides on iOS mobile devices.
+	Not working actually.
+	https://groups.google.com/forum/#!topic/slidesjs/Q5YpXk4riQA */
+	#slides * { -webkit-transform: translate3d(0, 0, 0); }
+	
+	/* Image de fond permanente sur le slider pour éviter d'avoir du vide en cas de bug du slider */
+	.slidesjs-control {
+		background: url('../Img/header1.jpg') no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+   @media only screen and (min-width: 35em) {
+
+   }
+   
+   @media print,
+          (-o-min-device-pixel-ratio: 5/4),
+          (-webkit-min-device-pixel-ratio: 1.25),
+          (min-resolution: 120dpi) {
+   
+   }
+   @media screen and (max-device-width: 480px){
+       /*--- iPhone only CSS here ---*/
+       /*#background { background: url("../img/bg-mob2.jpg") no-repeat #000; -webkit-background-size: 980px 1330px }*/
+   }
+   @media screen and (max-device-width: 1024px){
+       /*--- iPad only CSS here ---*/
+       /*#background { background: url("../img/bg-mob2.jpg") no-repeat #000; -webkit-background-size: 980px 1330px }*/
+   }
+    
+      

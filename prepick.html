@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Mystery+Quest" rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="google-site-verification" content="sXNRWi5U8DXbrM3emCZJuql1dH2CpqtE61p0pBuuUFE" />
+  <title>Arcadia Quest | Hero Gallery</title>
+  <meta name="description"
+    content="Find out more about each of the brave and unique heroes you can pick to defend your guild throughout the campaign." />
+  <!-- Mobile viewport optimized: h5bp.com/viewport -->
+  <!--<meta name="viewport" content="width=device-width" />-->
+  <meta name="viewport" content="width=1030" />
+  <!--<link rel="apple-touch-icon" href="" />-->
+  <!-- Windows 8 tile http://www.buildmypinnedsite.com -->
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main7.css">
+  <!-- -prefix-free http://www.alsacreations.com/article/lire/1306-prefix-free-prefixes-CSS3.html -->
+  <script type="text/javascript" src="https://raw.github.com/LeaVerou/prefixfree/master/prefixfree.min.js"></script>
+  <script src="js/lib/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <section id="greyHeader">
+      <div class="container">
+        <div id="slides">
+          <img width="980" height="290" alt="header1" src="Img/header1.jpg" />
+          <img width="980" height="290" alt="header2" src="Img/header2.jpg" />
+          <img width="980" height="290" alt="header3" src="Img/header3.jpg" />
+          <img width="980" height="290" alt="header4" src="Img/header4.jpg" />
+          <img width="980" height="290" alt="header5" src="Img/header5.jpg" />
+        </div>
+      </div>
+    </section>
+  </header>
+  <ul id="menu">
+    <li id="menu1"><a href="index.html">Main</a></li>
+    <li id="menu2"><a href="heroes.html">Heroes</a>
+      <ul>
+        <li><a href="heroes.html">Icons</a></li>
+        <li><a href="list.html">List</a></li>
+      </ul>
+    </li>
+    <li id="menu3"><a href="pets.html">Pet&Rider</a>
+      <ul>
+        <li><a href="pets.html">Pets</a></li>
+        <li><a href="riders.html">Riders</a></li>
+      </ul>
+    </li>
+    <li id="menu4"><a href="https://arcadiaquest.com/" target="blank">Home</a></li>
+
+    <li id="menu5"><a href="prepick.html">Pick</a></li>
+    <li id="menu6"><a href="https://support.cmon.com" target="blank">Contact</a></li>
+  </ul>
+  <div id="main">
+    <div id="createroom">
+      <div class="style-maintext">Hero Craft room</div>
+      <div id="buttons">
+        <button id="settingsButton">Create room</button>
+      </div>
+      <div class="style-text">OR JOIN EXSISTING</div>
+      <div>
+        <input type="text" id="name" name="name" placeholder="Enter room code">
+        <button id="joinButton">Join</button>
+      </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <div class="popup" id="settingsPopup">
+      <div class="style-subtext">Room Rules:</div>
+      <div class="value" id="sliderValue">Maximum Players (2)</div>
+      <div class="slider-container">
+        <input type="range" min="1" max="4" value="2" class="slider1" id="myRange"
+          oninput="updateValue('sliderValue', this.value,'Maximum Players (',')') ">
+      </div>
+      <div class="value" id="sliderValue1">Bans Per Player (0)</div>
+      <div class="slider-container">
+        <input type="range" min="0" max="3" value="0" class="slider1" id="myRange1"
+          oninput="updateValue('sliderValue1', this.value,'Bans Per Player (',')')">
+      </div>
+      <div class="modepick">
+        <span class="modeText" id="modeValue">Mode</span>
+        <select id="volumeDropdown">
+          <option value="0">All pick</option>
+          <option value="10">Host choose all</option>
+          <option value="20">Draft</option>
+          <option value="30">All random</option>
+        </select>
+      </div>
+      <div class="style-text">HERO POOL</div>
+      <div class="checkbox">
+        <div class="AQ" id="checkbox0">
+          <label for="checkbox1"><input type="checkbox" class="subOption0" checked>
+            AQ
+          </label>
+          <label for="checkbox2"><input type="checkbox" class="subOption0">
+            BTG
+          </label>
+          <label for="checkbox3"><input type="checkbox" class="subOption0">
+            Extra
+          </label>
+          <label for="checkbox4"><input type="checkbox" class="subOption0">
+            GM
+          </label>
+        </div>
+        <div class="Inferno" id="checkbox1">
+          <label for="checkbox1"><input type="checkbox" class="subOption1">
+            Inferno
+          </label>
+          <label for="checkbox2"><input type="checkbox" class="subOption1">
+            Pets
+          </label>
+          <label for="checkbox3"><input type="checkbox" class="subOption1">
+            HoB
+          </label>
+          <label for="checkbox4"><input type="checkbox" class="subOption1">
+            Extra
+          </label>
+          <label for="checkbox5"><input type="checkbox" class="subOption1">
+            Riders
+          </label>
+        </div>
+        <div class="Masmorra" id="checkbox2">
+          <label for="checkbox1"><input type="checkbox" class="subOption2">
+            Masmorra
+          </label>
+          <label for="checkbox2"><input type="checkbox" class="subOption2">
+            Extra
+          </label>
+          <label for="checkbox3"><input type="checkbox" class="subOption2">
+            Dungoneer
+          </label>
+        </div>
+        <div class="Promotion" id="checkbox3">
+          <label for="checkbox4"><input type="checkbox" class="subOption3">
+            Promo
+          </label>
+          <label for="checkbox4"><input type="checkbox" class="subOption3">
+            Usagi Yojimbo
+          </label>
+        </div>
+      </div>
+      <button id="closeButton">Create room with rules</button>
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/lib/jquery-1.10.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- fancyBox -->
+<script src="js/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<!-- Add Button helper (optional) -->
+<link rel="stylesheet" type="text/css" href="js/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+<script type="text/javascript" src="js/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<!-- Add Thumbnail helper (optional) -->
+<link rel="stylesheet" type="text/css" href="js/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+<script type="text/javascript" src="js/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<!-- Add Media helper (optional) -->
+<script type="text/javascript" src="js/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<!-- /fancyBox -->
+
+<!-- SlidesJS Required -->
+<script src="js/jquery.slides.min.js"></script>
+<script>
+  $(function () {
+    $('#slides').slidesjs({
+      width: 980,
+      height: 290,
+      navigation: {
+        active: false,
+        effect: "fade"
+      },
+      pagination: {
+        active: false,
+        effect: "fade"
+      },
+      play: {
+        active: false,
+        effect: "fade",
+        interval: 5000,
+        auto: true
+      },
+      effect: {
+        fade: {
+          speed: 1500,
+          crossfade: true
+        }
+      }
+    });
+  });
+</script>
+  <!-- Save parameter -->
+
+<script>
+  const settingsButton = document.getElementById('settingsButton');
+  const settingsPopup = document.getElementById('settingsPopup');
+  const overlay = document.getElementById('overlay');
+  const closeButton = document.getElementById('closeButton');
+
+  settingsButton.addEventListener('click', () => {
+    settingsPopup.classList.add('open');
+    overlay.classList.add('open');
+  });
+
+  closeButton.addEventListener('click', () => {
+    settingsPopup.classList.remove('open');
+    overlay.classList.remove('open');
+    window.location.href = "pick.html";
+
+    sessionStorage.setItem("playercount", document.getElementById("myRange").value);
+    sessionStorage.setItem("bancount", document.getElementById("myRange1").value);
+    sessionStorage.setItem("modepick", document.getElementById("volumeDropdown").value);
+    storeCheckboxStatus("input.subOption0")
+    storeCheckboxStatus("input.subOption1")
+    storeCheckboxStatus("input.subOption2")
+    storeCheckboxStatus("input.subOption3")
+  });
+
+  overlay.addEventListener('click', () => {
+    settingsPopup.classList.remove('open');
+    overlay.classList.remove('open');
+  });
+  function storeCheckboxStatus(x) {
+        var checkboxes = document.querySelectorAll(x);
+        var checkboxStatus = Array.from(checkboxes).map(function (checkbox) {
+            return checkbox.checked;
+        });
+        sessionStorage.setItem(x, JSON.stringify(checkboxStatus));
+    }
+</script>
+<script>
+  function updateValue(id, value, text1, text2) {
+    document.getElementById(id).textContent = text1 + value + text2;
+  }
+</script>
+
+</html>
