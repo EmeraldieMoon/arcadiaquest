@@ -148,9 +148,6 @@ function readdataonce(roomID) {
 }
 
 function writeUserData(roomID, playerId, data) {
-    console.log(data);
-    console.log(playername);
-    console.log(guildindex);
     set(ref(db, `room/${roomID}/${playerId}`), {
         hero1: data[0],
         hero2: data[1],
