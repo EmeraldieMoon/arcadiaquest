@@ -1,128 +1,227 @@
 /* General layout **************************************/
 
-html { border: medium none !important; box-shadow: none !important; }
+html {
+  border: medium none !important;
+  box-shadow: none !important;
+}
 
 body {
-    background-color: #15495F;
-    color: #3C3A3A;
-    font-family: HighlanderStd-Medium;
-    font-size: 17px;
-    line-height: 1.4;
+  background-color: #15495F;
+  color: #3C3A3A;
+  font-family: HighlanderStd-Medium;
+  font-size: 17px;
+  line-height: 1.4;
 }
 
-  
-header { margin: 0 auto; width: 980px; }
-header #topHeader { height:30px; display:none; }
-header #greyHeader { height: 290px; padding:20px 0; }
-header .container  { width: 980px; height:290px; }
+
+header {
+  margin: 0 auto;
+  width: 980px;
+}
+
+header #topHeader {
+  height: 30px;
+  display: none;
+}
+
+header #greyHeader {
+  height: 290px;
+  padding: 20px 0;
+}
+
+header .container {
+  width: 980px;
+  height: 290px;
+}
 
 #main {
-    background: url('../Img/green-BG.jpg') repeat-y scroll center top #C8D8CB;
-    border: 1px solid #D0D5CB;
-    box-shadow: 0 0 0 5px rgba(34, 34, 34, 0.6);
-    margin: 0 auto;
-    padding: 5px 0 5px;
-    position: relative;
-    text-shadow: 1px 1px 0 #FFFFFF;
-    width: 957px;
-    height: 300px;
-    display: grid;
-      place-items: center;
-}
-#createroom{
+  background: url('../Img/green-BG.jpg') repeat-y scroll center top #C8D8CB;
+  border: 1px solid #D0D5CB;
+  box-shadow: 0 0 0 5px rgba(34, 34, 34, 0.6);
+  margin: 0 auto;
+  padding: 5px 0 5px;
+  position: relative;
+  text-shadow: 1px 1px 0 #FFFFFF;
+  width: 957px;
+  height: 300px;
   display: grid;
   place-items: center;
-  border: 2px solid #ffffff;
-  border-radius: 5px;
-  width: 400px;
-  height: 200px;
- background: radial-gradient(circle, #3813c0, #4016d8);
-  opacity: 0.7;
 }
-.style-maintext{
+
+#createroom {
+  display: grid;
+  place-items: center;
+  background: url('../Img/createrooom.png');
+  background-size: cover;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  width: 400px;
+  height: 290px;
+}
+
+.style-maintext {
   display: flex;
   align-items: center;
   text-align: center;
-  font-size: 30px;
-  color:#ffffff;
-  font-family: HighlanderStd-Medium;
-  opacity: 1;
+  margin-top: -10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: rgb(236, 27, 27);
+  font-family: Literata;
+  text-shadow:
+    -2px -2px 0 #fff,
+    /* Top-left */
+    2px -2px 0 #fff,
+    /* Top-right */
+    -2px 2px 0 #fff,
+    /* Bottom-left */
+    2px 2px 0 #fff;
+  /* Bottom-right */
+}
 
+.style-text {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  width: 350px;
+  font-family: HighlanderStd-Medium;
+  margin-top: 1px;
+  color: #C8D8CB;
+  font-weight: bold;
 }
-.style-text{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    width:300px;
-    font-family: HighlanderStd-Medium;
-    color: #C8D8CB;
-    font-weight: bold;
-    opacity: 1;
-}
-.style-text::before, .style-text::after{
+
+.style-text::before,
+.style-text::after {
   content: '';
   flex: 1;
   border-bottom: 1px solid rgb(255, 255, 255);
 }
-.style-text::before{
-  margin-right:10px;
+
+.style-text::before {
+  margin-right: 10px;
 }
-.style-text::after{
-  margin-left:10px;
+
+.style-text::after {
+  margin-left: 10px;
 }
-#settingsButton{
-  background-color:#df7960;
+
+.style-text1 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  width: 350px;
+  font-family: HighlanderStd-Medium;
+  margin-top: 50px;
+  color: #838282;
+  font-weight: bold;
+}
+
+.style-text1::before,
+.style-text1::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.style-text1::before {
+  margin-right: 10px;
+}
+
+.style-text1::after {
+  margin-left: 10px;
+}
+
+#settingsButton {
+  background-color: #df7960;
   color: #ffffff;
   width: 300px;
   height: 50px;
   opacity: 1;
   border-radius: 8px;
-  font-weight: bold;      
+  font-weight: bold;
 }
-#closeButton{
-  background-color:#df7960;
+
+#closeButton {
+  background-color: #df7960;
   color: #ffffff;
-  width: 300px;
+  width: 320px;
   height: 50px;
   opacity: 1;
   border-radius: 8px;
-  font-weight: bold;      
+  font-weight: bold;
+  margin-bottom: -60px;
 }
-#jo
-#joinButton{
-  background-color:#df7960;
+
+#chooseall {
+  background-color: #ffd900;
+  color: #000000;
+  width: 100px;
+  height: 30px;
+  opacity: 1;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#joinButton {
+  background-color: #df7960;
   color: #ffffff;
   width: 50px;
   height: 30px;
   opacity: 1;
   border-radius: 8px;
-  font-weight: bold;      
-    
+  font-weight: bold;
+  margin-bottom: 40px;
 }
-#name{
+
+#submitButton {
+  background-color: #df7960;
+  color: #ffffff;
+  width: 100px;
+  height: 30px;
+  opacity: 1;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+#name {
   width: 240px;
   border-radius: 4px;
   height: 25px;
+  margin-bottom: 40px;
+
 }
-#settingsButton:hover, #joinButton:hover{background-color:#b8614c;}
+
+#settingsButton:hover,
+#joinButton:hover {
+  background-color: #b8614c;
+}
 
 .popup {
   display: none;
   position: fixed;
   left: 50%;
   top: 50%;
+  background: url('../Img/createrule.jpg');
+  background-size: cover;
   transform: translate(-50%, -50%);
-  background: radial-gradient(circle, #6c49ec, #553dac);
   padding: 20px;
   z-index: 1000;
   border-radius: 10px;
   border-width: 3px;
   border-style: solid;
   border-color: white;
+  width: 400px;
+  height: 700px;
+  place-items: center;
 }
+
 .popup.open {
-  display: block;
+  display: grid;
 }
+
 .overlay {
   display: none;
   position: fixed;
@@ -133,13 +232,140 @@ header .container  { width: 980px; height:290px; }
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 999;
 }
+
 .overlay.open {
   display: block;
 }
-.slider-container {
-width: 300px;
-margin-top: 30px;
+
+.popup1 {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  z-index: 1000;
+  width: 650px;
+  height: 180px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* Prevent tiling of the image */
 }
+.popup1.open {
+  display: block;
+}
+.popup2.open {
+  display: block;
+}
+.popup2 {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  z-index: 1000;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+ 
+  /* Prevent tiling of the image */
+}
+.popup3.open {
+  display: block;
+}
+.popup3 {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  z-index: 1000;
+  width: 650px;
+  height: 180px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* Prevent tiling of the image */
+}
+
+.insertname{
+  position: relative;
+  left:200px;
+  top:80px;
+}
+.guildicon{
+  position: relative;
+  left:200px;
+  top:120px;
+}
+#playername{
+  width:250px;
+  height: 30px;
+}
+
+#guild1, #joinguild1 {
+  background: url('../Img/iconorange.png');
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-position: center;
+}
+#guild2, #joinguild2 {
+  background: url('../Img/iconblue.png');
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-position: center;
+}
+#guild3, #joinguild3 {
+  background: url('../Img/iconred.png');
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-position: center;
+}
+#guild4, #joinguild4 {
+  background: url('../Img/icongreen.png');
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-position: center;
+}
+#guild5, #joinguild5 {
+  background: url('../Img/iconbrown.png');
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-position: center;
+}
+#guild6, #joinguild6 {
+  background: url('../Img/icongrey.png');
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-position: center;
+}
+#guild7, #joinguild7 {
+  background: url('../Img/iconpurple.png');
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-position: center;
+}
+#guild8, #joinguild8 {
+  background: url('../Img/iconcyan.png');
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-position: center;
+}
+
+.slider-container {
+  width: 350px;
+  margin-top: 30px;
+}
+
 .slider1 {
   width: 100%;
   height: 15px;
@@ -148,115 +374,348 @@ margin-top: 30px;
   opacity: 0.7;
   -webkit-transition: .2s;
   transition: opacity .2s;
-cursor: pointer;
+  cursor: pointer;
 }
+
 .value {
-position: fixed;
-color: rgb(255, 255, 255);
-font-family: HighlanderStd-Medium;
-font-size: 18px;
-padding: 5px;
-border-radius: 4px;
-z-index: 10; /* Ensure it stays on top of other elements */
-}
-.style-subtext{
-  font-size: 30px;
-  color:#ffffff;
-  font-family: HighlanderStd-Medium;
-}
-.modeText{
+  position: relative;
   color: rgb(255, 255, 255);
   font-family: HighlanderStd-Medium;
-font-size: 18px;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 4px;
+  z-index: 10;
+  /* Adjust to position above the slider */
+  /* Ensure it stays on top of other elements */
+  top: -1px;
 }
-.checkbox{
-  margin:5px;
+
+.style-subtext {
+  font-size: 40px;
+  align-items: center;
+  text-align: center;
+  color: #e05757;
+  font-family: LitteratraKLTF-Rg;
+  width: 350Ppx;
+  margin-top: 40px;
+}
+
+.modeText {
   color: rgb(255, 255, 255);
   font-family: HighlanderStd-Medium;
-font-size: 18px;
+  font-size: 18px;
+  margin-left: -150px;
 }
+
+.checkbox {
+  margin: 0px 0px 0px 0px;
+  color: rgb(255, 255, 255);
+  font-family: HighlanderStd-Medium;
+  font-size: 18px;
+}
+
+/* Tooltip container */
+.Promotion .AQ .Inferno {
+  position: absolute;
+  display: inline-block;
+}
+
+/* Style for the question mark */
+.question-mark {
+  font-size: 12px;
+  /* Adjust the size as needed */
+  color: blue;
+  /* Adjust the color as needed */
+  cursor: pointer;
+}
+
+/* Tooltip text */
+.tooltiptext {
+  visibility: hidden;
+  /* Hides the tooltip by default */
+  width: auto;
+  /* Adjust tooltip width */
+  background-color: black;
+  /* Background color of the tooltip */
+  color: white;
+  /* Text color */
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+
+  position: absolute;
+  bottom: 30%;
+  /* Position above the question mark */
+  /* left: 50%; /* Center alignment */
+  transform: translateX(-50%);
+  /* Adjust to perfectly align the center */
+  z-index: 11;
+  opacity: 0;
+  /* Hidden by default */
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+/* Tooltip text */
+.tooltiptext1 {
+  visibility: hidden;
+  /* Hides the tooltip by default */
+  width: auto;
+  /* Adjust tooltip width */
+  background-color: black;
+  /* Background color of the tooltip */
+  color: white;
+  /* Text color */
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+
+  position: absolute;
+  bottom: 25%;
+  /* Position above the question mark */
+  /* left: 50%; /* Center alignment */
+  transform: translateX(-50%);
+  /* Adjust to perfectly align the center */
+  z-index: 11;
+  opacity: 0;
+  /* Hidden by default */
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltiptext1::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+/* Tooltip text */
+.tooltiptext2 {
+  visibility: hidden;
+  /* Hides the tooltip by default */
+  width: auto;
+  /* Adjust tooltip width */
+  background-color: black;
+  /* Background color of the tooltip */
+  color: white;
+  /* Text color */
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+
+  position: absolute;
+  bottom: 22%;
+  /* Position above the question mark */
+  /* left: 50%; /* Center alignment */
+  transform: translateX(-50%);
+  /* Adjust to perfectly align the center */
+  z-index: 11;
+  opacity: 0;
+  /* Hidden by default */
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltiptext2::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+/* Tooltip text */
+.tooltiptext3 {
+  visibility: hidden;
+  /* Hides the tooltip by default */
+  width: auto;
+  /* Adjust tooltip width */
+  background-color: black;
+  /* Background color of the tooltip */
+  color: white;
+  /* Text color */
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+
+  position: absolute;
+  bottom: 18%;
+  /* Position above the question mark */
+  /* left: 50%; /* Center alignment */
+  transform: translateX(-50%);
+  /* Adjust to perfectly align the center */
+  z-index: 11;
+  opacity: 0;
+  /* Hidden by default */
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltiptext3::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+/* Show the tooltip text when hovering */
+.question-mark:hover+.tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.question-mark:hover+.tooltiptext1 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.question-mark:hover+.tooltiptext2 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.question-mark:hover+.tooltiptext3 {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
 /* Menus **************************************/
 
-#menu li a, #menu li a:visited, #menu li a:hover, #menu li a:active, #menu li a:focus { color:#84366A; text-decoration:none}
+#menu li a,
+#menu li a:visited,
+#menu li a:hover,
+#menu li a:active,
+#menu li a:focus {
+  color: #84366A;
+  text-decoration: none
+}
 
-#menu ul li a, #menu ul li a:visited, #menu ul li a:hover, #menu ul li a:active, #menu ul li a:focus {color:#fff }
+#menu ul li a,
+#menu ul li a:visited,
+#menu ul li a:hover,
+#menu ul li a:active,
+#menu ul li a:focus {
+  color: #fff
+}
 
 #menu {
-    list-style: none;
-	margin: 0 auto;
-    position: relative;
-    width: 980px;
-    z-index: 10;
+  list-style: none;
+  margin: 0 auto;
+  position: relative;
+  width: 980px;
+  z-index: 10;
 }
 
 #menu li {
-    background: none repeat scroll 0 0 #C8D8CD;
-    border-radius: 6px 6px 0 0;
-    box-shadow: 0 0 0 3px rgba(208, 213, 203, 0.3);
-    display: inline-block;
-    font-family: LitteratraKLTF-Rg;
-    font-size: 25px;
-    line-height: 25px;
-    margin: 0 11px 0px;
-    padding: 10px;
-	position: relative;
-    text-align: center;
-    text-shadow: 1px 1px 0 #FFFFFF;
-    width: 111px;
+  background: none repeat scroll 0 0 #C8D8CD;
+  border-radius: 6px 6px 0 0;
+  box-shadow: 0 0 0 3px rgba(208, 213, 203, 0.3);
+  display: inline-block;
+  font-family: LitteratraKLTF-Rg;
+  font-size: 25px;
+  line-height: 25px;
+  margin: 0 11px 0px;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  text-shadow: 1px 1px 0 #FFFFFF;
+  width: 111px;
 }
 
-#menu1:hover, #menu2:hover, #menu3:hover, #menu4:hover, #menu5:hover, #menu6:hover { background:url('../Img/current-Tab.jpg') no-repeat #C8D8CD !important}
-
-#menu li:hover > ul{
-    display: block;
+#menu1:hover,
+#menu2:hover,
+#menu3:hover,
+#menu4:hover,
+#menu5:hover,
+#menu6:hover {
+  background: url('../Img/current-Tab.jpg') no-repeat #C8D8CD !important
 }
 
-#menu ul{
-    list-style: none;
-    margin: 10px 0 0;
-    padding: 0;
-    display: none;
-    position: absolute;
-    top: 35px;
-    left: 0;
-    z-index: 99999;
-    background: #15495F;
-    border-radius: 5px;
-	border:3px solid #84366A;
+#menu li:hover>ul {
+  display: block;
 }
-#menu ul li{
-    background:none;
-	border:none;
-	float: none;
-    margin: 0;
-    padding: 0 0 0 8px;
-	text-align:left;
-	width: 95%;
-    box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+
+#menu ul {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  z-index: 99999;
+  background: #15495F;
+  border-radius: 5px;
+  border: 3px solid #84366A;
+}
+
+#menu ul li {
+  background: none;
+  border: none;
+  float: none;
+  margin: 0;
+  padding: 0 0 0 8px;
+  text-align: left;
+  width: 95%;
+  box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
 }
 
 #menu ul li a {
-    border-radius: 5px 5px 0 0;
-	display: block;
-    float: none;
-    height: auto;
-    line-height: 1;
-    margin-left: -10px;
-    padding: 10px;
-    text-shadow: 2px 2px 0 #84366A;
-    text-transform: none;
-    white-space: nowrap;
-    width: 111px;
+  border-radius: 5px 5px 0 0;
+  display: block;
+  float: none;
+  height: auto;
+  line-height: 1;
+  margin-left: -10px;
+  padding: 10px;
+  text-shadow: 2px 2px 0 #84366A;
+  text-transform: none;
+  white-space: nowrap;
+  width: 111px;
 }
 
 #menu ul li a:hover {
-    color: #BF2904;
-	text-shadow:none;
+  color: #BF2904;
+  text-shadow: none;
 }
 
 
-#menu2 > ul {width:193px}
-#menu3 > ul {width:186px}
+#menu2>ul {
+  width: 193px
+}
+
+#menu3>ul {
+  width: 186px
+}
 
 /* General layout **************************************/
 
@@ -264,54 +723,57 @@ font-size: 18px;
 
 /* Webfonts **************************************/
 @font-face {
-	font-family: 'LitteratraKLTF-Rg';
-	src: url('LitteratraKLTF-Rg.eot?') format('eot'), 
-	     url('LitteratraKLTF-Rg.otf')  format('opentype'),
-	     url('LitteratraKLTF-Rg.woff') format('woff'), 
-	     url('LitteratraKLTF-Rg.ttf')  format('truetype'),
-	     url('LitteratraKLTF-Rg.svg#LitteratraKLTF-Rg') format('svg');
+  font-family: 'LitteratraKLTF-Rg';
+  src: url('LitteratraKLTF-Rg.eot?') format('eot'),
+    url('LitteratraKLTF-Rg.otf') format('opentype'),
+    url('LitteratraKLTF-Rg.woff') format('woff'),
+    url('LitteratraKLTF-Rg.ttf') format('truetype'),
+    url('LitteratraKLTF-Rg.svg#LitteratraKLTF-Rg') format('svg');
 }
 
 /* =============================================================================
    SlideJS | http://slidesjs.com/
    ========================================================================== */
 
-    /* Prevent the slideshow from flashing on load */
-    #slides { display: none }
-    /* Center the slideshow */
-    .container { margin: 0 auto }
-		
-	/* Prevents flashes between slides on iOS mobile devices.
+/* Prevent the slideshow from flashing on load */
+#slides {
+  display: none
+}
+
+/* Center the slideshow */
+.container {
+  margin: 0 auto
+}
+
+/* Prevents flashes between slides on iOS mobile devices.
 	Not working actually.
 	https://groups.google.com/forum/#!topic/slidesjs/Q5YpXk4riQA */
-	#slides * { -webkit-transform: translate3d(0, 0, 0); }
-	
-	/* Image de fond permanente sur le slider pour éviter d'avoir du vide en cas de bug du slider */
-	.slidesjs-control {
-		background: url('../Img/header1.jpg') no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-	}
+#slides * {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+/* Image de fond permanente sur le slider pour éviter d'avoir du vide en cas de bug du slider */
+.slidesjs-control {
+  background: url('../Img/header1.jpg') no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
-   @media only screen and (min-width: 35em) {
+@media only screen and (min-width: 35em) {}
 
-   }
-   
-   @media print,
-          (-o-min-device-pixel-ratio: 5/4),
-          (-webkit-min-device-pixel-ratio: 1.25),
-          (min-resolution: 120dpi) {
-   
-   }
-   @media screen and (max-device-width: 480px){
-       /*--- iPhone only CSS here ---*/
-       /*#background { background: url("../img/bg-mob2.jpg") no-repeat #000; -webkit-background-size: 980px 1330px }*/
-   }
-   @media screen and (max-device-width: 1024px){
-       /*--- iPad only CSS here ---*/
-       /*#background { background: url("../img/bg-mob2.jpg") no-repeat #000; -webkit-background-size: 980px 1330px }*/
-   }
-    
-      
+@media print,
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {}
+
+@media screen and (max-device-width: 480px) {
+  /*--- iPhone only CSS here ---*/
+  /*#background { background: url("../img/bg-mob2.jpg") no-repeat #000; -webkit-background-size: 980px 1330px }*/
+}
+
+@media screen and (max-device-width: 1024px) {
+  /*--- iPad only CSS here ---*/
+  /*#background { background: url("../img/bg-mob2.jpg") no-repeat #000; -webkit-background-size: 980px 1330px }*/
+}

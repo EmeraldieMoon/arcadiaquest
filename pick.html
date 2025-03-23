@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html id="mainpage" lang="en">
 
 <head>
       <link href="https://fonts.googleapis.com/css?family=Mystery+Quest" rel='stylesheet' type='text/css'>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <meta name="google-site-verification" content="sXNRWi5U8DXbrM3emCZJuql1dH2CpqtE61p0pBuuUFE" />
-      <title>Arcadia Quest | Hero Gallery</title>
+      <title id="nameroom">Arcadia Quest | Hero Gallery</title>
       <meta name="description"
             content="Find out more about each of the brave and unique heroes you can pick to defend your guild throughout the campaign." />
       <!-- Mobile viewport optimized: h5bp.com/viewport -->
@@ -16,9 +16,14 @@
       <!-- Windows 8 tile http://www.buildmypinnedsite.com -->
       <link rel="stylesheet" href="css/normalize.min.css">
       <link rel="stylesheet" href="css/main5.css">
+      <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0&icon_names=add_circle,cancel,do_not_disturb_on" />
       <!-- -prefix-free http://www.alsacreations.com/article/lire/1306-prefix-free-prefixes-CSS3.html -->
       <script type="text/javascript" src="https://raw.github.com/LeaVerou/prefixfree/master/prefixfree.min.js"></script>
       <script src="js/lib/modernizr-2.6.2.min.js"></script>
+      <script type="module" src="js/indexclient.js"></script>
+
+
 </head>
 
 <body>
@@ -54,124 +59,11 @@
             <li id="menu5"><a href="prepick.html">Pick</a></li>
             <li id="menu6"><a href="https://support.cmon.com" target="blank">Contact</a></li>
       </ul>
-      <div id="search">
-            <section class="page">
-                  <div id="checkboxcontainer">
-                        <ul class="search">
-                              <li><label class="lcontainer"><input type="checkbox" id="option0"
-                                                onclick="checkmain('input.subOption0','option0')">Arcadia Quest</label>
-                                    <button class="dropdown-btn active">Detail
-                                          <i class="fa fa-caret-down"></i>
-                                    </button>
-                                    <ul class="dropdown-container">
-                                          <li><label class="lcontainer"><input type="checkbox" class="subOption0"
-                                                            id="AQ"
-                                                            onclick="checkboxfilter('input.subOption0','option0','input.subOption0:checked')">Arcadia
-                                                      Quest
-                                                      core</label></li>
-                                          <li><label class="lcontainer"><input type="checkbox" class="subOption0"
-                                                            id="BYG"
-                                                            onclick="checkboxfilter('input.subOption0','option0','input.subOption0:checked')">Beyond
-                                                      The
-                                                      Grave</label></li>
-                                          <li><label class="lcontainer"><input type="checkbox" class="subOption0"
-                                                            id="EX1"
-                                                            onclick="checkboxfilter('input.subOption0','option0','input.subOption0:checked')">Extra</label>
-                                          </li>
-                                          <li><label class="lcontainer"><input type="checkbox" class="subOption0"
-                                                            id="GM"
-                                                            onclick="checkboxfilter('input.subOption0','option0','input.subOption0:checked')">Guildmaster</label>
-                                          </li>
-                                    </ul>
-                              </li>
-                        </ul>
-                  </div>
-                  <div id="checkboxcontainer">
-                        <ul class="search">
-                              <li><label class="lcontainer"><input type="checkbox" id="option1"
-                                                onclick="checkmain('input.subOption1','option1')">Arcadia Quest
-                                          Inferno</label>
-                                    <button class="dropdown-btn">Detail
-                                          <i class="fa fa-caret-down"></i>
-                                    </button>
-                                    <ul class="dropdown-container">
-                                          <li><label class="lcontainer"><input type="checkbox" class="subOption1"
-                                                            id="AQI"
-                                                            onclick="checkboxfilter('input.subOption1','option1','input.subOption1:checked')">Arcadia
-                                                      Quest
-                                                      Inferno</label></li>
-                                          <li><label class="lcontainer"><input type="checkbox" class="subOption1"
-                                                            id="PET"
-                                                            onclick="checkboxfilter('input.subOption1','option1','input.subOption1:checked')">Pets</label>
-                                          </li>
-                                          <li><label class="lcontainer"><input type="checkbox" class="subOption1"
-                                                            id="HOB"
-                                                            onclick="checkboxfilter('input.subOption1','option1','input.subOption1:checked')">Hell
-                                                      of a
-                                                      box</label></li>
-                                          <li><label class="lcontainer"><input type="checkbox" class="subOption1"
-                                                            id="EX2"
-                                                            onclick="checkboxfilter('input.subOption1','option1','input.subOption1:checked')">Extra</label>
-                                          </li>
-                                          <li><label class="lcontainer"><input type="checkbox" class="subOption1"
-                                                            id="RD"
-                                                            onclick="checkboxfilter('input.subOption1','option1','input.subOption1:checked')">Riders</label>
-                                          </li>
-                                    </ul>
-                              </li>
-                        </ul>
-                  </div>
-                  <div id="checkboxcontainer">
-                        <ul class="search">
-                              <li><label class="lcontainer"><input type="checkbox" id="option2"
-                                                onclick="checkmain('input.subOption2','option2')">Masmorra</label>
-                                    <button class="dropdown-btn">Detail
-                                          <i class="fa fa-caret-down"></i>
-                                    </button>
-                                    <ul class="dropdown-container">
-                                          <li><label class="lcontainer"><input type="checkbox" class="subOption2"
-                                                            id="MMR"
-                                                            onclick="checkboxfilter('input.subOption2','option2','input.subOption2:checked')">Masmorra</label>
-                                          </li>
-                                          <li><label class="lcontainer"><input type="checkbox" class="subOption2"
-                                                            id="EX3"
-                                                            onclick="checkboxfilter('input.subOption2','option2','input.subOption2:checked')">Extra</label>
-                                          </li>
-                                          <li><label class="lcontainer"><input type="checkbox" class="subOption2"
-                                                            id="DGP"
-                                                            onclick="checkboxfilter('input.subOption2','option2','input.subOption2:checked')">Dungoneer</label>
-                                          </li>
-                                    </ul>
-                              </li>
-                        </ul>
-                  </div>
-                  <div id="checkboxcontainer">
-                        <ul class="search">
-                              <li><label class="lcontainer"><input type="checkbox" id="option3"
-                                                onclick="checkmain('input.subOption3','option3')">Promotion</label>
-                                    <button class="dropdown-btn">Detail
-                                          <i class="fa fa-caret-down"></i>
-                                    </button>
-                                    <ul class="dropdown-container">
-                                          <li><label class="lcontainer"><input type="checkbox" class="subOption3"
-                                                            id="PM"
-                                                            onclick="checkboxfilter('input.subOption3','option3','input.subOption3:checked')">Promo</label>
-                                          </li>
-                                          <li><label class="lcontainer"><input type="checkbox" class="subOption3"
-                                                            id="UY"
-                                                            onclick="checkboxfilter('input.subOption3','option3','input.subOption3:checked')">Usagi
-                                                      Yojimbo</label></li>
-                                    </ul>
-                              </li>
-                        </ul>
-                  </div>
-
-            </section>
-      </div>
       <div id="filter">
             <div>
                   <input type="text" id="myInput" onkeyup="textfilter()" placeholder="Search for hero names.."
                         title="Type in a name">
+                  <span id="nameroom">RoomId</span>
             </div>
       </div>
       <div role="main" id="main" class="style-1">
@@ -182,657 +74,1311 @@
             </style>
             <section class="page">
                   <ul class="gallery heros clearfix" id="Content">
-                        <li id="AQ"><a href="Img/card-H-Diva.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pDiva.png" alt="Diva" draggable="true"
-                                          ondragstart="drag(event)" id="Diva" /><span class="name">Diva</span></a></li>
-                        <li id="AQ"><a href="Img/card-H-Greensleeves.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pGreensleeves.png" alt="Greensleeves" draggable="true"
-                                          ondragstart="drag(event)" id="Greensleeves" /><span
-                                          class="name">Greensleeves</span></a></li>
-                        <li id="AQ"><a href="Img/card-H-Grom.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pGrom.png" alt="Grom" draggable="true"
-                                          ondragstart="drag(event)" id="Grom" /><span class="name">Grom</span></a></li>
-                        <li id="AQ"><a href="Img/card-H-Hobsbawm.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pHobsbawm.png" alt="Hobsbawm" draggable="true"
-                                          ondragstart="drag(event)" id="Hobsbawm" /><span
-                                          class="name">Hobsbawm</span></a></li>
-                        <li id="AQ"><a href="Img/card-H-Johan.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pJohan.png" alt="Johan" draggable="true"
+                        <li id="AQ" class="heroimage">
+                              <a href="Img/card-H-Diva.png" class="fancybox" rel="fancy"><img width="104" height="104"
+                                          src="Img/pDiva.png" alt="Diva" id="Diva" /><span class="name">Diva</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+
+                        <li id="AQ" class="heroimage"><a href="Img/card-H-Greensleeves.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pGreensleeves.png"
+                                          alt="Greensleeves" id="Greensleeves" /><span
+                                          class="name">Greensleeves</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="AQ" class="heroimage"><a href="Img/card-H-Grom.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pGrom.png" alt="Grom" draggable="true"
+                                          ondragstart="drag(event)" id="Grom" /><span class="name">Grom</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="AQ" class="heroimage"><a href="Img/card-H-Hobsbawm.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pHobsbawm.png" alt="Hobsbawm"
+                                          id="Hobsbawm" /><span class="name">Hobsbawm</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="AQ" class="heroimage"><a href="Img/card-H-Johan.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pJohan.png" alt="Johan" draggable="true"
                                           ondragstart="drag(event)" id="Johan" /><span class="name">Johan</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="AQ"><a href="Img/card-H-Kanga.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pKanga.png" alt="Kanga" draggable="true"
+                        <li id="AQ" class="heroimage"><a href="Img/card-H-Kanga.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pKanga.png" alt="Kanga" draggable="true"
                                           ondragstart="drag(event)" id="Kanga" /><span class="name">Kanga</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="AQ"><a href="Img/card-H-Maya.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pMaya.png" alt="Maya" draggable="true"
-                                          ondragstart="drag(event)" id="Maya" /><span class="name">Maya</span></a></li>
-                        <li id="AQ"><a href="Img/card-H-Scarlet.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pScarlet.png" alt="Scarlet" draggable="true"
+                        <li id="AQ" class="heroimage"><a href="Img/card-H-Maya.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pMaya.png" alt="Maya" draggable="true"
+                                          ondragstart="drag(event)" id="Maya" /><span class="name">Maya</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="AQ" class="heroimage"><a href="Img/card-H-Scarlet.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pScarlet.png" alt="Scarlet" draggable="true"
                                           ondragstart="drag(event)" id="Scarlet" /><span class="name">Scarlet</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="AQ"><a href="Img/card-H-Seth.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pSeth.png" alt="Seth" draggable="true"
-                                          ondragstart="drag(event)" id="Seth" /><span class="name">Seth</span></a></li>
-                        <li id="AQ"><a href="Img/card-H-Spike.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pSpike.png" alt="Spike" draggable="true"
+                        <li id="AQ" class="heroimage"><a href="Img/card-H-Seth.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pSeth.png" alt="Seth" draggable="true"
+                                          ondragstart="drag(event)" id="Seth" /><span class="name">Seth</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="AQ" class="heroimage"><a href="Img/card-H-Spike.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pSpike.png" alt="Spike" draggable="true"
                                           ondragstart="drag(event)" id="Spike" /><span class="name">Spike</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="AQ"><a href="Img/card-H-Wisp.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pWisp.png" alt="Wisp" draggable="true"
-                                          ondragstart="drag(event)" id="Wisp" /><span class="name">Wisp</span></a></li>
-                        <li id="AQ"><a href="Img/card-H-Zazu.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pZazu.png" alt="Zazu" draggable="true"
-                                          ondragstart="drag(event)" id="Zazu" /><span class="name">Zazu</span></a></li>
+                        <li id="AQ" class="heroimage"><a href="Img/card-H-Wisp.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pWisp.png" alt="Wisp" draggable="true"
+                                          ondragstart="drag(event)" id="Wisp" /><span class="name">Wisp</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="AQ" class="heroimage"><a href="Img/card-H-Zazu.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pZazu.png" alt="Zazu" draggable="true"
+                                          ondragstart="drag(event)" id="Zazu" /><span class="name">Zazu</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
 
-                        <li id="BYG"><a href="Img/card-H-Chaz.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pChaz.png" alt="Chaz" draggable="true"
-                                          ondragstart="drag(event)" id="Chaz" /><span class="name">Chaz</span></a></li>
-                        <li id="BYG"><a href="Img/card-H-Darryn.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pDarryn.png" alt="Darryn" draggable="true"
+                        <li id="BYG" class="heroimage"><a href="Img/card-H-Chaz.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pChaz.png" alt="Chaz" draggable="true"
+                                          ondragstart="drag(event)" id="Chaz" /><span class="name">Chaz</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="BYG" class="heroimage"><a href="Img/card-H-Darryn.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pDarryn.png" alt="Darryn" draggable="true"
                                           ondragstart="drag(event)" id="Darryn" /><span class="name">Darryn</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
 
-                        <li id="GM"><a href="Img/card-H-Black-Newt.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pBlack-Newt.png" alt="Black Newt" draggable="true"
-                                          ondragstart="drag(event)" id="Black-Newt" /><span class="name">Black
-                                          Newt</span></a></li>
-                        <li id="GM"><a href="Img/card-H-Bob.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pBob.png" alt="Bob" draggable="true"
-                                          ondragstart="drag(event)" id="Bob" /><span class="name">Bob</span></a></li>
-                        <li id="GM"><a href="Img/card-H-Bowie.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pBowie.png" alt="Bowie" draggable="true"
+                        <li id="GM" class="heroimage"><a href="Img/card-H-Black-Newt.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pBlack-Newt.png" alt="Black Newt"
+                                          id="Black-Newt" /><span class="name">Black
+                                          Newt</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="GM" class="heroimage"><a href="Img/card-H-Bob.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pBob.png" alt="Bob" draggable="true"
+                                          ondragstart="drag(event)" id="Bob" /><span class="name">Bob</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="GM" class="heroimage"><a href="Img/card-H-Bowie.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pBowie.png" alt="Bowie" draggable="true"
                                           ondragstart="drag(event)" id="Bowie" /><span class="name">Bowie</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="GM"><a href="Img/card-H-Chooloo.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pChooloo.png" alt="Chooloo" draggable="true"
+                        <li id="GM" class="heroimage"><a href="Img/card-H-Chooloo.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pChooloo.png" alt="Chooloo" draggable="true"
                                           ondragstart="drag(event)" id="Chooloo" /><span class="name">Chooloo</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="GM"><a href="Img/card-H-Elysia.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pElysia.png" alt="Elysia" draggable="true"
+                        <li id="GM" class="heroimage"><a href="Img/card-H-Elysia.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pElysia.png" alt="Elysia" draggable="true"
                                           ondragstart="drag(event)" id="Elysia" /><span class="name">Elysia</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="GM"><a href="Img/card-H-Frowny-Faceless.png" class="fancybox" rel="fancy"><img
-                                          width="104" height="104" src="Img/pFrowny-Faceless.png" alt="Frowny Faceless"
-                                          draggable="true" ondragstart="drag(event)" id="Frowny-Faceless" /><span
-                                          class="name">Frowny Faceless</span></a></li>
-                        <li id="GM"><a href="Img/card-H-Hitch.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pHitch.png" alt="Hitch" draggable="true"
+                        <li id="GM" class="heroimage"><a href="Img/card-H-Frowny-Faceless.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pFrowny-Faceless.png"
+                                          alt="Frowny Faceless" id="Frowny-Faceless" /><span class="name">Frowny
+                                          Faceless</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="GM" class="heroimage"><a href="Img/card-H-Hitch.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pHitch.png" alt="Hitch" draggable="true"
                                           ondragstart="drag(event)" id="Hitch" /><span class="name">Hitch</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="GM"><a href="Img/card-H-King-of-Thieves.png" class="fancybox" rel="fancy"><img
-                                          width="104" height="104" src="Img/pKing-of-Thieves.png" alt="King of Thieves"
-                                          draggable="true" ondragstart="drag(event)" id="King-of-Thieves" /><span
-                                          class="name">King of Thieves</span></a></li>
-                        <li id="GM"><a href="Img/card-H-Koba.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pKoba.png" alt="Koba" draggable="true"
-                                          ondragstart="drag(event)" id="Koba" /><span class="name">Koba</span></a></li>
-                        <li id="GM"><a href="Img/card-H-Lilith.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pLilith.png" alt="Lilith" draggable="true"
+                        <li id="GM" class="heroimage"><a href="Img/card-H-King-of-Thieves.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pKing-of-Thieves.png"
+                                          alt="King of Thieves" id="King-of-Thieves" /><span class="name">King of
+                                          Thieves</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="GM" class="heroimage"><a href="Img/card-H-Koba.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pKoba.png" alt="Koba" draggable="true"
+                                          ondragstart="drag(event)" id="Koba" /><span class="name">Koba</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="GM" class="heroimage"><a href="Img/card-H-Lilith.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pLilith.png" alt="Lilith" draggable="true"
                                           ondragstart="drag(event)" id="Lilith" /><span class="name">Lilith</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="GM"><a href="Img/card-H-Lord-Fang.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pLord-Fang.png" alt="Lord Fang" draggable="true"
-                                          ondragstart="drag(event)" id="Lord-Fang" /><span class="name">Lord
-                                          Fang</span></a></li>
-                        <li id="GM"><a href="Img/card-H-Lydia.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pLydia.png" alt="Lydia" draggable="true"
+                        <li id="GM" class="heroimage"><a href="Img/card-H-Lord-Fang.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pLord-Fang.png" alt="Lord Fang"
+                                          id="Lord-Fang" /><span class="name">Lord
+                                          Fang</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="GM" class="heroimage"><a href="Img/card-H-Lydia.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pLydia.png" alt="Lydia" draggable="true"
                                           ondragstart="drag(event)" id="Lydia" /><span class="name">Lydia</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="GM"><a href="Img/card-H-Monkey-King.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pMonkey-King.png" alt="Monkey King" draggable="true"
-                                          ondragstart="drag(event)" id="Monkey-King" /><span class="name">Monkey
-                                          King</span></a></li>
-                        <li id="GM"><a href="Img/card-H-Monkey-Queen.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pMonkey-Queen.png" alt="Monkey Queen" draggable="true"
-                                          ondragstart="drag(event)" id="Monkey-Queen" /><span class="name">Monkey
-                                          Queen</span></a></li>
-                        <li id="GM"><a href="Img/card-H-Montoya.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pMontoya.png" alt="Montoya" draggable="true"
+                        <li id="GM" class="heroimage"><a href="Img/card-H-Monkey-King.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pMonkey-King.png"
+                                          alt="Monkey King" id="Monkey-King" /><span class="name">Monkey
+                                          King</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="GM" class="heroimage"><a href="Img/card-H-Monkey-Queen.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pMonkey-Queen.png"
+                                          alt="Monkey Queen" id="Monkey-Queen" /><span class="name">Monkey
+                                          Queen</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="GM" class="heroimage"><a href="Img/card-H-Montoya.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pMontoya.png" alt="Montoya" draggable="true"
                                           ondragstart="drag(event)" id="Montoya" /><span class="name">Montoya</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="GM"><a href="Img/card-H-Morgan.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pMorgan.png" alt="Morgan" draggable="true"
+                        <li id="GM" class="heroimage"><a href="Img/card-H-Morgan.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pMorgan.png" alt="Morgan" draggable="true"
                                           ondragstart="drag(event)" id="Morgan" /><span class="name">Morgan</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="GM"><a href="Img/card-H-Pigsy.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pPigsy.png" alt="Pigsy" draggable="true"
+                        <li id="GM" class="heroimage"><a href="Img/card-H-Pigsy.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pPigsy.png" alt="Pigsy" draggable="true"
                                           ondragstart="drag(event)" id="Pigsy" /><span class="name">Pigsy</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="GM"><a href="Img/card-H-Pluck.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pPluck.png" alt="Pluck" draggable="true"
+                        <li id="GM" class="heroimage"><a href="Img/card-H-Pluck.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pPluck.png" alt="Pluck" draggable="true"
                                           ondragstart="drag(event)" id="Pluck" /><span class="name">Pluck</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="GM"><a href="Img/card-H-Prince-Aaron.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pPrince-Aaron.png" alt="Prince Aaron" draggable="true"
-                                          ondragstart="drag(event)" id="Prince-Aaron" /><span class="name">Prince
-                                          Aaron</span></a></li>
-                        <li id="GM"><a href="Img/card-H-Queen-of-Beggars.png" class="fancybox" rel="fancy"><img
-                                          width="104" height="104" src="Img/pQueen-of-Beggars.png"
-                                          alt="Queen of Beggars" draggable="true" ondragstart="drag(event)"
-                                          id="Queen-of-Beggars" /><span class="name">Queen of Beggars</span></a></li>
-                        <li id="GM"><a href="Img/card-H-Serious-Faceless.png" class="fancybox" rel="fancy"><img
-                                          width="104" height="104" src="Img/pSerious-Faceless.png"
-                                          alt="Serious Faceless" draggable="true" ondragstart="drag(event)"
-                                          id="Serious-Faceless" /><span class="name">Serious Faceless</span></a></li>
-                        <li id="GM"><a href="Img/card-H-Smiley-Faceless.png" class="fancybox" rel="fancy"><img
-                                          width="104" height="104" src="Img/pSmiley-Faceless.png" alt="Smiley Faceless"
-                                          draggable="true" ondragstart="drag(event)" id="Smiley-Faceless" /><span
-                                          class="name">Smiley Faceless</span></a></li>
-                        <li id="GM"><a href="Img/card-H-Sonja.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pSonja.png" alt="Sonja" draggable="true"
+                        <li id="GM" class="heroimage"><a href="Img/card-H-Prince-Aaron.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pPrince-Aaron.png"
+                                          alt="Prince Aaron" id="Prince-Aaron" /><span class="name">Prince
+                                          Aaron</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="GM" class="heroimage"><a href="Img/card-H-Queen-of-Beggars.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pQueen-of-Beggars.png"
+                                          alt="Queen of Beggars" id="Queen-of-Beggars" /><span class="name">Queen of
+                                          Beggars</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="GM" class="heroimage"><a href="Img/card-H-Serious-Faceless.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pSerious-Faceless.png"
+                                          alt="Serious Faceless" id="Serious-Faceless" /><span class="name">Serious
+                                          Faceless</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="GM" class="heroimage"><a href="Img/card-H-Smiley-Faceless.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pSmiley-Faceless.png"
+                                          alt="Smiley Faceless" id="Smiley-Faceless" /><span class="name">Smiley
+                                          Faceless</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="GM" class="heroimage"><a href="Img/card-H-Sonja.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pSonja.png" alt="Sonja" draggable="true"
                                           ondragstart="drag(event)" id="Sonja" /><span class="name">Sonja</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="GM"><a href="Img/card-H-Sting.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pSting.png" alt="Sting" draggable="true"
+                        <li id="GM" class="heroimage"><a href="Img/card-H-Sting.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pSting.png" alt="Sting" draggable="true"
                                           ondragstart="drag(event)" id="Sting" /><span class="name">Sting</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="GM"><a href="Img/card-H-Surprised-Faceless.png" class="fancybox" rel="fancy"><img
-                                          width="104" height="104" src="Img/pSurprised-Faceless.png"
-                                          alt="Surprised Faceless" draggable="true" ondragstart="drag(event)"
-                                          id="Surprised-Faceless" /><span class="name">Surprised Faceless</span></a>
+                        <li id="GM" class="heroimage"><a href="Img/card-H-Surprised-Faceless.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pSurprised-Faceless.png"
+                                          alt="Surprised Faceless" id="Surprised-Faceless" /><span
+                                          class="name">Surprised Faceless</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="GM"><a href="Img/card-H-The-Heartless.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pThe-Heartless.png" alt="The Heartless" draggable="true"
-                                          ondragstart="drag(event)" id="The-Heartless" /><span class="name">The
-                                          Heartless</span></a></li>
-                        <li id="GM"><a href="Img/card-H-The-Nameless.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pThe-Nameless.png" alt="The Nameless" draggable="true"
-                                          ondragstart="drag(event)" id="The-Nameless" /><span class="name">The
-                                          Nameless</span></a></li>
+                        <li id="GM" class="heroimage"><a href="Img/card-H-The-Heartless.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pThe-Heartless.png"
+                                          alt="The Heartless" id="The-Heartless" /><span class="name">The
+                                          Heartless</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="GM" class="heroimage"><a href="Img/card-H-The-Nameless.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pThe-Nameless.png"
+                                          alt="The Nameless" id="The-Nameless" /><span class="name">The
+                                          Nameless</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
 
-                        <li id="PM"><a href="Img/card-H-Tomrick.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pTomrick.png" alt="Tomrick" draggable="true"
+                        <li id="PM" class="heroimage"><a href="Img/card-H-Tomrick.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pTomrick.png" alt="Tomrick" draggable="true"
                                           ondragstart="drag(event)" id="Tomrick" /><span class="name">Tomrick</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
 
-                        <li id="EX1"><a href="Img/card-H-Viktor.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pViktor.png" alt="Viktor" draggable="true"
+                        <li id="EX1" class="heroimage"><a href="Img/card-H-Viktor.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pViktor.png" alt="Viktor" draggable="true"
                                           ondragstart="drag(event)" id="Viktor" /><span class="name">Viktor</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="EX1"><a href="Img/card-H-Aeric.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pAeric.png" alt="Aeric" draggable="true"
+                        <li id="EX1" class="heroimage"><a href="Img/card-H-Aeric.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pAeric.png" alt="Aeric" draggable="true"
                                           ondragstart="drag(event)" id="Aeric" /><span class="name">Aeric</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="EX1"><a href="Img/card-H-Brenna.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pBrenna.png" alt="Brenna" draggable="true"
+                        <li id="EX1" class="heroimage"><a href="Img/card-H-Brenna.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pBrenna.png" alt="Brenna" draggable="true"
                                           ondragstart="drag(event)" id="Brenna" /><span class="name">Brenna</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="EX1"><a href="Img/card-H-Farfalla.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pFarfalla.png" alt="Farfalla" draggable="true"
-                                          ondragstart="drag(event)" id="Farfalla" /><span
-                                          class="name">Farfalla</span></a></li>
-                        <li id="EX1"><a href="Img/card-H-Haldor.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pHaldor.png" alt="Haldor" draggable="true"
+                        <li id="EX1" class="heroimage"><a href="Img/card-H-Farfalla.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pFarfalla.png" alt="Farfalla"
+                                          id="Farfalla" /><span class="name">Farfalla</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="EX1" class="heroimage"><a href="Img/card-H-Haldor.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pHaldor.png" alt="Haldor" draggable="true"
                                           ondragstart="drag(event)" id="Haldor" /><span class="name">Haldor</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="EX1"><a href="Img/card-H-Hassan.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pHassan.png" alt="Hassan" draggable="true"
+                        <li id="EX1" class="heroimage"><a href="Img/card-H-Hassan.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pHassan.png" alt="Hassan" draggable="true"
                                           ondragstart="drag(event)" id="Hassan" /><span class="name">Hassan</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="EX1"><a href="Img/card-H-Leeroy.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pLeeroy.png" alt="Leeroy" draggable="true"
+                        <li id="EX1" class="heroimage"><a href="Img/card-H-Leeroy.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pLeeroy.png" alt="Leeroy" draggable="true"
                                           ondragstart="drag(event)" id="Leeroy" /><span class="name">Leeroy</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="EX1"><a href="Img/card-H-McHammer.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pMcHammer.png" alt="McHammer" draggable="true"
-                                          ondragstart="drag(event)" id="Mc-Hammer" /><span class="name">Mc
-                                          Hammer</span></a></li>
-                        <li id="EX1"><a href="Img/card-H-Mittens.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pMittens.png" alt="Mittens" draggable="true"
-                                          ondragstart="drag(event)" id="Mittens" /><span class="name">Mittens</span></a>
+                        <li id="EX1" class="heroimage"><a href="Img/card-H-McHammer.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pMcHammer.png" alt="McHammer"
+                                          id="Mc-Hammer" /><span class="name">Mc
+                                          Hammer</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="EX1"><a href="Img/card-H-Nibbles.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pNibbles.png" alt="Nibbles" draggable="true"
-                                          ondragstart="drag(event)" id="Nibbles" /><span class="name">Nibbles</span></a>
+                        <li id="EX1" class="heroimage"><a href="Img/card-H-Mittens.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pMittens.png" alt="Mittens"
+                                          id="Mittens" /><span class="name">Mittens</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="EX1"><a href="Img/card-H-Tiaret.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pTiaret.png" alt="Tiaret" draggable="true"
+                        <li id="EX1" class="heroimage"><a href="Img/card-H-Nibbles.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pNibbles.png" alt="Nibbles"
+                                          id="Nibbles" /><span class="name">Nibbles</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="EX1" class="heroimage"><a href="Img/card-H-Tiaret.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pTiaret.png" alt="Tiaret" draggable="true"
                                           ondragstart="drag(event)" id="Tiaret" /><span class="name">Tiaret</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="EX1"><a href="Img/card-H-Yun.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pYun.png" alt="Yun" draggable="true"
-                                          ondragstart="drag(event)" id="Yun" /><span class="name">Yun</span></a></li>
-                        <li id="EX1"><a href="Img/card-H-Zahra.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pZahra.png" alt="Zahra" draggable="true"
+                        <li id="EX1" class="heroimage"><a href="Img/card-H-Yun.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pYun.png" alt="Yun" draggable="true"
+                                          ondragstart="drag(event)" id="Yun" /><span class="name">Yun</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="EX1" class="heroimage"><a href="Img/card-H-Zahra.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pZahra.png" alt="Zahra" draggable="true"
                                           ondragstart="drag(event)" id="Zahra" /><span class="name">Zahra</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
 
-                        <li id="AQI"><a href="Img/card-H-Bjor-of-Oros.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pBjor-of-Oros.png" alt="Bjor of Oros" draggable="true"
-                                          ondragstart="drag(event)" id="Bjor-of-Oros" /><span class="name">Bjor of
-                                          Oros</span></a></li>
-                        <li id="AQI"><a href="Img/card-H-Cassius.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pCassius.png" alt="Cassius" draggable="true"
-                                          ondragstart="drag(event)" id="Cassius" /><span class="name">Cassius</span></a>
+                        <li id="AQI" class="heroimage"><a href="Img/card-H-Bjor-of-Oros.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pBjor-of-Oros.png"
+                                          alt="Bjor of Oros" id="Bjor-of-Oros" /><span class="name">Bjor of
+                                          Oros</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="AQI"><a href="Img/card-H-Diana.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pDiana.png" alt="Diana" draggable="true"
+                        <li id="AQI" class="heroimage"><a href="Img/card-H-Cassius.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pCassius.png" alt="Cassius"
+                                          id="Cassius" /><span class="name">Cassius</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="AQI" class="heroimage"><a href="Img/card-H-Diana.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pDiana.png" alt="Diana" draggable="true"
                                           ondragstart="drag(event)" id="Diana" /><span class="name">Diana</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="AQI"><a href="Img/card-H-Izzy.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pIzzy.png" alt="Izzy" draggable="true"
-                                          ondragstart="drag(event)" id="Izzy" /><span class="name">Izzy</span></a></li>
-                        <li id="AQI"><a href="Img/card-H-Jack-Jack.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pJack-Jack.png" alt="Jack Jack" draggable="true"
-                                          ondragstart="drag(event)" id="Jack-Jack" /><span class="name">Jack
-                                          Jack</span></a></li>
-                        <li id="AQI"><a href="Img/card-H-Jaimie.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pJaimie.png" alt="Jaimie" draggable="true"
+                        <li id="AQI" class="heroimage"><a href="Img/card-H-Izzy.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pIzzy.png" alt="Izzy" draggable="true"
+                                          ondragstart="drag(event)" id="Izzy" /><span class="name">Izzy</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="AQI" class="heroimage"><a href="Img/card-H-Jack-Jack.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pJack-Jack.png" alt="Jack Jack"
+                                          id="Jack-Jack" /><span class="name">Jack
+                                          Jack</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="AQI" class="heroimage"><a href="Img/card-H-Jaimie.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pJaimie.png" alt="Jaimie" draggable="true"
                                           ondragstart="drag(event)" id="Jaimie" /><span class="name">Jaimie</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="AQI"><a href="Img/card-H-Kisha.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pKisha.png" alt="Kisha" draggable="true"
+                        <li id="AQI" class="heroimage"><a href="Img/card-H-Kisha.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pKisha.png" alt="Kisha" draggable="true"
                                           ondragstart="drag(event)" id="Kisha" /><span class="name">Kisha</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="AQI"><a href="Img/card-H-Mark.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pMark.png" alt="Mark" draggable="true"
-                                          ondragstart="drag(event)" id="Mark" /><span class="name">Mark</span></a></li>
-                        <li id="AQI"><a href="Img/card-H-Natasha.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pNatasha.png" alt="Natasha" draggable="true"
-                                          ondragstart="drag(event)" id="Natasha" /><span class="name">Natasha</span></a>
+                        <li id="AQI" class="heroimage"><a href="Img/card-H-Mark.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pMark.png" alt="Mark" draggable="true"
+                                          ondragstart="drag(event)" id="Mark" /><span class="name">Mark</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="AQI"><a href="Img/card-H-Phyx.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pPhyx.png" alt="Phyx" draggable="true"
-                                          ondragstart="drag(event)" id="Phyx" /><span class="name">Phyx</span></a></li>
-                        <li id="AQI"><a href="Img/card-H-Sybbyl.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pSybbyl.png" alt="Sybbyl" draggable="true"
+                        <li id="AQI" class="heroimage"><a href="Img/card-H-Natasha.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pNatasha.png" alt="Natasha"
+                                          id="Natasha" /><span class="name">Natasha</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="AQI" class="heroimage"><a href="Img/card-H-Phyx.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pPhyx.png" alt="Phyx" draggable="true"
+                                          ondragstart="drag(event)" id="Phyx" /><span class="name">Phyx</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="AQI" class="heroimage"><a href="Img/card-H-Sybbyl.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pSybbyl.png" alt="Sybbyl" draggable="true"
                                           ondragstart="drag(event)" id="Sybbyl" /><span class="name">Sybbyl</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="AQI"><a href="Img/card-H-Trandir.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pTrandir.png" alt="Trandir" draggable="true"
-                                          ondragstart="drag(event)" id="Trandir" /><span class="name">Trandir</span></a>
+                        <li id="AQI" class="heroimage"><a href="Img/card-H-Trandir.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pTrandir.png" alt="Trandir"
+                                          id="Trandir" /><span class="name">Trandir</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="AQI"><a href="Img/card-H-Angle-eyes.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pAngle-eyes.png" alt="Angle eyes" draggable="true"
-                                          ondragstart="drag(event)" id="Angle-eyes" /><span class="name">Angle
-                                          eyes</span></a></li>
-                        <li id="AQI"><a href="Img/card-H-Benjamin.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pBenjamin.png" alt="Benjamin" draggable="true"
-                                          ondragstart="drag(event)" id="Benjamin" /><span
-                                          class="name">Benjamin</span></a></li>
-                        <li id="AQI"><a href="Img/card-H-Justicar.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pJusticar.png" alt="Justicar" draggable="true"
-                                          ondragstart="drag(event)" id="Justicar" /><span
-                                          class="name">Justicar</span></a></li>
-                        <li id="AQI"><a href="Img/card-H-Leah.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pLeah.png" alt="Leah" draggable="true"
-                                          ondragstart="drag(event)" id="Leah" /><span class="name">Leah</span></a></li>
-                        <li id="AQI"><a href="Img/card-H-The-Fallen-Angel.png" class="fancybox" rel="fancy"><img
-                                          width="104" height="104" src="Img/pThe-Fallen-Angel.png"
-                                          alt="The Fallen Angel" draggable="true" ondragstart="drag(event)"
-                                          id="The-Fallen-Angel" /><span class="name">The Fallen Angel</span></a></li>
-                        <li id="AQI"><a href="Img/card-H-The-Wanderer.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pThe-Wanderer.png" alt="The Wanderer" draggable="true"
-                                          ondragstart="drag(event)" id="The-Wanderer" /><span class="name">The
-                                          Wanderer</span></a></li>
+                        <li id="AQI" class="heroimage"><a href="Img/card-H-Angle-eyes.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pAngle-eyes.png" alt="Angle eyes"
+                                          id="Angle-eyes" /><span class="name">Angle
+                                          eyes</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="AQI" class="heroimage"><a href="Img/card-H-Benjamin.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pBenjamin.png" alt="Benjamin"
+                                          id="Benjamin" /><span class="name">Benjamin</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="AQI" class="heroimage"><a href="Img/card-H-Justicar.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pJusticar.png" alt="Justicar"
+                                          id="Justicar" /><span class="name">Justicar</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="AQI" class="heroimage"><a href="Img/card-H-Leah.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pLeah.png" alt="Leah" draggable="true"
+                                          ondragstart="drag(event)" id="Leah" /><span class="name">Leah</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="AQI" class="heroimage"><a href="Img/card-H-The-Fallen-Angel.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pThe-Fallen-Angel.png"
+                                          alt="The Fallen Angel" id="The-Fallen-Angel" /><span class="name">The Fallen
+                                          Angel</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="AQI" class="heroimage"><a href="Img/card-H-The-Wanderer.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pThe-Wanderer.png"
+                                          alt="The Wanderer" id="The-Wanderer" /><span class="name">The
+                                          Wanderer</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
 
-                        <li id="PET"><a href="Img/card-H-Greenhood.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pGreenhood.png" alt="Greenhood" draggable="true"
-                                          ondragstart="drag(event)" id="Greenhood" /><span
-                                          class="name">Greenhood</span></a></li>
-                        <li id="PET"><a href="Img/card-H-Oak.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pOak.png" alt="Oak" draggable="true"
-                                          ondragstart="drag(event)" id="Oak" /><span class="name">Oak</span></a></li>
+                        <li id="PET" class="heroimage"><a href="Img/card-H-Greenhood.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pGreenhood.png" alt="Greenhood"
+                                          id="Greenhood" /><span class="name">Greenhood</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="PET" class="heroimage"><a href="Img/card-H-Oak.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pOak.png" alt="Oak" draggable="true"
+                                          ondragstart="drag(event)" id="Oak" /><span class="name">Oak</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
 
-                        <li id="HOB"><a href="Img/card-H-Annabelle.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pAnnabelle.png" alt="Annabelle" draggable="true"
-                                          ondragstart="drag(event)" id="Annabelle" /><span
-                                          class="name">Annabelle</span></a></li>
-                        <li id="HOB"><a href="Img/card-H-Annika.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pAnnika.png" alt="Annika" draggable="true"
+                        <li id="HOB" class="heroimage"><a href="Img/card-H-Annabelle.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pAnnabelle.png" alt="Annabelle"
+                                          id="Annabelle" /><span class="name">Annabelle</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="HOB" class="heroimage"><a href="Img/card-H-Annika.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pAnnika.png" alt="Annika" draggable="true"
                                           ondragstart="drag(event)" id="Annika" /><span class="name">Annika</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="HOB"><a href="Img/card-H-Britney.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pBritney.png" alt="Britney" draggable="true"
-                                          ondragstart="drag(event)" id="Britney" /><span class="name">Britney</span></a>
+                        <li id="HOB" class="heroimage"><a href="Img/card-H-Britney.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pBritney.png" alt="Britney"
+                                          id="Britney" /><span class="name">Britney</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="HOB"><a href="Img/card-H-Dris.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pDris.png" alt="Dris" draggable="true"
-                                          ondragstart="drag(event)" id="Dris" /><span class="name">Dris</span></a></li>
-                        <li id="HOB"><a href="Img/card-H-Gabriel.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pGabriel.png" alt="Gabriel" draggable="true"
-                                          ondragstart="drag(event)" id="Gabriel" /><span class="name">Gabriel</span></a>
+                        <li id="HOB" class="heroimage"><a href="Img/card-H-Dris.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pDris.png" alt="Dris" draggable="true"
+                                          ondragstart="drag(event)" id="Dris" /><span class="name">Dris</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="HOB"><a href="Img/card-H-Hellen.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pHellen.png" alt="Hellen" draggable="true"
+                        <li id="HOB" class="heroimage"><a href="Img/card-H-Gabriel.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pGabriel.png" alt="Gabriel"
+                                          id="Gabriel" /><span class="name">Gabriel</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="HOB" class="heroimage"><a href="Img/card-H-Hellen.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pHellen.png" alt="Hellen" draggable="true"
                                           ondragstart="drag(event)" id="Hellen" /><span class="name">Hellen</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="HOB"><a href="Img/card-H-Johnny.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pJohnny.png" alt="Johnny" draggable="true"
+                        <li id="HOB" class="heroimage"><a href="Img/card-H-Johnny.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pJohnny.png" alt="Johnny" draggable="true"
                                           ondragstart="drag(event)" id="Johnny" /><span class="name">Johnny</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="HOB"><a href="Img/card-H-Julie.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pJulie.png" alt="Julie" draggable="true"
+                        <li id="HOB" class="heroimage"><a href="Img/card-H-Julie.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pJulie.png" alt="Julie" draggable="true"
                                           ondragstart="drag(event)" id="Julie" /><span class="name">Julie</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="HOB"><a href="Img/card-H-King-David-III.png" class="fancybox" rel="fancy"><img
-                                          width="104" height="104" src="Img/pKing-David-III.png" alt="King David III"
-                                          draggable="true" ondragstart="drag(event)" id="King-David-III" /><span
-                                          class="name">King David III</span></a></li>
-                        <li id="HOB"><a href="Img/card-H-Kragor.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pKragor.png" alt="Kragor" draggable="true"
+                        <li id="HOB" class="heroimage"><a href="Img/card-H-King-David-III.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pKing-David-III.png"
+                                          alt="King David III" id="King-David-III" /><span class="name">King David
+                                          III</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="HOB" class="heroimage"><a href="Img/card-H-Kragor.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pKragor.png" alt="Kragor" draggable="true"
                                           ondragstart="drag(event)" id="Kragor" /><span class="name">Kragor</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="HOB"><a href="Img/card-H-Lord-Tyron.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pLord-Tyron.png" alt="Lord Tyron" draggable="true"
-                                          ondragstart="drag(event)" id="Lord-Tyron" /><span class="name">Lord
-                                          Tyron</span></a></li>
-                        <li id="HOB"><a href="Img/card-H-Lucas.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pLucas.png" alt="Lucas" draggable="true"
+                        <li id="HOB" class="heroimage"><a href="Img/card-H-Lord-Tyron.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pLord-Tyron.png" alt="Lord Tyron"
+                                          id="Lord-Tyron" /><span class="name">Lord
+                                          Tyron</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="HOB" class="heroimage"><a href="Img/card-H-Lucas.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pLucas.png" alt="Lucas" draggable="true"
                                           ondragstart="drag(event)" id="Lucas" /><span class="name">Lucas</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="HOB"><a href="Img/card-H-Magu.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pMagu.png" alt="Magu" draggable="true"
-                                          ondragstart="drag(event)" id="Magu" /><span class="name">Magu</span></a></li>
-                        <li id="HOB"><a href="Img/card-H-Master-Pim.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pMaster-Pim.png" alt="Master Pim" draggable="true"
-                                          ondragstart="drag(event)" id="Master-Pim" /><span class="name">Master
-                                          Pim</span></a></li>
-                        <li id="HOB"><a href="Img/card-H-Mercury.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pMercury.png" alt="Mercury" draggable="true"
-                                          ondragstart="drag(event)" id="Mercury" /><span class="name">Mercury</span></a>
+                        <li id="HOB" class="heroimage"><a href="Img/card-H-Magu.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pMagu.png" alt="Magu" draggable="true"
+                                          ondragstart="drag(event)" id="Magu" /><span class="name">Magu</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="HOB"><a href="Img/card-H-Papa-Ruk.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pPapa-Ruk.png" alt="Papa Ruk" draggable="true"
-                                          ondragstart="drag(event)" id="Papa-Ruk" /><span class="name">Papa
-                                          Ruk</span></a></li>
-                        <li id="HOB"><a href="Img/card-H-Raven.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pRaven.png" alt="Raven" draggable="true"
+                        <li id="HOB" class="heroimage"><a href="Img/card-H-Master-Pim.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pMaster-Pim.png" alt="Master Pim"
+                                          id="Master-Pim" /><span class="name">Master
+                                          Pim</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="HOB" class="heroimage"><a href="Img/card-H-Mercury.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pMercury.png" alt="Mercury"
+                                          id="Mercury" /><span class="name">Mercury</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="HOB" class="heroimage"><a href="Img/card-H-Papa-Ruk.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pPapa-Ruk.png" alt="Papa Ruk"
+                                          id="Papa-Ruk" /><span class="name">Papa
+                                          Ruk</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="HOB" class="heroimage"><a href="Img/card-H-Raven.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pRaven.png" alt="Raven" draggable="true"
                                           ondragstart="drag(event)" id="Raven" /><span class="name">Raven</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="HOB"><a href="Img/card-H-Rivet.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pRivet.png" alt="Rivet" draggable="true"
+                        <li id="HOB" class="heroimage"><a href="Img/card-H-Rivet.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pRivet.png" alt="Rivet" draggable="true"
                                           ondragstart="drag(event)" id="Rivet" /><span class="name">Rivet</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="HOB"><a href="Img/card-H-Sarya.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pSarya.png" alt="Sarya" draggable="true"
+                        <li id="HOB" class="heroimage"><a href="Img/card-H-Sarya.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pSarya.png" alt="Sarya" draggable="true"
                                           ondragstart="drag(event)" id="Sarya" /><span class="name">Sarya</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="HOB"><a href="Img/card-H-Sir-Bryce.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pSir-Bryce.png" alt="Sir Bryce" draggable="true"
-                                          ondragstart="drag(event)" id="Sir-Bryce" /><span class="name">Sir
-                                          Bryce</span></a></li>
-                        <li id="HOB"><a href="Img/card-H-Tao.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pTao.png" alt="Tao" draggable="true"
-                                          ondragstart="drag(event)" id="Tao" /><span class="name">Tao</span></a></li>
-                        <li id="HOB"><a href="Img/card-H-Thornwood.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pThornwood.png" alt="Thornwood" draggable="true"
-                                          ondragstart="drag(event)" id="Thornwood" /><span
-                                          class="name">Thornwood</span></a></li>
-                        <li id="HOB"><a href="Img/card-H-Tigris.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pTigris.png" alt="Tigris" draggable="true"
+                        <li id="HOB" class="heroimage"><a href="Img/card-H-Sir-Bryce.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pSir-Bryce.png" alt="Sir Bryce"
+                                          id="Sir-Bryce" /><span class="name">Sir
+                                          Bryce</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="HOB" class="heroimage"><a href="Img/card-H-Tao.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pTao.png" alt="Tao" draggable="true"
+                                          ondragstart="drag(event)" id="Tao" /><span class="name">Tao</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="HOB" class="heroimage"><a href="Img/card-H-Thornwood.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pThornwood.png" alt="Thornwood"
+                                          id="Thornwood" /><span class="name">Thornwood</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="HOB" class="heroimage"><a href="Img/card-H-Tigris.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pTigris.png" alt="Tigris" draggable="true"
                                           ondragstart="drag(event)" id="Tigris" /><span class="name">Tigris</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="HOB"><a href="Img/card-H-Tyndall.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pTyndall.png" alt="Tyndall" draggable="true"
-                                          ondragstart="drag(event)" id="Tyndall" /><span class="name">Tyndall</span></a>
+                        <li id="HOB" class="heroimage"><a href="Img/card-H-Tyndall.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pTyndall.png" alt="Tyndall"
+                                          id="Tyndall" /><span class="name">Tyndall</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="HOB"><a href="Img/card-H-Tyrek.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pTyrek.png" alt="Tyrek" draggable="true"
+                        <li id="HOB" class="heroimage"><a href="Img/card-H-Tyrek.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pTyrek.png" alt="Tyrek" draggable="true"
                                           ondragstart="drag(event)" id="Tyrek" /><span class="name">Tyrek</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="HOB"><a href="Img/card-H-Vexia-The-Witch.png" class="fancybox" rel="fancy"><img
-                                          width="104" height="104" src="Img/pVexia-The-Witch.png" alt="Vexia The Witch"
-                                          draggable="true" ondragstart="drag(event)" id="Vexia-The-Witch" /><span
-                                          class="name">Vexia The Witch</span></a></li>
-                        <li id="HOB"><a href="Img/card-H-Wanda.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pWanda.png" alt="Wanda" draggable="true"
+                        <li id="HOB" class="heroimage"><a href="Img/card-H-Vexia-The-Witch.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pVexia-The-Witch.png"
+                                          alt="Vexia The Witch" id="Vexia-The-Witch" /><span class="name">Vexia The
+                                          Witch</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="HOB" class="heroimage"><a href="Img/card-H-Wanda.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pWanda.png" alt="Wanda" draggable="true"
                                           ondragstart="drag(event)" id="Wanda" /><span class="name">Wanda</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
 
-                        <li id="EX2"><a href="Img/card-H-Anvil.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pAnvil.png" alt="Anvil" draggable="true"
+                        <li id="EX2" class="heroimage"><a href="Img/card-H-Anvil.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pAnvil.png" alt="Anvil" draggable="true"
                                           ondragstart="drag(event)" id="Anvil" /><span class="name">Anvil</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="EX2"><a href="Img/card-H-Crash.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pCrash.png" alt="Crash" draggable="true"
+                        <li id="EX2" class="heroimage"><a href="Img/card-H-Crash.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pCrash.png" alt="Crash" draggable="true"
                                           ondragstart="drag(event)" id="Crash" /><span class="name">Crash</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="EX2"><a href="Img/card-H-Hilda.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pHilda.png" alt="Hilda" draggable="true"
+                        <li id="EX2" class="heroimage"><a href="Img/card-H-Hilda.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pHilda.png" alt="Hilda" draggable="true"
                                           ondragstart="drag(event)" id="Hilda" /><span class="name">Hilda</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="EX2"><a href="Img/card-H-Hoshi.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pHoshi.png" alt="Hoshi" draggable="true"
+                        <li id="EX2" class="heroimage"><a href="Img/card-H-Hoshi.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pHoshi.png" alt="Hoshi" draggable="true"
                                           ondragstart="drag(event)" id="Hoshi" /><span class="name">Hoshi</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="EX2"><a href="Img/card-H-Kuruk.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pKuruk.png" alt="Kuruk" draggable="true"
+                        <li id="EX2" class="heroimage"><a href="Img/card-H-Kuruk.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pKuruk.png" alt="Kuruk" draggable="true"
                                           ondragstart="drag(event)" id="Kuruk" /><span class="name">Kuruk</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="EX2"><a href="Img/card-H-Mamba.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pMamba.png" alt="Mamba" draggable="true"
+                        <li id="EX2" class="heroimage"><a href="Img/card-H-Mamba.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pMamba.png" alt="Mamba" draggable="true"
                                           ondragstart="drag(event)" id="Mamba" /><span class="name">Mamba</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="EX2"><a href="Img/card-H-Nina.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pNina.png" alt="Nina" draggable="true"
-                                          ondragstart="drag(event)" id="Nina" /><span class="name">Nina</span></a></li>
-                        <li id="EX2"><a href="Img/card-H-Rosh.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pRosh.png" alt="Rosh" draggable="true"
-                                          ondragstart="drag(event)" id="Rosh" /><span class="name">Rosh</span></a></li>
-                        <li id="EX2"><a href="Img/card-H-Valma.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pValma.png" alt="Valma" draggable="true"
+                        <li id="EX2" class="heroimage"><a href="Img/card-H-Nina.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pNina.png" alt="Nina" draggable="true"
+                                          ondragstart="drag(event)" id="Nina" /><span class="name">Nina</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="EX2" class="heroimage"><a href="Img/card-H-Rosh.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pRosh.png" alt="Rosh" draggable="true"
+                                          ondragstart="drag(event)" id="Rosh" /><span class="name">Rosh</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="EX2" class="heroimage"><a href="Img/card-H-Valma.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pValma.png" alt="Valma" draggable="true"
                                           ondragstart="drag(event)" id="Valma" /><span class="name">Valma</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="EX2"><a href="Img/card-H-Viola.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pViola.png" alt="Viola" draggable="true"
+                        <li id="EX2" class="heroimage"><a href="Img/card-H-Viola.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pViola.png" alt="Viola" draggable="true"
                                           ondragstart="drag(event)" id="Viola" /><span class="name">Viola</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="EX2"><a href="Img/card-H-Yona.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pYona.png" alt="Yona" draggable="true"
-                                          ondragstart="drag(event)" id="Yona" /><span class="name">Yona</span></a></li>
+                        <li id="EX2" class="heroimage"><a href="Img/card-H-Yona.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pYona.png" alt="Yona" draggable="true"
+                                          ondragstart="drag(event)" id="Yona" /><span class="name">Yona</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
 
-                        <li id="RD"><a href="Img/card-H-Colette.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pColette.png" alt="Colette" draggable="true"
+                        <li id="RD" class="heroimage"><a href="Img/card-H-Colette.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pColette.png" alt="Colette" draggable="true"
                                           ondragstart="drag(event)" id="Colette" /><span class="name">Colette</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="RD"><a href="Img/card-H-Gaston.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pGaston.png" alt="Gaston" draggable="true"
+                        <li id="RD" class="heroimage"><a href="Img/card-H-Gaston.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pGaston.png" alt="Gaston" draggable="true"
                                           ondragstart="drag(event)" id="Gaston" /><span class="name">Gaston</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
 
-                        <li id="MMR"><a href="Img/card-H-Algus.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pAlgus.png" alt="Algus" draggable="true"
+                        <li id="MMR" class="heroimage"><a href="Img/card-H-Algus.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pAlgus.png" alt="Algus" draggable="true"
                                           ondragstart="drag(event)" id="Algus" /><span class="name">Algus</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="MMR"><a href="Img/card-H-Greybark.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pGreybark.png" alt="Greybark" draggable="true"
-                                          ondragstart="drag(event)" id="Greybark" /><span
-                                          class="name">Greybark</span></a></li>
-                        <li id="MMR"><a href="Img/card-H-Jay.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pJay.png" alt="Jay" draggable="true"
-                                          ondragstart="drag(event)" id="Jay" /><span class="name">Jay</span></a></li>
-                        <li id="MMR"><a href="Img/card-H-Mika.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pMika.png" alt="Mika" draggable="true"
-                                          ondragstart="drag(event)" id="Mika" /><span class="name">Mika</span></a></li>
-                        <li id="MMR"><a href="Img/card-H-Valerie.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pValerie.png" alt="Valerie" draggable="true"
-                                          ondragstart="drag(event)" id="Valerie" /><span class="name">Valerie</span></a>
+                        <li id="MMR" class="heroimage"><a href="Img/card-H-Greybark.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pGreybark.png" alt="Greybark"
+                                          id="Greybark" /><span class="name">Greybark</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="MMR" class="heroimage"><a href="Img/card-H-Jay.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pJay.png" alt="Jay" draggable="true"
+                                          ondragstart="drag(event)" id="Jay" /><span class="name">Jay</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="MMR" class="heroimage"><a href="Img/card-H-Mika.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pMika.png" alt="Mika" draggable="true"
+                                          ondragstart="drag(event)" id="Mika" /><span class="name">Mika</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="MMR" class="heroimage"><a href="Img/card-H-Valerie.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pValerie.png" alt="Valerie"
+                                          id="Valerie" /><span class="name">Valerie</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
 
-                        <li id="EX3"><a href="Img/card-H-Damian.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pDamian.png" alt="Damian" draggable="true"
+                        <li id="EX3" class="heroimage"><a href="Img/card-H-Damian.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pDamian.png" alt="Damian" draggable="true"
                                           ondragstart="drag(event)" id="Damian" /><span class="name">Damian</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="EX3"><a href="Img/card-H-Lang-Lang.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pLang-Lang.png" alt="Lang Lang" draggable="true"
-                                          ondragstart="drag(event)" id="Lang-Lang" /><span class="name">Lang
-                                          Lang</span></a></li>
-                        <li id="EX3"><a href="Img/card-H-Luna.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pLuna.png" alt="Luna" draggable="true"
-                                          ondragstart="drag(event)" id="Luna" /><span class="name">Luna</span></a></li>
-                        <li id="EX3"><a href="Img/card-H-Neffar.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pNeffar.png" alt="Neffar" draggable="true"
+                        <li id="EX3" class="heroimage"><a href="Img/card-H-Lang-Lang.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pLang-Lang.png" alt="Lang Lang"
+                                          id="Lang-Lang" /><span class="name">Lang
+                                          Lang</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="EX3" class="heroimage"><a href="Img/card-H-Luna.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pLuna.png" alt="Luna" draggable="true"
+                                          ondragstart="drag(event)" id="Luna" /><span class="name">Luna</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="EX3" class="heroimage"><a href="Img/card-H-Neffar.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pNeffar.png" alt="Neffar" draggable="true"
                                           ondragstart="drag(event)" id="Neffar" /><span class="name">Neffar</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="EX3"><a href="Img/card-H-Stump.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pStump.png" alt="Stump" draggable="true"
+                        <li id="EX3" class="heroimage"><a href="Img/card-H-Stump.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pStump.png" alt="Stump" draggable="true"
                                           ondragstart="drag(event)" id="Stump" /><span class="name">Stump</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
 
-                        <li id="DGP"><a href="Img/card-H-Azure.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pAzure.png" alt="Azure" draggable="true"
+                        <li id="DGP" class="heroimage"><a href="Img/card-H-Azure.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pAzure.png" alt="Azure" draggable="true"
                                           ondragstart="drag(event)" id="Azure" /><span class="name">Azure</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="DGP"><a href="Img/card-H-Baruk.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pBaruk.png" alt="Baruk" draggable="true"
+                        <li id="DGP" class="heroimage"><a href="Img/card-H-Baruk.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pBaruk.png" alt="Baruk" draggable="true"
                                           ondragstart="drag(event)" id="Baruk" /><span class="name">Baruk</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="DGP"><a href="Img/card-H-Blossom.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pBlossom.png" alt="Blossom" draggable="true"
-                                          ondragstart="drag(event)" id="Blossom" /><span class="name">Blossom</span></a>
+                        <li id="DGP" class="heroimage"><a href="Img/card-H-Blossom.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pBlossom.png" alt="Blossom"
+                                          id="Blossom" /><span class="name">Blossom</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="DGP"><a href="Img/card-H-Hyldir.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pHyldir.png" alt="Hyldir" draggable="true"
+                        <li id="DGP" class="heroimage"><a href="Img/card-H-Hyldir.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pHyldir.png" alt="Hyldir" draggable="true"
                                           ondragstart="drag(event)" id="Hyldir" /><span class="name">Hyldir</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="DGP"><a href="Img/card-H-Lotus.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pLotus.png" alt="Lotus" draggable="true"
+                        <li id="DGP" class="heroimage"><a href="Img/card-H-Lotus.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pLotus.png" alt="Lotus" draggable="true"
                                           ondragstart="drag(event)" id="Lotus" /><span class="name">Lotus</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="DGP"><a href="Img/card-H-Luke-the-lucky.png" class="fancybox" rel="fancy"><img
-                                          width="104" height="104" src="Img/pLuke-the-lucky.png" alt="Luke the lucky"
-                                          draggable="true" ondragstart="drag(event)" id="Luke-the-lucky" /><span
-                                          class="name">Luke the lucky</span></a></li>
-                        <li id="DGP"><a href="Img/card-H-Makumba.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pMakumba.png" alt="Makumba" draggable="true"
-                                          ondragstart="drag(event)" id="Makumba" /><span class="name">Makumba</span></a>
+                        <li id="DGP" class="heroimage"><a href="Img/card-H-Luke-the-lucky.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pLuke-the-lucky.png"
+                                          alt="Luke the lucky" id="Luke-the-lucky" /><span class="name">Luke the
+                                          lucky</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="DGP"><a href="Img/card-H-Prince-Grenouille.png" class="fancybox" rel="fancy"><img
-                                          width="104" height="104" src="Img/pPrince-Grenouille.png"
-                                          alt="Prince Grenouille" draggable="true" ondragstart="drag(event)"
-                                          id="Prince-Grenouille" /><span class="name">Prince Grenouille</span></a></li>
-                        <li id="DGP"><a href="Img/card-H-Quan.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pQuan.png" alt="Quan" draggable="true"
-                                          ondragstart="drag(event)" id="Quan" /><span class="name">Quan</span></a></li>
-                        <li id="DGP"><a href="Img/card-H-Raffi.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pRaffi.png" alt="Raffi" draggable="true"
+                        <li id="DGP" class="heroimage"><a href="Img/card-H-Makumba.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pMakumba.png" alt="Makumba"
+                                          id="Makumba" /><span class="name">Makumba</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="DGP" class="heroimage"><a href="Img/card-H-Prince-Grenouille.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pPrince-Grenouille.png"
+                                          alt="Prince Grenouille" id="Prince-Grenouille" /><span class="name">Prince
+                                          Grenouille</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="DGP" class="heroimage"><a href="Img/card-H-Quan.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pQuan.png" alt="Quan" draggable="true"
+                                          ondragstart="drag(event)" id="Quan" /><span class="name">Quan</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="DGP" class="heroimage"><a href="Img/card-H-Raffi.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pRaffi.png" alt="Raffi" draggable="true"
                                           ondragstart="drag(event)" id="Raffi" /><span class="name">Raffi</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="DGP"><a href="Img/card-H-Thereon.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pThereon.png" alt="Thereon" draggable="true"
-                                          ondragstart="drag(event)" id="Thereon" /><span class="name">Thereon</span></a>
+                        <li id="DGP" class="heroimage"><a href="Img/card-H-Thereon.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pThereon.png" alt="Thereon"
+                                          id="Thereon" /><span class="name">Thereon</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="DGP"><a href="Img/card-H-Toghor.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pToghor.png" alt="Toghor" draggable="true"
+                        <li id="DGP" class="heroimage"><a href="Img/card-H-Toghor.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pToghor.png" alt="Toghor" draggable="true"
                                           ondragstart="drag(event)" id="Toghor" /><span class="name">Toghor</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="DGP"><a href="Img/card-H-Tosh.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pTosh.png" alt="Tosh" draggable="true"
-                                          ondragstart="drag(event)" id="Tosh" /><span class="name">Tosh</span></a></li>
-                        <li id="DGP"><a href="Img/card-H-Travis.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pTravis.png" alt="Travis" draggable="true"
+                        <li id="DGP" class="heroimage"><a href="Img/card-H-Tosh.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pTosh.png" alt="Tosh" draggable="true"
+                                          ondragstart="drag(event)" id="Tosh" /><span class="name">Tosh</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="DGP" class="heroimage"><a href="Img/card-H-Travis.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pTravis.png" alt="Travis" draggable="true"
                                           ondragstart="drag(event)" id="Travis" /><span class="name">Travis</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="DGP"><a href="Img/card-H-Zsa-Zsa.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pZsa-Zsa.png" alt="Zsa Zsa" draggable="true"
-                                          ondragstart="drag(event)" id="Zsa-Zsa" /><span class="name">Zsa Zsa</span></a>
+                        <li id="DGP" class="heroimage"><a href="Img/card-H-Zsa-Zsa.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pZsa-Zsa.png" alt="Zsa Zsa"
+                                          id="Zsa-Zsa" /><span class="name">Zsa Zsa</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
 
-                        <li id="PM"><a href="Img/card-H-Princess-Pearl.png" class="fancybox" rel="fancy"><img
-                                          width="104" height="104" src="Img/pPrincess-Pearl.png" alt="Princess Pearl"
-                                          draggable="true" ondragstart="drag(event)" id="Princess-Pearl" /><span
-                                          class="name">Princess Pearl</span></a></li>
+                        <li id="PM" class="heroimage"><a href="Img/card-H-Princess-Pearl.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pPrincess-Pearl.png"
+                                          alt="Princess Pearl" id="Princess-Pearl" /><span class="name">Princess
+                                          Pearl</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
 
-                        <li id="UY"><a href="Img/card-H-Kitsune.png" class="fancybox" rel="fancy"><img width="104"
-                                          height="104" src="Img/pKitsune.png" alt="Kitsune" draggable="true"
+                        <li id="UY" class="heroimage"><a href="Img/card-H-Kitsune.png" class="fancybox" rel="fancy"><img
+                                          width="104" height="104" src="Img/pKitsune.png" alt="Kitsune" draggable="true"
                                           ondragstart="drag(event)" id="Kitsune" /><span class="name">Kitsune</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
-                        <li id="UY"><a href="Img/card-H-Miyamoto-Usagi.png" class="fancybox" rel="fancy"><img
-                                          width="104" height="104" src="Img/pMiyamoto-Usagi.png" alt="Miyamoto Usagi"
-                                          draggable="true" ondragstart="drag(event)" id="Miyamoto-Usagi" /><span
-                                          class="name">Miyamoto Usagi</span></a></li>
-                        <li id="UY"><a href="Img/card-H-Murakami-Gennosuke.png" class="fancybox" rel="fancy"><img
-                                          width="104" height="104" src="Img/pMurakami-Gennosuke.png"
-                                          alt="Murakami Gennosuke" draggable="true" ondragstart="drag(event)"
-                                          id="Murakami-Gennosuke" /><span class="name">Murakami Gennosuke</span></a>
+                        <li id="UY" class="heroimage"><a href="Img/card-H-Miyamoto-Usagi.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pMiyamoto-Usagi.png"
+                                          alt="Miyamoto Usagi" id="Miyamoto-Usagi" /><span class="name">Miyamoto
+                                          Usagi</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
+                        </li>
+                        <li id="UY" class="heroimage"><a href="Img/card-H-Murakami-Gennosuke.png" class="fancybox"
+                                    rel="fancy"><img width="104" height="104" src="Img/pMurakami-Gennosuke.png"
+                                          alt="Murakami Gennosuke" id="Murakami-Gennosuke" /><span class="name">Murakami
+                                          Gennosuke</span></a>
+                              <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle
+                              </div>
+                              <div id="ban-symbol" class="material-symbols-outlined"
+                                    onclick="banImage(this)">do_not_disturb_on</div>
                         </li>
 
 
                   </ul>
             </section>
       </div>
-      <div id="left" ondrop="drop(event)" ondragover="allowDrop(event)">
-            <section class="page">
+      <div id="left">
+            <section id="playerbase" class="page">
                   <div class="maindiv1" id="player1base">
-                        <p class="text">Team 1</p>
-                        <div class="div1">
-                              <a draggable="true" ondragstart="drag(event)"><img width="104" height="104" id="mdrag1">
+                        <p class="text">Guild 1</p>
+                        <div class="div1 ">
+                              <a><img width="104" height="104" id="mdrag1"
+                                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
                                     <span class="name">Hero</span></a>
-                              <div class="remove-symbol" onclick="removeImage(this)">X</div>
+                              <div class="remove-symbol material-symbols-outlined" onclick="removeImage(this)">cancel
+                              </div>
                         </div>
-                        <div class="div1">
-                              <a draggable="true" ondragstart="drag(event)"><img width="104" height="104" id="mdrag2">
+                        <div class="div1 ">
+                              <a><img width="104" height="104" id="mdrag2"
+                                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
                                     <span class="name">Hero</span></a>
-                              <div class="remove-symbol" onclick="removeImage(this)">X</div>
+                              <div class="remove-symbol material-symbols-outlined" onclick="removeImage(this)">cancel
+                              </div>
                         </div>
-                        <div class="div1">
-                              <a draggable="true" ondragstart="drag(event)"><img width="104" height="104" id="mdrag3">
+                        <div class="div1 ">
+                              <a><img width="104" height="104" id="mdrag3"
+                                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
                                     <span class="name">Hero</span></a>
-                              <div class="remove-symbol" onclick="removeImage(this)">X</div>
-                        </div>
-                  </div>
-                  <div class="maindiv1" id="player2base">
-                        <p class="text">Team 2</p>
-                        <div class="div1">
-                              <a draggable="true" ondragstart="drag(event)"><img width="104" height="104" id="mdrag4">
-                                    <span class="name">Hero</span></a>
-                              <div class="remove-symbol" onclick="removeImage(this)">X</div>
-
-                        </div>
-                        <div class="div1">
-                              <a draggable="true" ondragstart="drag(event)"><img width="104" height="104" id="mdrag5">
-                                    <span class="name">Hero</span></a>
-                              <div class="remove-symbol" onclick="removeImage(this)">X</div>
-
-                        </div>
-                        <div class="div1">
-                              <a draggable="true" ondragstart="drag(event)"><img width="104" height="104" id="mdrag6">
-                                    <span class="name">Hero</span></a>
-                              <div class="remove-symbol" onclick="removeImage(this)">X</div>
-
+                              <div class="remove-symbol material-symbols-outlined" onclick="removeImage(this)">cancel
+                              </div>
                         </div>
                   </div>
-                  <div class="maindiv1" id="player3base">
-                        <p class="text">Team 3</p>
-                        <div class="div1">
-                              <a draggable="true" ondragstart="drag(event)"><img width="104" height="104" id="mdrag7">
+                  <div class="maindiv2" id="player2base">
+                        <p class="text">Guild 2</p>
+                        <div class="div2 ">
+                              <a><img width="104" height="104" id="mdrag4"
+                                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
                                     <span class="name">Hero</span></a>
-                              <div class="remove-symbol" onclick="removeImage(this)">X</div>
+                              <div class="remove-symbol material-symbols-outlined" onclick="removeImage(this)">cancel
+                              </div>
+                        </div>
+                        <div class="div2 ">
+                              <a><img width="104" height="104" id="mdrag5"
+                                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><span
+                                          class="name">Hero</span></a>
+                              <div class="remove-symbol material-symbols-outlined" onclick="removeImage(this)">cancel
+                              </div>
+                        </div>
+                        <div class="div2 ">
+                              <a><img width="104" height="104" id="mdrag6"
+                                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><span
+                                          class="name">Hero</span></a>
+                              <div class="remove-symbol material-symbols-outlined" onclick="removeImage(this)">cancel
+                              </div>
+                        </div>
+                  </div>
+                  <div class="maindiv3" id="player3base">
+                        <p class="text">Guild 3</p>
+                        <div class="div3 ">
+                              <a><img width="104" height="104" id="mdrag7"
+                                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><span
+                                          class="name">Hero</span></a>
+                              <div class="remove-symbol material-symbols-outlined" onclick="removeImage(this)">cancel
+                              </div>
 
                         </div>
-                        <div class="div1">
-                              <a draggable="true" ondragstart="drag(event)"><img width="104" height="104" id="mdrag8">
-                                    <span class="name">Hero</span></a>
-                              <div class="remove-symbol" onclick="removeImage(this)">X</div>
+                        <div class="div3 ">
+                              <a><img width="104" height="104" id="mdrag8"
+                                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><span
+                                          class="name">Hero</span></a>
+                              <div class="remove-symbol material-symbols-outlined" onclick="removeImage(this)">cancel
+                              </div>
 
                         </div>
-                        <div class="div1">
-                              <a draggable="true" ondragstart="drag(event)"><img width="104" height="104" id="mdrag9">
-                                    <span class="name">Hero</span></a>
-                              <div class="remove-symbol" onclick="removeImage(this)">X</div>
+                        <div class="div3 ">
+                              <a><img width="104" height="104" id="mdrag9"
+                                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><span
+                                          class="name">Hero</span></a>
+                              <div class="remove-symbol material-symbols-outlined" onclick="removeImage(this)">cancel
+                              </div>
 
                         </div>
                   </div>
-                  <div class="maindiv1" id="player4base">
-                        <p class="text">Team 4</p>
-                        <div class="div1">
-                              <a draggable="true" ondragstart="drag(event)"><img width="104" height="104" id="mdrag10">
-                                    <span class="name">Hero</span></a>
-                              <div class="remove-symbol" onclick="removeImage(this)">X</div>
+                  <div class="maindiv4" id="player4base">
+                        <p class="text">Guild 4</p>
+                        <div class="div4">
+                              <a><img width="104" height="104" id="mdrag10"
+                                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><span
+                                          class="name">Hero</span></a>
+                              <div class="remove-symbol material-symbols-outlined" onclick="removeImage(this)">cancel
+                              </div>
 
                         </div>
-                        <div class="div1">
-                              <a draggable="true" ondragstart="drag(event)"><img width="104" height="104" id="mdrag11">
-                                    <span class="name">Hero</span></a>
-                              <div class="remove-symbol" onclick="removeImage(this)">X</div>
+                        <div class="div4">
+                              <a><img width="104" height="104" id="mdrag11"
+                                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><span
+                                          class="name">Hero</span></a>
+                              <div class="remove-symbol material-symbols-outlined" onclick="removeImage(this)">cancel
+                              </div>
 
                         </div>
-                        <div class="div1">
-                              <a draggable="true" ondragstart="drag(event)"><img width="104" height="104" id="mdrag12">
+                        <div class="div4">
+                              <a><img width="104" height="104" id="mdrag12"
+                                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
                                     <span class="name">Hero</span></a>
-                              <div class="remove-symbol" onclick="removeImage(this)">X</div>
+                              <div class="remove-symbol material-symbols-outlined" onclick="removeImage(this)">cancel
+                              </div>
 
                         </div>
                   </div>
@@ -885,250 +1431,5 @@
                   });
             });
       </script>
-
-      <script>
-            var lied = document.getElementById("main").querySelectorAll('li:not([style*="display: none;"])')
-            function textfilter() {
-                  var input, filter, ul, li, a, i, txtValue;
-                  input = document.getElementById("myInput");
-                  filter = input.value.toUpperCase();
-                  /*li = document.getElementById("main").getElementsByTagName("li");*/
-                  for (i = 0; i < lied.length; i++) {
-                        a = lied[i].getElementsByTagName("a")[0];
-                        txtValue = a.textContent || a.innerText;
-                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                              lied[i].style.display = "block";
-                        } else {
-                              lied[i].style.display = "none";
-                        }
-                  }
-            }
-            function checkboxfilter(x, y, z) {
-                  checkbox = document.querySelectorAll(x);
-                  checkall = document.getElementById(y);
-                  li = document.getElementById("main").getElementsByTagName("li");
-                  for (j = 0; j < checkbox.length; j++) {
-                        if (checkbox[j].checked == true) {
-                              for (i = 0; i < li.length; i++) {
-                                    if (li[i].getAttribute('id') === checkbox[j].getAttribute('id')) {
-                                          li[i].style.display = "block";
-                                    }
-                              }
-                        } else {
-                              for (i = 0; i < li.length; i++) {
-                                    if (li[i].getAttribute('id') === checkbox[j].getAttribute('id')) {
-                                          li[i].style.display = "none";
-                                    }
-                              }
-                        }
-                  }
-                  checkedCount = document.querySelectorAll(z).length;
-                  checkall.checked = checkedCount > 0;
-                  checkall.indeterminate = checkedCount > 0 && checkedCount < checkbox.length;
-                  lied = document.getElementById("main").querySelectorAll('li:not([style*="display: none;"])')
-            }
-            function checkmain(x, y) {
-                  checkbox = document.querySelectorAll(x),
-                        checkall = document.getElementById(y);
-                  for (i = 0; i < checkbox.length; i++) {
-                        checkbox[i].checked = checkall.checked;
-                  }
-                  li = document.getElementById("main").getElementsByTagName("li");
-                  for (j = 0; j < checkbox.length; j++) {
-                        if (checkbox[j].checked == true) {
-                              for (i = 0; i < li.length; i++) {
-                                    if (li[i].getAttribute('id') === checkbox[j].getAttribute('id')) {
-                                          li[i].style.display = "block";
-                                    }
-
-                              }
-                        } else {
-                              for (i = 0; i < li.length; i++) {
-                                    if (li[i].getAttribute('id') === checkbox[j].getAttribute('id')) {
-                                          li[i].style.display = "none";
-                                    }
-                              }
-                        }
-                  }
-                  lied = document.getElementById("main").querySelectorAll('li:not([style*="display: none;"])')
-            }
-
-      </script>
-
-
-      <script>
-            var list = document.getElementById("main").getElementsByTagName("img");
-            const heroposition = [];
-            for (i = 0; i < list.length; i++) {
-                  heroposition.push(list[i].id);
-            }
-
-            var origin
-            var team
-            fetch('data/team.json')
-                  .then(response => {
-                        if (!response.ok) {
-                              throw new Error('Network response was not ok');
-                        }
-                        return response.json();
-                  })
-                  .then(data => {
-                        // Process the JSON data
-                        team = (JSON.stringify(data, null, 2)); // Display JSON data
-                  })
-                  .catch(error => {
-                        console.error('There has been a problem with your fetch operation:', error);
-                  });
-            loadElement();
-
-
-            function allowDrop(ev) {
-                  ev.preventDefault();
-            }
-
-            function drag(ev) {
-                  ev.dataTransfer.setData("text", ev.target.id); //// id img drag
-                  var maintable = document.getElementById(ev.target.id).parentNode.parentNode.nodeName;
-                  origin = maintable == "LI" ? 1 : 0; //ternary operation
-            }
-
-            function drop(ev) {
-                  ev.preventDefault();
-                  let data = ev.dataTransfer.getData("text"); // id img drag
-                  let character = document.getElementById(data).parentNode;
-                  let characterparent = character.parentNode;
-                  let clonedcharacter = document.getElementById(ev.target.id).parentNode; //ev.target.id = id img drop
-                  //Change name when drag from pool to blank position team 
-                  clonedcharacter.parentNode.appendChild(character);
-                  characterparent.appendChild(clonedcharacter);
-                  if (origin == 1 && ev.target.id.includes("mdrag")) {
-                        clonedcharacter.children[1].innerText = data.replace(/-/g, ' ');
-                  }
-                  ev.dataTransfer.clearData();
-                  //Return drop hero to it original place
-                  if (origin == 1 && !ev.target.id.includes("mdrag")) {
-                        const index = heroposition.indexOf(ev.target.id);
-                        li = document.getElementById("main").getElementsByTagName("li")[index];
-                        let originalcharacter = li.children[0];
-                        clonedcharacter.parentNode.appendChild(originalcharacter);
-                        li.appendChild(clonedcharacter);
-                        originalcharacter.children[1].innerText = data.replace(/-/g, ' ');
-                  }
-                  //save data
-                  let herodata = document.getElementById("left").getElementsByTagName("img")
-                  for (i = 0; i < herodata.length; i++) {
-                        if (!herodata[i].id.includes("mdrag")) {
-                              team[i].ido = herodata[i].id;
-                        }
-                  }
-                  localStorage.setItem('team', JSON.stringify(team));
-            }
-            //load data
-            function loadElement() {
-                  for (i = 0; i < team.length; i++) {
-                        if (team[i].ido) {
-                              let character = document.getElementById(team[i].ido).parentNode;
-                              let characterparent = character.parentNode;
-                              let clonedcharacter = document.getElementById(team[i].idd).parentNode;
-                              clonedcharacter.parentNode.appendChild(character);
-                              characterparent.appendChild(clonedcharacter);
-                              clonedcharacter.children[1].innerText = team[i].ido.replace(/-/g, ' ');
-                        }
-                  }
-            }
-      </script>
-      <script>
-            /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-            var dropdown = document.getElementsByClassName("dropdown-btn");
-            var i;
-            let m = 0;
-            for (i = 0; i < dropdown.length; i++) {
-                  dropdown[i].addEventListener("click", function () {
-                        this.classList.toggle("active");
-                        var dropdownContent = this.nextElementSibling;
-                        if (dropdownContent.style.display === "block") {
-                              dropdownContent.style.display = "none";
-                              m = m - 1;
-                        } else {
-                              dropdownContent.style.display = "block";
-                              document.getElementById('search').style.height = '200px';
-                              m = m + 1;
-                        }
-                        if (m === 0) {
-                              document.getElementById('search').style.height = '80px';
-                        }
-
-                  });
-            }
-      </script>
-
-      <script>
-            function removeImage(element) {
-                  let data = element.nextElementSibling.children[0].id;
-                  let character = document.getElementById(data).parentNode;
-                  const index = heroposition.indexOf(data);
-                  li = document.getElementById("main").getElementsByTagName("li")[index];
-                  let originalcharacter = li.children[0];
-                  character.parentNode.appendChild(originalcharacter);
-                  li.appendChild(character);
-                  originalcharacter.children[1].innerText = ('Hero');
-            }
-
-      </script>
-      <!-- Load parameter -->
-
-      <script>
-            const playercount = sessionStorage.getItem("playercount");
-            const bancount = sessionStorage.getItem("bancount");
-            const checkboxes0 = sessionStorage.getItem("checkboxes0");
-            retrieveCheckboxStatus("input.subOption0", 'option0', 'input.subOption0:checked')
-            retrieveCheckboxStatus("input.subOption1", 'option1', 'input.subOption1:checked')
-            retrieveCheckboxStatus("input.subOption2", 'option2', 'input.subOption2:checked')
-            retrieveCheckboxStatus("input.subOption3", 'option3', 'input.subOption3:checked')
-
-            var myDiv2 = document.getElementById("player2base");
-            var myDiv3 = document.getElementById("player3base");
-            var myDiv4 = document.getElementById("player4base");
-
-            switch (playercount) {
-                  case "1":
-                        myDiv2.classList.add("hidden");
-                        myDiv3.classList.add("hidden");
-                        myDiv4.classList.add("hidden"); break;
-                  case "2":
-                        myDiv3.classList.add("hidden");
-                        myDiv4.classList.add("hidden"); break;
-                  case "3":
-                        myDiv4.classList.add("hidden"); break;
-            }
-            function retrieveCheckboxStatus(x, y, z) {
-                  let storedCheckboxStatus = JSON.parse(sessionStorage.getItem(x));
-                  let checkboxes = document.querySelectorAll(x);
-                  let checkall = document.getElementById(y);
-                  li = document.getElementById("main").getElementsByTagName("li");
-                  for (j = 0; j < storedCheckboxStatus.length; j++) {
-                        if (storedCheckboxStatus[j] == true) {
-                              checkboxes[j].checked = true;
-                              for (i = 0; i < li.length; i++) {
-                                    if (li[i].getAttribute('id') === checkboxes[j].getAttribute('id')) {
-                                          li[i].style.display = "block";
-                                    }
-                              }
-                        } else {
-                              for (i = 0; i < li.length; i++) {
-                                    if (li[i].getAttribute('id') === checkboxes[j].getAttribute('id')) {
-                                          li[i].style.display = "none";
-                                    }
-                              }
-                        }
-                  }
-                  checkedCount = document.querySelectorAll(z).length;
-                  checkall.checked = checkedCount > 0;
-                  checkall.indeterminate = checkedCount > 0 && checkedCount < checkboxes.length;
-                  lied = document.getElementById("main").querySelectorAll('li:not([style*="display: none;"])')
-
-            };
-      </script>
 </body>
-
 </html>
