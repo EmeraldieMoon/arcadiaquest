@@ -161,7 +161,7 @@ const backgrounds = ["bannerorange", "bannerblue", "bannerred", "bannergreen", "
 for (let i = 1; i <= 8; i++) {
     const button = document.getElementById(`guild${i}`);
     button.addEventListener("click", () => {
-        div.style.backgroundImage = `url('/Img/${backgrounds[i - 1]}.png')`;
+        div.style.backgroundImage = `url('arcadiaquest/Img/${backgrounds[i - 1]}.png')`;
         //sessionStorage.setItem("guildindex", i);
         guildindex = i;
     });
@@ -170,7 +170,7 @@ for (let i = 1; i <= 8; i++) {
 for (let i = 1; i <= 8; i++) {
     const button = document.getElementById(`joinguild${i}`);
     button.addEventListener("click", () => {
-        joindiv.style.backgroundImage = `url('/Img/${backgrounds[i - 1]}.png')`;
+        joindiv.style.backgroundImage = `url('arcadiaquest/Img/${backgrounds[i - 1]}.png')`;
         //sessionStorage.setItem("guildindex", i);
         guildindex = i;
     });
@@ -187,10 +187,14 @@ overlay3.addEventListener('click', () => {
     overlay3.classList.remove('open');
 });
 joinsubmitButton.addEventListener('click', () => {
-    sessionStorage.setItem("playername", document.getElementById("joinplayername").value);
-    sessionStorage.setItem("roomID", roomID);
-    // sessionStorage.setItem("guildindex", guildindex);
-    joinpost();
+    const checkplayername = document.getElementById("joinplayername").value;
+    if (checkplayername) {
+        sessionStorage.setItem("playername", d);
+        sessionStorage.setItem("roomID", roomID);
+        // sessionStorage.setItem("guildindex", guildindex);
+        joinpost();
+    }
+    else { alert("Name cannot be empty!"); }
 });
 settingsButton.addEventListener('click', () => {
     settingsPopup.classList.add('open');
@@ -231,13 +235,14 @@ overlay1.addEventListener('click', () => {
 });
 function randombackground(element) {
     const randomNumber = Math.floor(Math.random() * 8) + 1;
-    element.style.backgroundImage = `url('/Img/${backgrounds[randomNumber - 1]}.png')`;
+    element.style.backgroundImage = `url('arcadiaquest/Img/${backgrounds[randomNumber - 1]}.png')`;
     //sessionStorage.setItem("guildindex", randomNumber);
     guildindex = randomNumber;
 }
 
 submitButton.addEventListener('click', () => {
-
+    playername = document.getElementById("playername").value;
+    if (playername) {
     const settingsButton = document.getElementById('settingsButton');/*Create room*/
     const settingsPopup = document.getElementById('settingsPopup');/*Popup rule*/
     const overlay = document.getElementById('overlay'); /*Dark the area surround*/
@@ -250,18 +255,13 @@ submitButton.addEventListener('click', () => {
     playercount = document.getElementById("myRange").value;
     bancount = document.getElementById("myRange1").value;
     modepick = document.getElementById("volumeDropdown").value
-    playername = document.getElementById("playername").value;
 
-    //sessionStorage.setItem("playercount", playercount);
-    //sessionStorage.setItem("bancount", bancount);
-    //sessionStorage.setItem("modepick", modepick);
     sessionStorage.setItem("playername", playername);
 
     checkboxStatus0 = storeCheckboxStatus("input.subOption0");
     checkboxStatus1 = storeCheckboxStatus("input.subOption1");
     checkboxStatus2 = storeCheckboxStatus("input.subOption2");
     checkboxStatus3 = storeCheckboxStatus("input.subOption3");
-
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     for (let i = 0; i < 5; i++) {
         result += characters.charAt(Math.floor(Math.random() * characters.length));
@@ -270,8 +270,7 @@ submitButton.addEventListener('click', () => {
     writeNewpost();
     createPopup.classList.add('open');
     overlay2.classList.add('open');
-    //
-    // window.open("pick.html", "_blank");
+}else{alert("Name cannot be empty!");}
 });
 ok.addEventListener('click', () => {
     window.location.href = "pick.html";
