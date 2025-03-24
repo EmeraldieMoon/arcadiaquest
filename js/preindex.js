@@ -161,7 +161,7 @@ const backgrounds = ["bannerorange", "bannerblue", "bannerred", "bannergreen", "
 for (let i = 1; i <= 8; i++) {
     const button = document.getElementById(`guild${i}`);
     button.addEventListener("click", () => {
-        div.style.backgroundImage = `url('arcadiaquest/Img/${backgrounds[i - 1]}.png')`;
+        div.style.backgroundImage = `url('/Img/${backgrounds[i - 1]}.png')`;
         //sessionStorage.setItem("guildindex", i);
         guildindex = i;
     });
@@ -170,7 +170,7 @@ for (let i = 1; i <= 8; i++) {
 for (let i = 1; i <= 8; i++) {
     const button = document.getElementById(`joinguild${i}`);
     button.addEventListener("click", () => {
-        joindiv.style.backgroundImage = `url('arcadiaquest/Img/${backgrounds[i - 1]}.png')`;
+        joindiv.style.backgroundImage = `url('/Img/${backgrounds[i - 1]}.png')`;
         //sessionStorage.setItem("guildindex", i);
         guildindex = i;
     });
@@ -235,7 +235,7 @@ overlay1.addEventListener('click', () => {
 });
 function randombackground(element) {
     const randomNumber = Math.floor(Math.random() * 8) + 1;
-    element.style.backgroundImage = `url('arcadiaquest/Img/${backgrounds[randomNumber - 1]}.png')`;
+    element.style.backgroundImage = `url('/Img/${backgrounds[randomNumber - 1]}.png')`;
     //sessionStorage.setItem("guildindex", randomNumber);
     guildindex = randomNumber;
 }

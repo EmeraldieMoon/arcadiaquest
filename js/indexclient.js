@@ -111,10 +111,10 @@ function readdataonce(roomID) {
                         playersArray.push(childData);
                     });
                     if (playersArray[0]) {
-                        playerBases[i].style.backgroundImage = `url('../Img/${teambackgrounds[playersArray[0] - 1]}.png')`;
+                        playerBases[i].style.backgroundImage = `url('/Img/${teambackgrounds[playersArray[0] - 1]}.png')`;
                         let childDivs1 = playerBases[i].querySelectorAll(`.div${i + 1}`);
                         childDivs1.forEach(child => {
-                            child.style.backgroundImage = `url('../Img/${herobackgrounds[playersArray[0] - 1]}.png')`;
+                            child.style.backgroundImage = `url('/Img/${herobackgrounds[playersArray[0] - 1]}.png')`;
                         });
                         guildindex=playersArray[0];
                     }
@@ -360,10 +360,10 @@ for (let i = 0; i <= 3; i++) {
             nameindex = i;
             addremoveUnclickableClass(playerBases[nameindex], nameindex, true)
             changeborder(playerBases[nameindex]); //Change css of div
-            playerBases[nameindex].style.backgroundImage = `url('../Img/${teambackgrounds[guildindex - 1]}.png')`;
+            playerBases[nameindex].style.backgroundImage = `url('/Img/${teambackgrounds[guildindex - 1]}.png')`;
             let childDivs1 = playerBases[nameindex].querySelectorAll(`.div${nameindex + 1}`);
             childDivs1.forEach(child => {
-                child.style.backgroundImage = `url('../Img/${herobackgrounds[guildindex - 1]}.png')`;
+                child.style.backgroundImage = `url('/Img/${herobackgrounds[guildindex - 1]}.png')`;
             });
         }
     });
