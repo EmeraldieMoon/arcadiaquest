@@ -189,7 +189,7 @@ overlay3.addEventListener('click', () => {
 joinsubmitButton.addEventListener('click', () => {
     const checkplayername = document.getElementById("joinplayername").value;
     if (checkplayername) {
-        sessionStorage.setItem("playername", d);
+        sessionStorage.setItem("playername", checkplayername);
         sessionStorage.setItem("roomID", roomID);
         // sessionStorage.setItem("guildindex", guildindex);
         joinpost();
