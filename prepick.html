@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html id="prepage" lang="en">
 
 <head>
   <link href="https://fonts.googleapis.com/css?family=Mystery+Quest" rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Literata" rel="stylesheet">
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="google-site-verification" content="sXNRWi5U8DXbrM3emCZJuql1dH2CpqtE61p0pBuuUFE" />
@@ -11,7 +13,7 @@
     content="Find out more about each of the brave and unique heroes you can pick to defend your guild throughout the campaign." />
   <!-- Mobile viewport optimized: h5bp.com/viewport -->
   <!--<meta name="viewport" content="width=device-width" />-->
-  <meta name="viewport" content="width=1030" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--<link rel="apple-touch-icon" href="" />-->
   <!-- Windows 8 tile http://www.buildmypinnedsite.com -->
   <link rel="stylesheet" href="css/normalize.min.css">
@@ -19,6 +21,8 @@
   <!-- -prefix-free http://www.alsacreations.com/article/lire/1306-prefix-free-prefixes-CSS3.html -->
   <script type="text/javascript" src="https://raw.github.com/LeaVerou/prefixfree/master/prefixfree.min.js"></script>
   <script src="js/lib/modernizr-2.6.2.min.js"></script>
+  <script type="module" src="js/preindex.js"></script>
+
 </head>
 
 <body>
@@ -54,96 +58,180 @@
     <li id="menu5"><a href="prepick.html">Pick</a></li>
     <li id="menu6"><a href="https://support.cmon.com" target="blank">Contact</a></li>
   </ul>
-  <div id="main">
-    <div id="createroom">
-      <div class="style-maintext">Hero Craft room</div>
-      <div id="buttons">
-        <button id="settingsButton">Create room</button>
-      </div>
-      <div class="style-text">OR JOIN EXSISTING</div>
-      <div>
-        <input type="text" id="name" name="name" placeholder="Enter room code">
-        <button id="joinButton">Join</button>
-      </div>
-    </div>
-    <div class="overlay" id="overlay"></div>
+  <div role="main" id="main">
+    <style>
+      #menu5 {
+        background: url('Img/current-Tab.jpg') no-repeat #C8D8CD !important
+      }
+    </style>
 
-    <div class="popup" id="settingsPopup">
-      <div class="style-subtext">Room Rules:</div>
-      <div class="value" id="sliderValue">Maximum Players (2)</div>
-      <div class="slider-container">
-        <input type="range" min="1" max="4" value="2" class="slider1" id="myRange"
-          oninput="updateValue('sliderValue', this.value,'Maximum Players (',')') ">
-      </div>
-      <div class="value" id="sliderValue1">Bans Per Player (0)</div>
-      <div class="slider-container">
-        <input type="range" min="0" max="3" value="0" class="slider1" id="myRange1"
-          oninput="updateValue('sliderValue1', this.value,'Bans Per Player (',')')">
-      </div>
-      <div class="modepick">
-        <span class="modeText" id="modeValue">Mode</span>
-        <select id="volumeDropdown">
-          <option value="0">All pick</option>
-          <option value="10">Host choose all</option>
-          <option value="20">Draft</option>
-          <option value="30">All random</option>
-        </select>
-      </div>
-      <div class="style-text">HERO POOL</div>
-      <div class="checkbox">
-        <div class="AQ" id="checkbox0">
-          <label for="checkbox1"><input type="checkbox" class="subOption0" checked>
-            AQ
-          </label>
-          <label for="checkbox2"><input type="checkbox" class="subOption0">
-            BTG
-          </label>
-          <label for="checkbox3"><input type="checkbox" class="subOption0">
-            Extra
-          </label>
-          <label for="checkbox4"><input type="checkbox" class="subOption0">
-            GM
-          </label>
+    <section class="page">
+      <div id="createroom">
+        <div class="style-maintext">Hero Craft room</div>
+        <div id="buttons">
+          <button id="settingsButton">Create room</button>
         </div>
-        <div class="Inferno" id="checkbox1">
-          <label for="checkbox1"><input type="checkbox" class="subOption1">
-            Inferno
-          </label>
-          <label for="checkbox2"><input type="checkbox" class="subOption1">
-            Pets
-          </label>
-          <label for="checkbox3"><input type="checkbox" class="subOption1">
-            HoB
-          </label>
-          <label for="checkbox4"><input type="checkbox" class="subOption1">
-            Extra
-          </label>
-          <label for="checkbox5"><input type="checkbox" class="subOption1">
-            Riders
-          </label>
-        </div>
-        <div class="Masmorra" id="checkbox2">
-          <label for="checkbox1"><input type="checkbox" class="subOption2">
-            Masmorra
-          </label>
-          <label for="checkbox2"><input type="checkbox" class="subOption2">
-            Extra
-          </label>
-          <label for="checkbox3"><input type="checkbox" class="subOption2">
-            Dungoneer
-          </label>
-        </div>
-        <div class="Promotion" id="checkbox3">
-          <label for="checkbox4"><input type="checkbox" class="subOption3">
-            Promo
-          </label>
-          <label for="checkbox4"><input type="checkbox" class="subOption3">
-            Usagi Yojimbo
-          </label>
+        <div class="style-text">OR JOIN EXSISTING</div>
+        <div>
+          <input type="text" id="name" name="name" placeholder="Enter room code" autocomplete="name">
+          <button id="joinButton">Join</button>
         </div>
       </div>
-      <button id="closeButton">Create room with rules</button>
-    </div>
+      <div class="overlay" id="overlay"></div>
+
+      <div class="popup" id="settingsPopup">
+        <div class="style-subtext">ROOM RULES</div>
+        <div class="slider-container">
+          <label for="myRange" class="value" id="sliderValue">Maximum Players (2)</label>
+          <input type="range" min="1" max="4" value="2" class="slider1" id="myRange" aria-label="Adjust player"
+            oninput="updateValue('sliderValue', this.value,'Maximum Players (',')') ">
+        </div>
+        <div class="slider-container">
+          <label for="myRange1" class="value" id="sliderValue1">Bans Per Player (0)</label>
+          <input type="range" min="0" max="3" value="0" class="slider1" id="myRange1" aria-label="Adjust banhero"
+            oninput="updateValue('sliderValue1', this.value,'Bans Per Player (',')')">
+        </div>
+        <div class="modepick">
+          <span class="modeText" id="modeValue">Mode</span>
+          <select aria-label="Mode" id="volumeDropdown">
+            <option value="0">All pick</option>
+            <option value="10">Host choose all</option>
+            <option value="20">Draft</option>
+            <option value="30">All random</option>
+          </select>
+        </div>
+        <div class="style-text1">HERO POOL</div>
+        <div class="checkbox">
+          <div class="AQ" id="checkbox00">
+            <label for="checkbox1"><input type="checkbox" class="subOption0" checked id="checkbox1">
+              AQ<sup class="question-mark">?</sup>
+              <span class="tooltiptext">AQ base:Diva, Greensleeves, Grom, Hobsbawm, Johan, Kanga, Maya, Scarlet, Seth,
+                Spike, Wisp, Zazu, Wisp</span>
+            </label>
+            <label for="checkbox2"><input type="checkbox" class="subOption0" id="checkbox2">
+              BYG<sup class="question-mark">?</sup>
+              <span class="tooltiptext">Beyond the Grave: Chaz, Darryn</span>
+            </label>
+            <label for="checkbox3"><input type="checkbox" class="subOption0" id="checkbox3">
+              Extra<sup class="question-mark">?</sup>
+              <span class="tooltiptext">Viktor, Aeric, Brenna, Farfalla, Haldor, Hassan, Leeroy, Mc Hammer, Mittens,
+                Nibbles, Tiaret, Yun, Zahra</span>
+            </label>
+            <label for="checkbox4"><input type="checkbox" class="subOption0" id="checkbox4">
+              GM<sup class="question-mark">?</sup>
+              <span class="tooltiptext">Guildmaster:Black Newt,Bob, Bowie, Chooloo, Elysia,Frowny Faceless, Hitch, King
+                of
+                Thieves, Koba, Lilith, Lord Fang, Lydia, Monkey King, Monkey Queen, Montoya, Morgan, Pigsy, Pluck,
+                Prince
+                Aaron, Queen of Beggars,Serious Faceless, Smiley Faceless, Sonja, Sting, Surprised Faceless, The
+                Heartless, The Nameless</span>
+            </label>
+          </div>
+          <div class="Inferno" id="checkbox01">
+            <label for="checkbox5"><input type="checkbox" class="subOption1" id="checkbox5">
+              Inferno<sup class="question-mark">?</sup>
+              <span class="tooltiptext1">Bjor of Oros, Cassius, Diana, Izzy, Jack Jack, Jaimie, Kisha, Mark, Natasha,
+                Phyx, Sybbyl, Trandir, Angle eyes, Benjamin, Justicar, Leah, The Fallen Angel, The Wanderer</span>
+            </label>
+            <label for="checkbox6"><input type="checkbox" class="subOption1" id="checkbox6">
+              Pets<sup class="question-mark">?</sup>
+              <span class="tooltiptext1">Greenhood, Oak</span>
+            </label>
+            <label for="checkbox7"><input type="checkbox" class="subOption1" id="checkbox7">
+              HoB<sup class="question-mark">?</sup>
+              <span class="tooltiptext1">Hell of a box: Annabelle, Annika, Britney, Dris, Gabriel, Hellen, Johnny,
+                Julie,
+                King David III, Kragor, Lord Tyron, Lucas, Magu, Master Pim, Mercury, Papa Ruk, Raven, Rivet, Sarya, Sir
+                Bryce, Tao, Thornwood, igris, Tyndall, Tyrek, Vexia The Witch, Wanda</span>
+            </label>
+            <label for="checkbox8"><input type="checkbox" class="subOption1" id="checkbox8">
+              Extra<sup class="question-mark">?</sup>
+              <span class="tooltiptext1">Anvil, Crash, Hilda, Hoshi, Kuruk, Mamba, Nina, Rosh, Valma, Viola, Yona</span>
+            </label>
+            <label for="checkbox9"><input type="checkbox" class="subOption1" id="checkbox9">
+              Riders<sup class="question-mark">?</sup>
+              <span class="tooltiptext1">Colette, Gaston</span>
+            </label>
+          </div>
+          <div class="Masmorra" id="checkbox02">
+            <label for="checkbox10"><input type="checkbox" class="subOption2" id="checkbox10">
+              Masmorra<sup class="question-mark">?</sup>
+              <span class="tooltiptext2">Algus, Greybark, Jay, Mika, Valerie</span>
+            </label>
+            <label for="checkbox11"><input type="checkbox" class="subOption2" id="checkbox11">
+              Extra<sup class="question-mark">?</sup>
+              <span class="tooltiptext2">Damian, Lang Lang, Luna, Neffar, Stump</span>
+            </label>
+            <label for="checkbox12"><input type="checkbox" class="subOption2" id="checkbox12">
+              Dungoneer<sup class="question-mark">?</sup>
+              <span class="tooltiptext2">Azure, Baruk, Blossom, Hyldir, Lotus, Luke the lucky, Makumba, Prince
+                Grenouille,
+                Quan, Raffi, Thereon, Toghor, Tosh, Travis, Zsa Zsa</span>
+            </label>
+          </div>
+          <div class="Promotion" id="checkbox03">
+            <label for="checkbox13">
+              <input type="checkbox" class="subOption3" id="checkbox13"> Promo<sup class="question-mark">?</sup>
+              <span class="tooltiptext3">Tomrick, Princess Pearl</span>
+            </label>
+            <label for="checkbox14">
+              <input type="checkbox" class="subOption3" id="checkbox14"> Usagi Yojimbo<sup class="question-mark">?</sup>
+              <span class="tooltiptext3">Kitsune, Miyamoto Usagi, Murakami Gennosuke</span>
+            </label>
+            <button id="chooseall">Choose all</button>
+          </div>
+
+        </div>
+        <div id="buttons">
+          <button id="closeButton">Create room with rules</button>
+        </div>
+      </div>
+      <div class="overlay" id="overlay1"></div>
+
+      <div class="popup1" id="namePopup">
+
+        <div class="insertname">
+          <input type="text" id="playername" placeholder="Your guild name...">
+          <button id="submitButton">Submit</button>
+        </div>
+        <div class="guildicon">
+          <button aria-label="guild1" id="guild1"></button>
+          <button aria-label="guild2" id="guild2"></button>
+          <button aria-label="guild3" id="guild3"></button>
+          <button aria-label="guild4" id="guild4"></button>
+          <button aria-label="guild5" id="guild5"></button>
+          <button aria-label="guild6" id="guild6"></button>
+          <button aria-label="guild7" id="guild7"></button>
+          <button aria-label="guild8" id="guild8"></button>
+        </div>
+      </div>
+      <div class="overlay" id="overlay2"></div>
+
+      <div class="popup2" id="createPopup">
+        <div>
+          <label id="createresult">"Loading..."</span>
+        </div>
+        <div>
+          <button id="ok">Ok</button>
+        </div>
+      </div>
+      <div class="overlay" id="overlay3"></div>
+      <div class="popup3" id="joinnamePopup">
+        <div class="insertname">
+          <input type="text" id="joinplayername" placeholder="Your guild name...">
+          <button id="joinsubmitButton">Submit</button>
+        </div>
+        <div class="guildicon">
+          <button aria-label="joinguild1" id="joinguild1"></button>
+          <button aria-label="joinguild2" id="joinguild2"></button>
+          <button aria-label="joinguild3" id="joinguild3"></button>
+          <button aria-label="joinguild4" id="joinguild4"></button>
+          <button aria-label="joinguild5" id="joinguild5"></button>
+          <button aria-label="joinguild6" id="joinguild6"></button>
+          <button aria-label="joinguild7" id="joinguild7"></button>
+          <button aria-label="joinguild8" id="joinguild8"></button>
+        </div>
+      </div>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
@@ -194,50 +282,6 @@
       }
     });
   });
-</script>
-  <!-- Save parameter -->
-
-<script>
-  const settingsButton = document.getElementById('settingsButton');
-  const settingsPopup = document.getElementById('settingsPopup');
-  const overlay = document.getElementById('overlay');
-  const closeButton = document.getElementById('closeButton');
-
-  settingsButton.addEventListener('click', () => {
-    settingsPopup.classList.add('open');
-    overlay.classList.add('open');
-  });
-
-  closeButton.addEventListener('click', () => {
-    settingsPopup.classList.remove('open');
-    overlay.classList.remove('open');
-    window.location.href = "pick.html";
-
-    sessionStorage.setItem("playercount", document.getElementById("myRange").value);
-    sessionStorage.setItem("bancount", document.getElementById("myRange1").value);
-    sessionStorage.setItem("modepick", document.getElementById("volumeDropdown").value);
-    storeCheckboxStatus("input.subOption0")
-    storeCheckboxStatus("input.subOption1")
-    storeCheckboxStatus("input.subOption2")
-    storeCheckboxStatus("input.subOption3")
-  });
-
-  overlay.addEventListener('click', () => {
-    settingsPopup.classList.remove('open');
-    overlay.classList.remove('open');
-  });
-  function storeCheckboxStatus(x) {
-        var checkboxes = document.querySelectorAll(x);
-        var checkboxStatus = Array.from(checkboxes).map(function (checkbox) {
-            return checkbox.checked;
-        });
-        sessionStorage.setItem(x, JSON.stringify(checkboxStatus));
-    }
-</script>
-<script>
-  function updateValue(id, value, text1, text2) {
-    document.getElementById(id).textContent = text1 + value + text2;
-  }
 </script>
 
 </html>

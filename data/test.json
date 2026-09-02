@@ -1,0 +1,42 @@
+{
+  "room131": {
+    "playerID0": {
+      "playername": "",
+      "status": "deactive",
+      "hero1": "",
+      "hero2": "",
+      "hero3": ""
+    },
+    "playerID1": {
+      "playername": "",
+      "status": "deactive",
+      "hero1": "Johan",
+      "hero2": "",
+      "hero3": ""
+    },
+    "playerID2": {
+      "playername": "",
+      "status": "deactive",
+      "hero1": "",
+      "hero2": "",
+      "hero3": "Scarlet"
+    },
+    "playerID3": {
+      "playerID": 4,
+      "playername": "",
+      "status": "deactive",
+      "hero1": "",
+      "hero2": "Seth",
+      "hero3": ""
+    },
+    "roomSetting": {
+      "playercount": "",
+      "bancount": "",
+      "modepick": "",
+      "inputsubOption0": "",
+      "inputsubOption1": "",
+      "inputsubOption2": "",
+      "inputsubOption3": ""
+    }
+  }
+}
