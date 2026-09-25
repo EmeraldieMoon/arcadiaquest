@@ -46,7 +46,7 @@ var heropool1 = ['AQI', 'PET', 'HOB', 'EX2', 'RD'];
 var heropool2 = ['MMR', 'EX3', 'DGP', 'GM'];
 var heropool3 = ['PM', 'UY'];
 var guildindex = "";
-var divpositionindex = ["mdrag1", "mdrag2", "mdrag3", "mdrag4", "mdrag5", "mdrag6", "mdrag7", "mdrag8", "mdrag9", "mdrag10", "mdrag11", "mdrag12"]
+var divpositionindex = ["mdrag1", "mdrag2", "mdrag3", "mdrag4", "mdrag5", "mdrag6", "mdrag7", "mdrag8", "mdrag9", "mdrag10", "mdrag11", "mdrag11"]
 var list = document.getElementById("main").getElementsByTagName("img");
 const heroposition = [];
 for (let i = 0; i < list.length; i++) {
@@ -54,7 +54,6 @@ for (let i = 0; i < list.length; i++) {
 }
 var playercount = "";
 var modepick = "";
-var lied=null;
 //<!-- Load parameter -->
 
 
@@ -63,7 +62,8 @@ roomID = sessionStorage.getItem("roomID");
 document.querySelectorAll("#nameroom").forEach((element) => {
     element.innerHTML = "RoomID: " + roomID;
 });
-guildindex = sessionStorage.getItem("guildindex");
+//guildindex = sessionStorage.getItem("guildindex");
+
 //checknameindex(roomID);
 readdataonce(roomID);
 
@@ -75,17 +75,15 @@ function readdataonce(roomID) {
             playercount = data.playercount;
             switch (playercount) {
                 case "1":
-                    //playerBases[1].classList.add("hidden");
-                    playerBases[1].remove();
-                    playerBases[2].remove();
-                    playerBases[3].remove(); break;
+                    playerBases[1].classList.add("hidden");
+                    playerBases[2].classList.add("hidden");
+                    playerBases[3].classList.add("hidden"); break;
                 case "2":
-                    playerBases[2].remove();
-                    playerBases[3].remove(); break;
+                    playerBases[2].classList.add("hidden");
+                    playerBases[3].classList.add("hidden"); break;
                 case "3":
-                    playerBases[3].remove(); break;
+                    playerBases[3].classList.add("hidden"); break;
             }
-            
             bancount = data.bancount;
             if (bancount > 0) {
                 const elements = document.querySelectorAll('#ban-symbol');
@@ -94,10 +92,7 @@ function readdataonce(roomID) {
                     element.classList.add('ban-symbol'); // Perform any action on each element
                 });
             }
-
             modepick = data.modepick;
-
-            //Load hero list based on checkbox status
             const inputSubOption0 = data.inputsubOption0;
             const inputSubOption1 = data.inputsubOption1;
             const inputSubOption2 = data.inputsubOption2;
@@ -106,7 +101,6 @@ function readdataonce(roomID) {
             retrieveCheckboxStatus(inputSubOption1, heropool1);
             retrieveCheckboxStatus(inputSubOption2, heropool2);
             retrieveCheckboxStatus(inputSubOption3, heropool3);
-
             // Generate playerID dynamically
             for (let i = 0; i < playercount; i++) {
                 const playerinformation = ref(db, `room/${roomID}/playerID${i}`);
@@ -116,41 +110,24 @@ function readdataonce(roomID) {
                         const childData = childSnapshot.val();
                         playersArray.push(childData);
                     });
-
-                    //Load guild index and background for each player
                     if (playersArray[0]) {
                         playerBases[i].style.backgroundImage = `url('Img/${teambackgrounds[playersArray[0] - 1]}.png')`;
                         let childDivs1 = playerBases[i].querySelectorAll(`.div${i + 1}`);
                         childDivs1.forEach(child => {
                             child.style.backgroundImage = `url('Img/${herobackgrounds[playersArray[0] - 1]}.png')`;
                         });
+                        guildindex=playersArray[0];
                     }
-                    else{
-                        playerBases[i].style.backgroundImage = ``;
-                        let childDivs1 = playerBases[i].querySelectorAll(`.div${i + 1}`);
-                        childDivs1.forEach(child => {
-                            child.style.backgroundImage = ``;
-                        });
-                        //playerBases[i].querySelector('p').textContent = `Guild ${i + 1}: `;
-                    }
-
-                    //Load hero for each player
                     for (let n = 1; n < 4; n++) {
-                        const index = heroposition.indexOf(playersArray[n]);//lay vi tri cua hero trong pool theo id database
+                        const index = heroposition.indexOf(playersArray[n]);//new index
                         if (index >= 0) {
-                           const divremove = playerBases[i].children[n].children[1];
-                           removeotherImage(divremove);
-                           const li = document.getElementById("main").getElementsByTagName("li")[index]; //<li>
-                           const divpick = li.querySelector("#pick-symbol");
+                            const divremove = playerBases[i].children[n].children[1];
+                            removeotherImage(divremove);
+                            const li = document.getElementById("main").getElementsByTagName("li")[index]; //<li>
+                            const divpick = li.querySelector("#pick-symbol");
                             pickotherImages(divpick, i, n);
                         }
-                        else{
-                           const divremove = playerBases[i].children[n].children[1];
-                            removeotherImage(divremove);
-                        }
                     }
-
-                    //Load player name for each player
                     if (playersArray[4]) {
                         playerBases[i].querySelector('p').textContent = `Guild ${i + 1}: ${playersArray[4]}`; // Update div content
                         if (playername == playersArray[4]) {
@@ -159,11 +136,6 @@ function readdataonce(roomID) {
                             addremoveUnclickableClass(playerBases[nameindex], nameindex, true)
                         }
                     }
-                    else {
-                       playerBases[i].querySelector('p').textContent = `Guild ${i + 1}:`;
-                    }
-                playerBases[i].addEventListener("click", () => changediv(i));
-
                 });
             };
         } else {
@@ -192,51 +164,16 @@ function writeUserData(roomID, playerId, data) {
         });
 }
 
-function resetUserData(roomID, playerId, data) {
-    set(ref(db, `room/${roomID}/${playerId}`), {
-        hero1: data[0],
-        hero2: data[1],
-        hero3: data[2],
-        name: "",
-        guild: "",
-        status: "deactive"
-    })
-        .then(() => {
-            // Data saved successfully!
-        })
-        .catch((error) => {
-            // The write failed...
-        });
-}
-
-function rewriteUserData(roomID, playerId,data) {
-    set(ref(db, `room/${roomID}/${playerId}`), {
-        hero1: data[0],
-        hero2: data[1],
-        hero3: data[2],
-        name: playername,
-        guild: guildindex,
-        status: "active"
-    })
-        .then(() => {
-            // Data saved successfully!
-        })
-        .catch((error) => {
-            // The write failed...
-        });
-}
 //<!-- Ban pick function -->
 
 export function removeImage(element) {
-    let data = element.previousElementSibling.children[0].id; //<img id> of div data = mdrag1,2,3,4,5,6,7,8,9,10,11,12
-    if (!data.includes("mdrag")) {
-         //let character = document.getElementById(data).parentNode; //<a href img id>
-        const index = heroposition.indexOf(data);//lay thu tu cua hero trong pool
-         let li = document.getElementById("main").getElementsByTagName("li")[index];//<li id=> cua hero trong pool
-        let originalcharacter = li.children[0]; //<a href> of li
-        let divposition = originalcharacter.children[0].id;//divposition = mdrag1,2,3,4,5,6,7,8,9,10,11,12
-        const divindex = divpositionindex.indexOf(divposition);//vi tri cua div theo mdrag 1,2,3 là div1, 4,5,6 là div2, 7,8,9 là div3, 10,11,12 là div4. gia trị divindex từ 0-11, chia 3 lấy phần nguyên sẽ ra div1,2,3,4
-        console.log("divindex: " + divindex/9);
+    let data = element.previousElementSibling.children[0].id; //<img id> of div
+    let character = document.getElementById(data).parentNode; //<a href img id>
+    const index = heroposition.indexOf(data);
+    let li = document.getElementById("main").getElementsByTagName("li")[index];//<li id=>
+    let originalcharacter = li.children[0]; //<a href> of li
+    let divposition = originalcharacter.children[0].id;
+    const divindex = divpositionindex.indexOf(divposition);
     switch (true) {
         case divindex / 3 < 1:
             datahero0[divindex] = "";
@@ -250,17 +187,14 @@ export function removeImage(element) {
             datahero2[divindex - 6] = "";
             writeUserData(roomID, `playerID${nameindex}`, datahero2);
             break;
-        case divindex / 9 >= 1:
+        case divindex / 9 >= 3:
             datahero3[divindex - 9] = "";
             writeUserData(roomID, `playerID${nameindex}`, datahero3);
             break;
         default:
     }
-   
-}
 
-
-   /* originalcharacter.classList.remove('unclickable');
+    originalcharacter.classList.remove('unclickable');
 
     //div get hero
     originalcharacter.children[0].setAttribute("src", "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
@@ -270,17 +204,14 @@ export function removeImage(element) {
     li.insertBefore(character, li.firstChild);
     li.classList.add('heroimage');
     //Reset name after move to Div
-    originalcharacter.children[1].innerText = ('Hero');*/
+    originalcharacter.children[1].innerText = ('Hero');
 }
 window.removeImage = removeImage;
 
 export function pickImage(element) {
-    /*//<li id="AQI" class="heroimage"><a href="Img/card-H-Phyx.png" class="fancybox" rel="fancy"><img width="104" height="104" src="Img/pPhyx.png" alt="Phyx" draggable="true" ondragstart="drag(event)" id="Phyx" /><span class="name">Phyx</span></a><div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle</div><div id="ban-symbol" class="material-symbols-outlined"onclick="banImage(this)">do_not_disturb_on</div></li>
-    //element = <div id="pick-symbol" class="pick-symbol material-symbols-outlined" onclick="pickImage(this)">add_circle</div>
-    let data = element.previousElementSibling.children[0].id; //data = Phyx
-    let character = document.getElementById(data).parentNode;//character = <a href="Img/card-H-Phyx.png" class="fancybox" rel="fancy"><img width="104" height="104" src="Img/pPhyx.png" alt="Phyx" draggable="true" ondragstart="drag(event)" id="Phyx" /><span class="name">Phyx</span></a>
-    let linkimage = character.children[0].getAttribute("src");//linkimage = Img/pPhyx.png
-    
+    let data = element.previousElementSibling.children[0].id; //<img id> of li
+    let character = document.getElementById(data).parentNode;//<a href of li
+    let linkimage = character.children[0].getAttribute("src");
     let i = ""
     for (i = 1; i < 4; i++) {
         var pickplace = playerBases[nameindex].children[i]; //<div class>;
@@ -301,26 +232,11 @@ export function pickImage(element) {
     //div get hero
     pickplace.insertBefore(character, pickplace.firstChild);
     pickplace.classList.add('div1hover');
-    pickplacecharacter.children[1].innerText = data;*/
-    
-    let data = element.previousElementSibling.children[0].id; //data = Phyx
-    let i = ""
-    for (i = 1; i < 4; i++) {
-        var pickplace = playerBases[nameindex].children[i]; //<div class>;
-        var pickplacecharacter = pickplace.children[0]; //<a href>;
-        if (!pickplacecharacter.classList.contains("fancybox")) {
-            break; // i sẽ chạy từ slot 1 tới 3, nếu slot nào chưa có hero thì dừng lại và lấy i đó để lưu vào datahero, nếu slot nào đã có hero thì tiếp tục chạy tới slot tiếp theo
-        }
-        if (i == 3) {
-            alert('You had all 3 heroes');
-            return;
-        }
-    }
+    pickplacecharacter.children[1].innerText = data;
     datahero[nameindex][i - 1] = data;
     writeUserData(roomID, `playerID${nameindex}`, datahero[nameindex]);
 }
 window.pickImage = pickImage;
-
 export function banImage(element) {
     let character = element.parentNode //<a href of li
     character.classList.add("unclickable");
@@ -328,7 +244,7 @@ export function banImage(element) {
 }
 window.banImage = banImage;
 
-////Load data for other players
+////Load data
 function pickotherImages(element, othersindex, j) {
     let data = element.previousElementSibling.children[0].id; //<img id> of li
     let character = document.getElementById(data).parentNode;//<a href of li
@@ -348,7 +264,6 @@ function pickotherImages(element, othersindex, j) {
     pickplacecharacter.children[1].innerText = data;
     datahero[othersindex][j - 1] = data;
 }
-
 function removeotherImage(element) {
     let data = element.previousElementSibling.children[0].id; //<img id> of div
     if (!data.includes("mdrag")) {
@@ -369,14 +284,13 @@ function removeotherImage(element) {
     }
 }
 
-////Load hero list based on checkbox status
+
 function retrieveCheckboxStatus(inputSubOption, heropool) {
     let li = document.getElementById("main").getElementsByTagName("li");
     let j = 0;
     Object.keys(inputSubOption).forEach((key) => {
         const checkboxValue = inputSubOption[key];
-        /// Nếu có tick vào checkbox thì hiển thị hero trong heropool, nếu không tick thì ẩn hero trong heropool
-        /*if (checkboxValue == true) {
+        if (checkboxValue == true) {
             for (let i = 0; i < li.length; i++) {
                 if (li[i].getAttribute('id') === heropool[j]) {
                     li[i].style.display = "block";
@@ -388,28 +302,22 @@ function retrieveCheckboxStatus(inputSubOption, heropool) {
                     li[i].style.display = "none";
                 }
             }
-        }*/
-        if (checkboxValue == true) {
-                document.querySelectorAll(`li#${heropool[j]}`).forEach(el => {
-                    el.style.display = "block";
-        });
-
-        } else {
-           document.querySelectorAll(`li#${heropool[j]}`).forEach(el => el.remove());
         }
         j++;
     });
     lied = document.getElementById("main").querySelectorAll('li:not([style*="display: none;"])')
-
 }
 
 
 //!--- Filter hero name --->
 
+var lied = document.getElementById("main").querySelectorAll('li:not([style*="display: none;"])')
 function textfilter() {
     var input, filter, ul, li, a, i, txtValue;
+    //var lied = document.getElementById("main").querySelectorAll('li:not([style*="display: none;"]):not(.unclickable)')
     input = document.getElementById("myInput");
     filter = input.value.toUpperCase();
+    /*li = document.getElementById("main").getElementsByTagName("li");*/
     for (i = 0; i < lied.length; i++) {
         a = lied[i].getElementsByTagName("a")[0];
         if (a) {
@@ -417,63 +325,57 @@ function textfilter() {
         }
         if (lied[i].classList.contains('unclickable')) {
             if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                lied[i].style.display = "none";
+                lied[i].style.opacity = 0.5;
             }
         } else {
             if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                lied[i].style.display="block";
+                lied[i].style.opacity = 1;
             }
             else {
-                lied[i].style.display = "none";
+                lied[i].style.opacity = 0.5;
             }
         }
     }
 }
-
 document.getElementById("myInput").addEventListener("input", () => textfilter());
 
 //!--- Click change Div function --->
 
 /// Select the div
 
-
-     
-function changediv(i){
+for (let i = 0; i <= 3; i++) {
+    playerBases[i].children[0].addEventListener("click", () => {
         let guildname = playerBases[i].querySelector('p');
         if (guildname.textContent.length <= 8) {
             //previous nameindex of div
-            resetborderandname(playerBases[nameindex]);
+            resetborderandname(playerBases[nameindex], nameindex);
             addremoveUnclickableClass(playerBases[nameindex], nameindex, false);
-            /*playerBases[nameindex].style.backgroundImage = ``;
+            playerBases[nameindex].style.backgroundImage = ``;
             let childDivs = playerBases[nameindex].querySelectorAll(`.div${nameindex + 1}`);
             childDivs.forEach(child => {
                 child.style.backgroundImage = ``;
-            });*/
-            resetUserData(roomID, `playerID${nameindex}`,datahero[nameindex]);
-
+            });
             //update nameindex to current div
-            //guildname.textContent = `Guild ${i + 1}: ${playername}`;
+            guildname.textContent = `Guild ${i + 1}: ${playername}`;
             nameindex = i;
-            //addremoveUnclickableClass(playerBases[nameindex], nameindex, true)
-            //changeborder(playerBases[nameindex]); //Change css of div
-            /*playerBases[nameindex].style.backgroundImage = `url('Img/${teambackgrounds[guildindex - 1]}.png')`;
+            addremoveUnclickableClass(playerBases[nameindex], nameindex, true)
+            changeborder(playerBases[nameindex]); //Change css of div
+            playerBases[nameindex].style.backgroundImage = `url('Img/${teambackgrounds[guildindex - 1]}.png')`;
             let childDivs1 = playerBases[nameindex].querySelectorAll(`.div${nameindex + 1}`);
             childDivs1.forEach(child => {
                 child.style.backgroundImage = `url('Img/${herobackgrounds[guildindex - 1]}.png')`;
-            });*/
-            rewriteUserData(roomID, `playerID${nameindex}`,datahero[nameindex]);
+            });
         }
+    });
 }
-
-
-
 function changeborder(element) {
     element.style.borderColor = "red";
     element.style.borderRadius = "10px";
 }
-function resetborderandname(element) {
+function resetborderandname(element, index) {
     element.style.borderColor = "black";
     element.style.borderRadius = "0px";
+    element.querySelector('p').textContent = `Guild ${index + 1}`;
 }
 
 function addremoveUnclickableClass(element, index, isClickable) {

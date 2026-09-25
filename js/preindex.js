@@ -157,21 +157,19 @@ const backgrounds = ["bannerorange", "bannerblue", "bannerred", "bannergreen", "
 
 
 
-// Loop through the buttons and assign a click event to each one
+// Loop through the buttons and assign a click event to each one when creating a room
 for (let i = 1; i <= 8; i++) {
     const button = document.getElementById(`guild${i}`);
     button.addEventListener("click", () => {
         div.style.backgroundImage = `url('Img/${backgrounds[i - 1]}.png')`;
-        //sessionStorage.setItem("guildindex", i);
         guildindex = i;
     });
 }
-// Loop through the buttons and assign a click event to each one
+// Loop through the buttons and assign a click event to each one when joining a room
 for (let i = 1; i <= 8; i++) {
     const button = document.getElementById(`joinguild${i}`);
     button.addEventListener("click", () => {
         joindiv.style.backgroundImage = `url('Img/${backgrounds[i - 1]}.png')`;
-        //sessionStorage.setItem("guildindex", i);
         guildindex = i;
     });
 }
@@ -186,12 +184,13 @@ overlay3.addEventListener('click', () => {
     joinnamePopup.classList.remove('open');
     overlay3.classList.remove('open');
 });
+// Save data when joining a room
 joinsubmitButton.addEventListener('click', () => {
     const checkplayername = document.getElementById("joinplayername").value;
     if (checkplayername) {
         sessionStorage.setItem("playername", checkplayername);
         sessionStorage.setItem("roomID", roomID);
-        // sessionStorage.setItem("guildindex", guildindex);
+        sessionStorage.setItem("guildindex", guildindex);
         joinpost();
     }
     else { alert("Name cannot be empty!"); }
@@ -233,10 +232,11 @@ overlay1.addEventListener('click', () => {
     namePopup.classList.remove('open');
     overlay1.classList.remove('open');
 });
+
+// Function to generate a random background when choose guild popup is opened
 function randombackground(element) {
     const randomNumber = Math.floor(Math.random() * 8) + 1;
     element.style.backgroundImage = `url('Img/${backgrounds[randomNumber - 1]}.png')`;
-    //sessionStorage.setItem("guildindex", randomNumber);
     guildindex = randomNumber;
 }
 
@@ -257,6 +257,7 @@ submitButton.addEventListener('click', () => {
     modepick = document.getElementById("volumeDropdown").value
 
     sessionStorage.setItem("playername", playername);
+    sessionStorage.setItem("guildindex", guildindex);
 
     checkboxStatus0 = storeCheckboxStatus("input.subOption0");
     checkboxStatus1 = storeCheckboxStatus("input.subOption1");
